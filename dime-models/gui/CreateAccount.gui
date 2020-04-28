@@ -1,0 +1,561 @@
+GUI _kdyYUU8sEeqXc4pcZOAMbQ {
+  fullWidth false
+  disableAutoLayout false
+  additionalJavaScript [  ]
+  additionalStylesheets [  ]
+  title "CreateAccount"
+  DataContext _kd3Q0U8sEeqXc4pcZOAMbQ at 10,10 size 200,1000 {
+  	dfViewWorkaround true
+  	PrimitiveVariable __Y65UE89EeqNpIsdvs4-BA at 20,190 size 140,25 {
+  		isInput false
+  		dataType Text
+  		name "firstName"
+  		dfViewWorkaround true
+  		isList false
+  		-FormSubmit-> _HCPq4E8tEeqXc4pcZOAMbQ via (252,212) (252,539) decorate "" at (0,0) {
+  			id _M2Nk4U8-EeqNpIsdvs4-BA
+  		}
+  		
+  		-AddPrimitiveToSubmission-> _Gdoh8U8tEeqXc4pcZOAMbQ via (-35,212) (-35,919) decorate "" at (0,0) decorate "Text" at (75,189) {
+  			id _Xu17UU8-EeqNpIsdvs4-BA
+  		}
+  	}
+  	
+  	PrimitiveVariable _BiyI0U8-EeqNpIsdvs4-BA at 20,230 size 140,25 {
+  		isInput false
+  		dataType Text
+  		name "lastName"
+  		dfViewWorkaround true
+  		isList false
+  		-FormSubmit-> _QRwcgU8vEeqXc4pcZOAMbQ via (246,252) (246,610) decorate "" at (0,0) {
+  			id _NeYYIU8-EeqNpIsdvs4-BA
+  		}
+  		
+  		-AddPrimitiveToSubmission-> _Gdoh8U8tEeqXc4pcZOAMbQ via (-16,253) (-16,919) decorate "" at (0,0) decorate "Text" at (207,169) {
+  			id _4OePYU8-EeqC3owT0yULIA
+  		}
+  	}
+  	
+  	PrimitiveVariable _B1C9gU8-EeqNpIsdvs4-BA at 20,270 size 140,25 {
+  		isInput false
+  		dataType Text
+  		name "userName"
+  		dfViewWorkaround true
+  		isList false
+  		-FormSubmit-> _YCYOQU8xEeqXc4pcZOAMbQ via (242,292) (242,679) decorate "" at (0,0) {
+  			id _N-A6cU8-EeqNpIsdvs4-BA
+  		}
+  		
+  		-AddPrimitiveToSubmission-> _Gdoh8U8tEeqXc4pcZOAMbQ via (-3,293) (-3,919) decorate "" at (0,0) decorate "Text" at (143,149) {
+  			id _aXRYAVMhEeq0bZx5VLhsHw
+  		}
+  	}
+  	
+  	PrimitiveVariable _Iy8jwU8-EeqNpIsdvs4-BA at 20,310 size 140,25 {
+  		isInput false
+  		dataType Text
+  		name "password"
+  		dfViewWorkaround true
+  		isList false
+  		-FormSubmit-> _H02MgU8tEeqXc4pcZOAMbQ via (230,329) (230,750) decorate "" at (0,0) {
+  			id _PFXkEU8-EeqNpIsdvs4-BA
+  		}
+  		
+  		-AddPrimitiveToSubmission-> _Gdoh8U8tEeqXc4pcZOAMbQ via (15,329) (15,919) decorate "" at (0,0) decorate "Text" at (222,131) {
+  			id _4rgwsU8-EeqC3owT0yULIA
+  		}
+  	}
+  	
+  	PrimitiveVariable _EK0yAIAmEeqgd4ylQ2UEbA at 20,380 size 140,25 {
+  		isInput false
+  		dataType File
+  		name "uploadedSkills"
+  		dfViewWorkaround true
+  		isList false
+  		-AddPrimitiveToSubmission-> _Gdoh8U8tEeqXc4pcZOAMbQ via (29,404) (29,919) decorate "" at (0,0) decorate "Text" at (61,93) {
+  			id _NuNz0YAmEeqgd4ylQ2UEbA
+  		}
+  		
+  		-FormSubmit-> _yifCUIAlEeqgd4ylQ2UEbA via (223,402) (223,819) decorate "" at (0,0) {
+  			id _BEPTEYG8EeqbzaBwevDrEg
+  		}
+  	}
+  }
+  
+  Template _kd4e8U8sEeqXc4pcZOAMbQ at 260,10 size 550,1100 {
+  	blockName "body"
+  	disableAutoLayout false
+  	generalStyle GeneralStyling _kd6UIE8sEeqXc4pcZOAMbQ {
+  			tallness Fitting
+  			marginBottom None
+  			attributes [  ]
+  			marginTop None
+  		}
+  	Row _kd7iQU8sEeqXc4pcZOAMbQ at 10,30 size 530,1040 {
+  		generalStyle GeneralStyling _keGhYE8sEeqXc4pcZOAMbQ {
+  				tallness Fitting
+  				marginBottom None
+  				attributes [  ]
+  				marginTop None
+  			}
+  		MoveUp _kd8wYU8sEeqXc4pcZOAMbQ at 2,2 size 14,7 {
+  		}
+  		
+  		MoveDown _kd9XcU8sEeqXc4pcZOAMbQ at 2,10 size 14,7 {
+  		}
+  		
+  		Col _kd_MoU8sEeqXc4pcZOAMbQ at 10,30 size 500,990 {
+  			wideness Full
+  			layout Layout _keFTQE8sEeqXc4pcZOAMbQ {
+  					size Default
+  					offset None
+  					alignment Left
+  				}
+  			generalStyle GeneralStyling _keEFIE8sEeqXc4pcZOAMbQ {
+  					tallness Fitting
+  					marginBottom None
+  					attributes [  ]
+  					marginTop None
+  				}
+  			MoveLeft _keAawU8sEeqXc4pcZOAMbQ at 2,2 size 7,14 {
+  			}
+  			
+  			MoveRight _keBB0U8sEeqXc4pcZOAMbQ at 10,2 size 7,14 {
+  			}
+  			
+  			Box _vNkScWaeEeqafp0Y4WM32A at 10,350 size 480,610 {
+  				invisible true
+  				generalStyle GeneralStyling _vNnVwGaeEeqafp0Y4WM32A {
+  						tallness Fitting
+  						marginBottom None
+  						attributes [  ]
+  						marginTop None
+  					}
+  				MoveUp _vNlgkWaeEeqafp0Y4WM32A at 2,2 size 14,7 {
+  				}
+  				
+  				MoveDown _vNmHoWaeEeqafp0Y4WM32A at 2,10 size 14,7 {
+  				}
+  				
+  				Form _Gdk3kE8tEeqXc4pcZOAMbQ at 10,60 size 460,520 {
+  					inline false
+  					errorMessage "Name, Student Number and Password Required. "
+  					generalStyle GeneralStyling _Gd7c4E8tEeqXc4pcZOAMbQ {
+  							tallness Fitting
+  							marginBottom None
+  							attributes [  ]
+  							marginTop None
+  						}
+  					MoveUp _GdmswU8tEeqXc4pcZOAMbQ at 2,2 size 14,7 {
+  					}
+  					
+  					MoveDown _Gdmsw08tEeqXc4pcZOAMbQ at 2,10 size 14,7 {
+  					}
+  					
+  					Field _HCPq4E8tEeqXc4pcZOAMbQ at 10,30 size 200,60 {
+  						maxMB 0
+  						disabled false
+  						inputType Text
+  						label "First Name"
+  						generalStyle GeneralStyling _HCT8UE8tEeqXc4pcZOAMbQ {
+  								tallness Fitting
+  								marginBottom None
+  								attributes [  ]
+  								marginTop None
+  							}
+  						additionalOptions FormFieldAdditionalOptions _HCdGQE8tEeqXc4pcZOAMbQ {
+  								readonly false
+  							}
+  						styling FormFieldStyling _HCgwoE8tEeqXc4pcZOAMbQ {
+  								color Default
+  								size Default
+  								disabled false
+  							}
+  						icon Icon _HCWYkE8tEeqXc4pcZOAMbQ {
+  								postIcon None
+  								preIcon None
+  							}
+  						validation FormFieldValidation _HCaC8E8tEeqXc4pcZOAMbQ {
+  								min 0
+  								max -1
+  								required true
+  							}
+  						MoveUp _HCRgEU8tEeqXc4pcZOAMbQ at 2,2 size 14,7 {
+  						}
+  						
+  						MoveDown _HCSHIU8tEeqXc4pcZOAMbQ at 2,10 size 14,7 {
+  						}
+  					}
+  					
+  					Field _H02MgU8tEeqXc4pcZOAMbQ at 10,240 size 200,60 {
+  						maxMB 0
+  						disabled false
+  						inputType Password
+  						label "Password"
+  						generalStyle GeneralStyling _H06d8E8tEeqXc4pcZOAMbQ {
+  								tallness Fitting
+  								marginBottom None
+  								attributes [  ]
+  								marginTop None
+  							}
+  						additionalOptions FormFieldAdditionalOptions _H1AkkE8tEeqXc4pcZOAMbQ {
+  								readonly false
+  							}
+  						styling FormFieldStyling _H1CZwE8tEeqXc4pcZOAMbQ {
+  								color Default
+  								size Default
+  								disabled false
+  							}
+  						icon Icon _H086ME8tEeqXc4pcZOAMbQ {
+  								postIcon None
+  								preIcon None
+  							}
+  						validation FormFieldValidation _H0-vYE8tEeqXc4pcZOAMbQ {
+  								errorText "Password must be at least 8 Characters long"
+  								min 8
+  								max -1
+  								required true
+  							}
+  						MoveUp _H04owU8tEeqXc4pcZOAMbQ at 2,2 size 14,7 {
+  						}
+  						
+  						MoveDown _H05P0U8tEeqXc4pcZOAMbQ at 2,10 size 14,7 {
+  						}
+  					}
+  					
+  					Field _QRwcgU8vEeqXc4pcZOAMbQ at 10,100 size 200,60 {
+  						maxMB 0
+  						disabled false
+  						inputType Text
+  						label "Last Name"
+  						generalStyle GeneralStyling _QR0G4E8vEeqXc4pcZOAMbQ {
+  								tallness Fitting
+  								marginBottom None
+  								attributes [  ]
+  								marginTop None
+  							}
+  						additionalOptions FormFieldAdditionalOptions _QSBiQE8vEeqXc4pcZOAMbQ {
+  								readonly false
+  							}
+  						styling FormFieldStyling _QSJeEE8vEeqXc4pcZOAMbQ {
+  								color Default
+  								size Default
+  								disabled false
+  							}
+  						icon Icon _QR4YUE8vEeqXc4pcZOAMbQ {
+  								postIcon None
+  								preIcon None
+  							}
+  						validation FormFieldValidation _QR9Q0E8vEeqXc4pcZOAMbQ {
+  								min 0
+  								max -1
+  								required true
+  							}
+  						MoveUp _QRy4wE8vEeqXc4pcZOAMbQ at 2,2 size 14,7 {
+  						}
+  						
+  						MoveDown _QRy4wk8vEeqXc4pcZOAMbQ at 2,10 size 14,7 {
+  						}
+  					}
+  					
+  					Field _YCYOQU8xEeqXc4pcZOAMbQ at 10,170 size 200,60 {
+  						maxMB 0
+  						disabled false
+  						inputType Text
+  						label "Student Number"
+  						generalStyle GeneralStyling _YCdt0E8xEeqXc4pcZOAMbQ {
+  								tallness Fitting
+  								marginBottom None
+  								attributes [  ]
+  								marginTop None
+  							}
+  						additionalOptions FormFieldAdditionalOptions _YCrwQE8xEeqXc4pcZOAMbQ {
+  								helpText "Please enter your Student ID"
+  								readonly false
+  							}
+  						styling FormFieldStyling _YCvaoE8xEeqXc4pcZOAMbQ {
+  								color Default
+  								size Default
+  								disabled false
+  							}
+  						icon Icon _YCimUE8xEeqXc4pcZOAMbQ {
+  								postIcon None
+  								preIcon None
+  							}
+  						validation FormFieldValidation _YCm3wE8xEeqXc4pcZOAMbQ {
+  								errorText "Student number is required for enrolment"
+  								min 8
+  								max -1
+  								required true
+  							}
+  						MoveUp _YCbRkU8xEeqXc4pcZOAMbQ at 2,2 size 14,7 {
+  						}
+  						
+  						MoveDown _YCb4oU8xEeqXc4pcZOAMbQ at 2,10 size 14,7 {
+  						}
+  					}
+  					
+  					ButtonGroup _OjsNwWYQEeqafp0Y4WM32A at 10,380 size 440,110 {
+  						size Default
+  						alignment horizontal
+  						generalStyle GeneralStyling _OkI5sGYQEeqafp0Y4WM32A {
+  								tallness Fitting
+  								marginBottom None
+  								attributes [  ]
+  								marginTop None
+  							}
+  						MoveUp _OjuC8WYQEeqafp0Y4WM32A at 2,2 size 14,7 {
+  						}
+  						
+  						MoveDown _OjuqAWYQEeqafp0Y4WM32A at 2,10 size 14,7 {
+  						}
+  						
+  						Button _TfnSAWYMEeqafp0Y4WM32A at 220,30 size 200,60 {
+  							disabled false
+  							label "Cancel"
+  							generalStyle GeneralStyling _TfsxkGYMEeqafp0Y4WM32A {
+  									tallness Fitting
+  									marginBottom None
+  									attributes [  ]
+  									marginTop None
+  								}
+  							styling ButtonStyling _Tf4-0GYMEeqafp0Y4WM32A {
+  									fullWidth false
+  									color Red
+  									size Default
+  									disabled false
+  								}
+  							icon Icon _TfxDAGYMEeqafp0Y4WM32A {
+  									postIcon None
+  									preIcon None
+  								}
+  							options ButtonOptions _Tf8CIGYMEeqafp0Y4WM32A {
+  									isLink false
+  									submitsForm true
+  								}
+  							MoveUp _TfqVUWYMEeqafp0Y4WM32A at 2,2 size 14,7 {
+  							}
+  							
+  							MoveDown _TfqVU2YMEeqafp0Y4WM32A at 2,10 size 14,7 {
+  							}
+  						}
+  						
+  						Button _Gdoh8U8tEeqXc4pcZOAMbQ at 10,30 size 200,60 {
+  							disabled false
+  							label "Create Account"
+  							generalStyle GeneralStyling _GduBgE8tEeqXc4pcZOAMbQ {
+  									tallness Fitting
+  									marginBottom None
+  									attributes [  ]
+  									marginTop None
+  								}
+  							styling ButtonStyling _Gd1WQE8tEeqXc4pcZOAMbQ {
+  									fullWidth false
+  									color Green
+  									size Default
+  									disabled false
+  								}
+  							icon Icon _GdxE0E8tEeqXc4pcZOAMbQ {
+  									postIcon None
+  									preIcon None
+  								}
+  							options ButtonOptions _Gd3LcE8tEeqXc4pcZOAMbQ {
+  									isLink false
+  									submitsForm true
+  								}
+  							MoveUp _GdqXIU8tEeqXc4pcZOAMbQ at 2,2 size 14,7 {
+  							}
+  							
+  							MoveDown _Gdq-MU8tEeqXc4pcZOAMbQ at 2,10 size 14,7 {
+  							}
+  						}
+  					}
+  					
+  					Field _yifCUIAlEeqgd4ylQ2UEbA at 10,310 size 200,60 {
+  						maxMB 0
+  						disabled false
+  						inputType SimpleFile
+  						label "Upload Skills(Optional)"
+  						accept ""
+  						generalStyle GeneralStyling _yilwAIAlEeqgd4ylQ2UEbA {
+  								tallness Fitting
+  								marginBottom None
+  								attributes [  ]
+  								marginTop None
+  							}
+  						additionalOptions FormFieldAdditionalOptions _yi4q8IAlEeqgd4ylQ2UEbA {
+  								helpText "If a student has previous skills logged. Upload a CSV headed \"SkillsCategory\" and \"Skill\""
+  								readonly false
+  							}
+  						styling FormFieldStyling _yi9jcIAlEeqgd4ylQ2UEbA {
+  								color Default
+  								size Default
+  								disabled false
+  							}
+  						icon Icon _yisdsIAlEeqgd4ylQ2UEbA {
+  								postIcon None
+  								preIcon None
+  							}
+  						validation FormFieldValidation _yiykUIAlEeqgd4ylQ2UEbA {
+  								min 0
+  								max -1
+  								required false
+  							}
+  						MoveUp _yihekYAlEeqgd4ylQ2UEbA at 2,2 size 14,7 {
+  						}
+  						
+  						MoveDown _yiiFoYAlEeqgd4ylQ2UEbA at 2,10 size 14,7 {
+  						}
+  					}
+  				}
+  			}
+  			
+  			Box _0cVIgINJEeqJoJgR0nOI2w at 10,30 size 390,310 {
+  				invisible true
+  				generalStyle GeneralStyling _0ceScINJEeqJoJgR0nOI2w {
+  						tallness Fitting
+  						marginBottom None
+  						attributes [  ]
+  						marginTop None
+  					}
+  				MoveUp _0cZZ8YNJEeqJoJgR0nOI2w at 2,2 size 14,7 {
+  				}
+  				
+  				MoveDown _0caBAYNJEeqJoJgR0nOI2w at 2,10 size 14,7 {
+  				}
+  				
+  				Jumbotron _HD3qYWYJEeqafp0Y4WM32A at 10,60 size 370,220 {
+  					generalStyle GeneralStyling _HETIMGYJEeqafp0Y4WM32A {
+  							tallness Fitting
+  							marginBottom Single
+  							attributes [  ]
+  							marginTop Single
+  						}
+  					MoveUp _HD4RcWYJEeqafp0Y4WM32A at 2,2 size 14,7 {
+  					}
+  					
+  					MoveDown _HD4Rc2YJEeqafp0Y4WM32A at 2,10 size 14,7 {
+  					}
+  					
+  					Row _HD5fkWYJEeqafp0Y4WM32A at 10,30 size 350,160 {
+  						generalStyle GeneralStyling _HEMagGYJEeqafp0Y4WM32A {
+  								tallness Fitting
+  								marginBottom None
+  								attributes [  ]
+  								marginTop None
+  							}
+  						MoveUp _HD5fk2YJEeqafp0Y4WM32A at 2,2 size 14,7 {
+  						}
+  						
+  						MoveDown _HD6GoWYJEeqafp0Y4WM32A at 2,10 size 14,7 {
+  						}
+  						
+  						Col _HD6tsWYJEeqafp0Y4WM32A at 10,30 size 320,110 {
+  							wideness Half
+  							layout Layout _HEEesGYJEeqafp0Y4WM32A {
+  									size Default
+  									offset Quarter
+  									alignment Center
+  								}
+  							generalStyle GeneralStyling _HD8i4GYJEeqafp0Y4WM32A {
+  									tallness Fitting
+  									marginBottom None
+  									attributes [  ]
+  									marginTop None
+  								}
+  							MoveLeft _HD7UwWYJEeqafp0Y4WM32A at 2,2 size 7,14 {
+  							}
+  							
+  							MoveRight _HD7Uw2YJEeqafp0Y4WM32A at 10,2 size 7,14 {
+  							}
+  							
+  							Headline _PMMcYWYJEeqafp0Y4WM32A at 10,30 size 300,50 {
+  								size Big
+  								generalStyle GeneralStyling _PMUYMGYJEeqafp0Y4WM32A {
+  										tallness Fitting
+  										marginBottom None
+  										attributes [  ]
+  										marginTop None
+  									}
+  								content [ StaticContent _PMZ3wGYJEeqafp0Y4WM32A {
+  										renderMarkdown false
+  										maxChars 0
+  										html false
+  										rawContent "Account Creation"
+  										styling TextStyling _PMZ3wWYJEeqafp0Y4WM32A {
+  												small false
+  												highlight false
+  												deleted false
+  												color Default
+  												underline false
+  												bold false
+  												alignment Center
+  												italic false
+  											}
+  									} ]
+  								MoveUp _PMO4oWYJEeqafp0Y4WM32A at 2,2 size 14,7 {
+  								}
+  								
+  								MoveDown _PMRU4WYJEeqafp0Y4WM32A at 2,10 size 14,7 {
+  								}
+  							}
+  						}
+  					}
+  				}
+  			}
+  		}
+  	}
+  }
+  
+  Template _7n-gcYS1Eeq-xN2pTPXSYw at 440,-114 size 170,125 {
+  	blockName "header"
+  	disableAutoLayout false
+  	generalStyle GeneralStyling _7oAVoIS1Eeq-xN2pTPXSYw {
+  			tallness Fitting
+  			marginBottom None
+  			attributes [  ]
+  			marginTop None
+  		}
+  	GUISIB _8x25oYS1Eeq-xN2pTPXSYw at 10,30 size 150,65 {
+  		label "GeneralHeader"
+  		libraryComponentUID "_jw-g4YPKEeqJoJgR0nOI2w"
+  		generalStyle GeneralStyling _8yMQ0IS1Eeq-xN2pTPXSYw {
+  				tallness Fitting
+  				marginBottom None
+  				attributes [  ]
+  				marginTop None
+  			}
+  		MoveUp _8yKboYS1Eeq-xN2pTPXSYw at 2,2 size 14,7 {
+  		}
+  		
+  		MoveDown _8yLpwYS1Eeq-xN2pTPXSYw at 2,10 size 14,7 {
+  		}
+  	}
+  }
+  
+  Template _9wWiMYS1Eeq-xN2pTPXSYw at 425,1109 size 170,125 {
+  	blockName "footer"
+  	disableAutoLayout false
+  	generalStyle GeneralStyling _9wXwUIS1Eeq-xN2pTPXSYw {
+  			tallness Fitting
+  			marginBottom None
+  			attributes [  ]
+  			marginTop None
+  		}
+  	GUISIB __aGHMYS1Eeq-xN2pTPXSYw at 10,30 size 150,65 {
+  		label "generalFooter"
+  		libraryComponentUID "_kymGcU2GEeqQN-t2MiOxbw"
+  		generalStyle GeneralStyling __aaQQoS1Eeq-xN2pTPXSYw {
+  				tallness Fitting
+  				marginBottom None
+  				attributes [  ]
+  				marginTop None
+  			}
+  		MoveUp __aZpMYS1Eeq-xN2pTPXSYw at 2,2 size 14,7 {
+  		}
+  		
+  		MoveDown __aaQQYS1Eeq-xN2pTPXSYw at 2,10 size 14,7 {
+  		}
+  	}
+  }
+}

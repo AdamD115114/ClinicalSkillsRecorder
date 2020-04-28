@@ -1,0 +1,61 @@
+Process _x49UkV7xEeq8Ne6T1dHaVQ {
+  modelName "RetrieveAllUsers"
+  description "RetrieveAllUsers"
+  dataFlowView true
+  processType Interactable
+  isStateful false
+  StartSIB _x5FQYV7xEeq8Ne6T1dHaVQ at 350,50 size 100,65 {
+  	-ControlFlow-> _8UEu8V75Eeqf9N7ymesWyA  decorate "" at (0,0) {
+  		id _LR6nQV76Eeqf9N7ymesWyA
+  		concurrent true
+  	}
+  }
+  
+  EndSIB _x5HFkV7xEeq8Ne6T1dHaVQ at 350,280 size 100,90 {
+  	branchName "success"
+  	ComplexInputPort _AlmOgV76Eeqf9N7ymesWyA at 5,67 size 90,18 {
+  		name "allUsers"
+  		isList true
+  		libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
+  	}
+  }
+  
+  RetrieveOfTypeSIB _8UEu8V75Eeqf9N7ymesWyA at 340,150 size 120,65 {
+  	label "Retrieve from StudentUser"
+  	libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
+  	-BranchConnector-> _8Uha4V75Eeqf9N7ymesWyA   {
+  		id _8UrL4V75Eeqf9N7ymesWyA
+  		concurrent true
+  	}
+  	
+  	-BranchConnector-> _8VHQwV75Eeqf9N7ymesWyA via (549,182)  {
+  		id _8VHQw175Eeqf9N7ymesWyA
+  		concurrent true
+  	}
+  }
+  
+  Branch _8Uha4V75Eeqf9N7ymesWyA at 340,225 size 120,50 {
+  	name "success"
+  	ComplexOutputPort _8U0V0V75Eeqf9N7ymesWyA at 5,27 size 110,18 {
+  		name "retrieved"
+  		isList true
+  		libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
+  		-ComplexDirectDataFlow-> _AlmOgV76Eeqf9N7ymesWyA via (330,261) (330,356) decorate "" at (0,0) {
+  			id _A9B3EV76Eeqf9N7ymesWyA
+  			dfViewWorkaround true
+  		}
+  	}
+  	-ControlFlow-> _x5HFkV7xEeq8Ne6T1dHaVQ  decorate "" at (0,0) {
+  		id __Qp00V75Eeqf9N7ymesWyA
+  		concurrent true
+  	}
+  }
+  
+  Branch _8VHQwV75Eeqf9N7ymesWyA at 490,237 size 120,25 {
+  	name "none found"
+  	-ControlFlow-> _x5HFkV7xEeq8Ne6T1dHaVQ via (549,324) decorate "" at (0,0) {
+  		id __en_YV75Eeqf9N7ymesWyA
+  		concurrent true
+  	}
+  }
+}

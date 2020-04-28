@@ -1,0 +1,150 @@
+Process _gdZH8U_PEeqI8c2lYoiaDQ {
+  modelName "CreateAccountFlow"
+  description "CreateAccountFlow"
+  dataFlowView true
+  processType Interactable
+  isStateful false
+  StartSIB _gdiR4U_PEeqI8c2lYoiaDQ at 350,0 size 100,162 {
+  	PrimitiveOutputPort _Slv9cVMWEeqcOZB7_6FPGQ at 5,67 size 90,18 {
+  		dataType Text
+  		name "firstName"
+  		isList false
+  		-PrimitiveDirectDataFlow-> _r0LaAU_PEeqI8c2lYoiaDQ via (330,76) (330,296) decorate "" at (0,0) {
+  			id _MvIS4VMXEeqcOZB7_6FPGQ
+  			dfViewWorkaround true
+  		}
+  	}
+  	
+  	PrimitiveOutputPort _Vni6gFMWEeqcOZB7_6FPGQ at 5,85 size 90,18 {
+  		dataType Text
+  		name "lastName"
+  		isList false
+  		-PrimitiveDirectDataFlow-> _r0SuwU_PEeqI8c2lYoiaDQ via (330,94) (330,314) decorate "" at (0,0) {
+  			id _NGqpIVMXEeqcOZB7_6FPGQ
+  			dfViewWorkaround true
+  		}
+  	}
+  	
+  	PrimitiveOutputPort _VsIfkVMWEeqcOZB7_6FPGQ at 5,103 size 90,18 {
+  		dataType Text
+  		name "userName"
+  		isList false
+  		-PrimitiveDirectDataFlow-> _r0j0gU_PEeqI8c2lYoiaDQ via (330,112) (330,350) decorate "" at (0,0) {
+  			id _bFbGMVMbEeqcOZB7_6FPGQ
+  			dfViewWorkaround true
+  		}
+  	}
+  	
+  	PrimitiveOutputPort _FQn58VMXEeqcOZB7_6FPGQ at 5,121 size 90,18 {
+  		dataType Text
+  		name "password"
+  		isList false
+  		-PrimitiveDirectDataFlow-> _r0bRoU_PEeqI8c2lYoiaDQ via (330,130) (330,332) decorate "" at (0,0) {
+  			id _bkIbcVMbEeqcOZB7_6FPGQ
+  			dfViewWorkaround true
+  		}
+  	}
+  	
+  	PrimitiveOutputPort _ZUPJ0YAoEeqgd4ylQ2UEbA at 5,139 size 90,18 {
+  		dataType File
+  		name "inputFile"
+  		isList false
+  		-PrimitiveDirectDataFlow-> _cxFEIYAoEeqgd4ylQ2UEbA via (330,148) (330,536) decorate "" at (0,0) {
+  			id _eTGQgYAoEeqgd4ylQ2UEbA
+  			dfViewWorkaround true
+  		}
+  	}
+  	-ControlFlow-> _rzePYU_PEeqI8c2lYoiaDQ  decorate "" at (0,0) {
+  		id _-DrLEVMWEeqcOZB7_6FPGQ
+  		concurrent true
+  	}
+  }
+  
+  ProcessSIB _rzePYU_PEeqI8c2lYoiaDQ at 340,220 size 120,162 {
+  	minorPage false
+  	label "CreateUser"
+  	libraryComponentUID "_cBxicNzDEeW2rv4DARGjjw"
+  	PrimitiveInputPort _r0LaAU_PEeqI8c2lYoiaDQ at 5,67 size 110,18 {
+  		dataType Text
+  		name "firstName"
+  		isList false
+  	}
+  	
+  	PrimitiveInputPort _r0SuwU_PEeqI8c2lYoiaDQ at 5,85 size 110,18 {
+  		dataType Text
+  		name "lastName"
+  		isList false
+  	}
+  	
+  	PrimitiveInputPort _r0bRoU_PEeqI8c2lYoiaDQ at 5,103 size 110,18 {
+  		dataType Text
+  		name "password"
+  		isList false
+  	}
+  	
+  	PrimitiveInputPort _r0j0gU_PEeqI8c2lYoiaDQ at 5,121 size 110,18 {
+  		dataType Text
+  		name "userName"
+  		isList false
+  	}
+  	
+  	BooleanInputStatic _zvDl4U_PEeqI8c2lYoiaDQ at 5,139 size 110,18 {
+  		name "supervisor"
+  		value false
+  	}
+  	-BranchConnector-> _r039kU_PEeqI8c2lYoiaDQ   {
+  		id _r05LsE_PEeqI8c2lYoiaDQ
+  		concurrent true
+  	}
+  }
+  
+  Branch _r039kU_PEeqI8c2lYoiaDQ at 340,400 size 120,50 {
+  	name "success"
+  	ComplexOutputPort _r0-EMU_PEeqI8c2lYoiaDQ at 5,27 size 110,18 {
+  		name "newUser"
+  		isList false
+  		libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
+  		-ComplexDirectDataFlow-> _cxRRYYAoEeqgd4ylQ2UEbA via (330,436) (330,554) decorate "" at (0,0) {
+  			id _d4NEQYAoEeqgd4ylQ2UEbA
+  			dfViewWorkaround true
+  		}
+  	}
+  	-ControlFlow-> _cw3owYAoEeqgd4ylQ2UEbA  decorate "" at (0,0) {
+  		id _dhVcYYAoEeqgd4ylQ2UEbA
+  		concurrent true
+  	}
+  }
+  
+  EndSIB _L7y8AVMYEeqcOZB7_6FPGQ at 350,630 size 100,65 {
+  	branchName "success"
+  }
+  
+  ProcessSIB _cw3owYAoEeqgd4ylQ2UEbA at 340,460 size 120,108 {
+  	minorPage false
+  	label "PreviousSkillHandler"
+  	libraryComponentUID "_mOz0wYAmEeqgd4ylQ2UEbA"
+  	PrimitiveInputPort _cxFEIYAoEeqgd4ylQ2UEbA at 5,67 size 110,18 {
+  		dataType File
+  		name "inputFile"
+  		isList false
+  	}
+  	
+  	ComplexInputPort _cxRRYYAoEeqgd4ylQ2UEbA at 5,85 size 110,18 {
+  		name "NewUser"
+  		isList false
+  		libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
+  	}
+  	-BranchConnector-> _cxbCYYAoEeqgd4ylQ2UEbA   {
+  		id _cxcQgYAoEeqgd4ylQ2UEbA
+  		concurrent true
+  	}
+  }
+  
+  Branch _cxbCYYAoEeqgd4ylQ2UEbA at 340,578 size 120,25 {
+  	name "success"
+  	-ControlFlow-> _L7y8AVMYEeqcOZB7_6FPGQ  decorate "" at (0,0) {
+  		id _egEVgYAoEeqgd4ylQ2UEbA
+  		concurrent true
+  	}
+  }
+}

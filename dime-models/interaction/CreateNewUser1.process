@@ -1,0 +1,145 @@
+Process _JIQtoYAsEeqgd4ylQ2UEbA {
+  modelName "CreateNewUser1"
+  description "CreateNewUser1"
+  dataFlowView true
+  processType Interaction
+  isStateful false
+  StartSIB _JITw8YAsEeqgd4ylQ2UEbA at 350,-20 size 100,65 {
+  	-ControlFlow-> _OqJawYJOEeqmJ4CvZ57k3g  decorate "" at (0,0) {
+  		id _SA8-gYJOEeqmJ4CvZ57k3g
+  		concurrent true
+  	}
+  }
+  
+  EndSIB _JIU_EYAsEeqgd4ylQ2UEbA at 350,530 size 100,65 {
+  	branchName "success"
+  }
+  
+  ProcessSIB _qxef8YAsEeqgd4ylQ2UEbA at 340,320 size 120,162 {
+  	minorPage false
+  	label "CreateAccountFlow"
+  	libraryComponentUID "_gdZH8U_PEeqI8c2lYoiaDQ"
+  	PrimitiveInputPort _qxqtMYAsEeqgd4ylQ2UEbA at 5,67 size 110,18 {
+  		dataType Text
+  		name "firstName"
+  		isList false
+  	}
+  	
+  	PrimitiveInputPort _qxwMwYAsEeqgd4ylQ2UEbA at 5,85 size 110,18 {
+  		dataType Text
+  		name "lastName"
+  		isList false
+  	}
+  	
+  	PrimitiveInputPort _qx3hgYAsEeqgd4ylQ2UEbA at 5,103 size 110,18 {
+  		dataType Text
+  		name "userName"
+  		isList false
+  	}
+  	
+  	PrimitiveInputPort _qx-2QYAsEeqgd4ylQ2UEbA at 5,121 size 110,18 {
+  		dataType Text
+  		name "password"
+  		isList false
+  	}
+  	
+  	PrimitiveInputPort _qyHZIYAsEeqgd4ylQ2UEbA at 5,139 size 110,18 {
+  		dataType File
+  		name "inputFile"
+  		isList false
+  	}
+  	-BranchConnector-> _qyP8AYAsEeqgd4ylQ2UEbA   {
+  		id _qyRKIYAsEeqgd4ylQ2UEbA
+  		concurrent true
+  	}
+  }
+  
+  Branch _qyP8AYAsEeqgd4ylQ2UEbA at 340,492 size 120,25 {
+  	name "success"
+  	-ControlFlow-> _JIU_EYAsEeqgd4ylQ2UEbA  decorate "" at (0,0) {
+  		id _smfg0YAsEeqgd4ylQ2UEbA
+  		concurrent true
+  	}
+  }
+  
+  GUISIB _OqJawYJOEeqmJ4CvZ57k3g at 340,80 size 120,65 {
+  	name "CreateAccount"
+  	majorPage true
+  	label "CreateAccount"
+  	libraryComponentUID "_kdyYUU8sEeqXc4pcZOAMbQ"
+  	-BranchConnector-> _OqwewYJOEeqmJ4CvZ57k3g   {
+  		id _Oqxs4YJOEeqmJ4CvZ57k3g
+  		concurrent true
+  	}
+  	
+  	-BranchConnector-> _Or7jcYJOEeqmJ4CvZ57k3g via (569,113)  {
+  		id _Or8xkYJOEeqmJ4CvZ57k3g
+  		concurrent true
+  	}
+  }
+  
+  Branch _OqwewYJOEeqmJ4CvZ57k3g at 340,170 size 120,122 {
+  	name "Create Account"
+  	PrimitiveOutputPort _Oq5BoYJOEeqmJ4CvZ57k3g at 5,27 size 110,18 {
+  		dataType Text
+  		name "firstName"
+  		isList false
+  		-PrimitiveDirectDataFlow-> _qxqtMYAsEeqgd4ylQ2UEbA via (330,206) (330,396) decorate "" at (0,0) {
+  			id _ZkqAgYJOEeqmJ4CvZ57k3g
+  			dfViewWorkaround true
+  		}
+  	}
+  	
+  	PrimitiveOutputPort _OrEAwYJOEeqmJ4CvZ57k3g at 5,45 size 110,18 {
+  		dataType Text
+  		name "lastName"
+  		isList false
+  		-PrimitiveDirectDataFlow-> _qxwMwYAsEeqgd4ylQ2UEbA via (330,224) (330,414) decorate "" at (0,0) {
+  			id _byl3sYJOEeqmJ4CvZ57k3g
+  			dfViewWorkaround true
+  		}
+  	}
+  	
+  	PrimitiveOutputPort _OrO_4YJOEeqmJ4CvZ57k3g at 5,63 size 110,18 {
+  		dataType Text
+  		name "userName"
+  		isList false
+  		-PrimitiveDirectDataFlow-> _qx3hgYAsEeqgd4ylQ2UEbA via (330,242) (330,432) decorate "" at (0,0) {
+  			id _cNMJAYJOEeqmJ4CvZ57k3g
+  			dfViewWorkaround true
+  		}
+  	}
+  	
+  	PrimitiveOutputPort _Orb0MYJOEeqmJ4CvZ57k3g at 5,81 size 110,18 {
+  		dataType Text
+  		name "password"
+  		isList false
+  		-PrimitiveDirectDataFlow-> _qx-2QYAsEeqgd4ylQ2UEbA via (330,260) (330,450) decorate "" at (0,0) {
+  			id _c05CMYJOEeqmJ4CvZ57k3g
+  			dfViewWorkaround true
+  		}
+  	}
+  	
+  	PrimitiveOutputPort _OrqdsYJOEeqmJ4CvZ57k3g at 5,99 size 110,18 {
+  		dataType File
+  		name "uploadedSkills"
+  		isList false
+  		-PrimitiveDirectDataFlow-> _qyHZIYAsEeqgd4ylQ2UEbA via (330,278) (330,468) decorate "" at (0,0) {
+  			id _dIxngYJOEeqmJ4CvZ57k3g
+  			dfViewWorkaround true
+  		}
+  	}
+  	-ControlFlow-> _qxef8YAsEeqgd4ylQ2UEbA  decorate "" at (0,0) {
+  		id _Ua87wYJOEeqmJ4CvZ57k3g
+  		concurrent true
+  	}
+  }
+  
+  Branch _Or7jcYJOEeqmJ4CvZ57k3g at 510,370 size 120,25 {
+  	name "Cancel"
+  	-ControlFlow-> _JIU_EYAsEeqgd4ylQ2UEbA via (569,563) decorate "" at (0,0) {
+  		id _TyZuAYJOEeqmJ4CvZ57k3g
+  		concurrent true
+  	}
+  }
+}

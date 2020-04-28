@@ -1,0 +1,296 @@
+Process _Dz9mAYLrEeqXUY5-iTcA-A {
+  modelName "ManagementPortal"
+  description "ManagementPortal"
+  dataFlowView true
+  processType Interaction
+  isStateful false
+  StartSIB _D0Fh0YLrEeqXUY5-iTcA-A at 342,-160 size 100,65 {
+  	-ControlFlow-> _eORsMYLsEeqXUY5-iTcA-A  decorate "" at (0,0) {
+  		id _FRI5MYLsEeqXUY5-iTcA-A
+  		concurrent true
+  	}
+  }
+  
+  EndSIB _D0HXAYLrEeqXUY5-iTcA-A at 20,266 size 100,65 {
+  	branchName "success"
+  }
+  
+  GUISIB _QFtrgYLrEeqXUY5-iTcA-A at 329,160 size 120,90 {
+  	name "ManageUsers"
+  	majorPage true
+  	label "ManageUsers"
+  	libraryComponentUID "_zZLnoV7lEeqsQ7mBBi2uzg"
+  	ComplexInputPort _QG4JIYLrEeqXUY5-iTcA-A at 5,67 size 110,18 {
+  		name "allUsers"
+  		isList true
+  		libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
+  	}
+  	-BranchConnector-> _QHGyoYLrEeqXUY5-iTcA-A   {
+  		id _QHw58YLrEeqXUY5-iTcA-A
+  		concurrent true
+  	}
+  	
+  	-BranchConnector-> _QH9uQYLrEeqXUY5-iTcA-A   {
+  		id _QH-8YYLrEeqXUY5-iTcA-A
+  		concurrent true
+  	}
+  	
+  	-BranchConnector-> _QIB_sYLrEeqXUY5-iTcA-A   {
+  		id _QID04YLrEeqXUY5-iTcA-A
+  		concurrent true
+  	}
+  	
+  	-BranchConnector-> _QIQpMYLrEeqXUY5-iTcA-A   {
+  		id _QISeYYLrEeqXUY5-iTcA-A
+  		concurrent true
+  	}
+  	
+  	-BranchConnector-> _QIWIwYLrEeqXUY5-iTcA-A   {
+  		id _QIXW4YLrEeqXUY5-iTcA-A
+  		concurrent true
+  	}
+  }
+  
+  Branch _QHGyoYLrEeqXUY5-iTcA-A at 16,340 size 120,50 {
+  	name "Delete"
+  	ComplexOutputPort _QH2ZgYLrEeqXUY5-iTcA-A at 5,27 size 110,18 {
+  		name "current"
+  		isList false
+  		libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
+  		-ComplexDirectDataFlow-> _vvdD8YLsEeqXUY5-iTcA-A via (6,376) (0,489) decorate "" at (0,0) {
+  			id _zh4zwYLsEeqXUY5-iTcA-A
+  			dfViewWorkaround true
+  		}
+  	}
+  	-ControlFlow-> _vvBmIYLsEeqXUY5-iTcA-A  decorate "" at (0,0) {
+  		id _x6NrUYLsEeqXUY5-iTcA-A
+  		concurrent true
+  	}
+  }
+  
+  Branch _QH9uQYLrEeqXUY5-iTcA-A at 140,210 size 120,25 {
+  	name "Return"
+  	-ControlFlow-> _D0HXAYLrEeqXUY5-iTcA-A via (199,298) decorate "" at (0,0) {
+  		id _YXVjcYLrEeqXUY5-iTcA-A
+  		concurrent true
+  	}
+  }
+  
+  Branch _QIB_sYLrEeqXUY5-iTcA-A at 190,473 size 120,50 {
+  	name "Current Progress"
+  	ComplexOutputPort _QIItYYLrEeqXUY5-iTcA-A at 5,27 size 110,18 {
+  		name "current"
+  		isList false
+  		libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
+  		-ComplexDirectDataFlow-> _6g1i4YLsEeqXUY5-iTcA-A via (180,509) (180,529) decorate "" at (0,0) {
+  			id _-gLGQYLsEeqXUY5-iTcA-A
+  			dfViewWorkaround true
+  		}
+  	}
+  	-ControlFlow-> _6gBqkYLsEeqXUY5-iTcA-A  decorate "" at (0,0) {
+  		id _-s_aQYLsEeqXUY5-iTcA-A
+  		concurrent true
+  	}
+  }
+  
+  Branch _QIQpMYLrEeqXUY5-iTcA-A at 676,192 size 120,25 {
+  	name "Create User"
+  	-ControlFlow-> _7hdH0YLrEeqXUY5-iTcA-A  decorate "" at (0,0) {
+  		id _1s8WEYLsEeqXUY5-iTcA-A
+  		concurrent true
+  	}
+  }
+  
+  Branch _QIWIwYLrEeqXUY5-iTcA-A at 520,314 size 120,50 {
+  	name "Edit"
+  	ComplexOutputPort _QIbBQYLrEeqXUY5-iTcA-A at 5,27 size 110,18 {
+  		name "baseUser"
+  		isList false
+  		libraryComponentUID "_UdYs4MwNEeWZVvvwxpYu8A"
+  		-ComplexDirectDataFlow-> _dcEa4YVXEeqVaIrIaAJAXw via (510,350) (510,372) (631,372) (631,425) decorate "" at (0,0) {
+  			id _j7FFsYVXEeqVaIrIaAJAXw
+  			dfViewWorkaround true
+  		}
+  	}
+  	-ControlFlow-> _dbfMEYVXEeqVaIrIaAJAXw  decorate "" at (0,0) {
+  		id _jq3fcYVXEeqVaIrIaAJAXw
+  		concurrent true
+  	}
+  }
+  
+  Branch _6s6sgYLrEeqXUY5-iTcA-A at 510,-4 size 120,25 {
+  	name "success"
+  	-ControlFlow-> _eORsMYLsEeqXUY5-iTcA-A  decorate "" at (0,0) {
+  		id _pIeI4YLsEeqXUY5-iTcA-A
+  		concurrent true
+  	}
+  }
+  
+  GuardContainer _7hdH0YLrEeqXUY5-iTcA-A at 660,-71 size 151,159 {
+  	label "label"
+  	GuardedProcessSIB _7hdu4YLrEeqXUY5-iTcA-A at 8,12 size 136,65 {
+  		label "CreateNewUserGaurd"
+  		libraryComponentUID "_JIQtoYAsEeqgd4ylQ2UEbA"
+  	}
+  	
+  	GuardProcessSIB _aaIsMYLsEeqXUY5-iTcA-A at 10,82 size 134,65 {
+  		label "CreateAccountSecurity"
+  		libraryComponentUID "_LfgE4X_3EeqtutZK3Ck3vg"
+  	}
+  	-BranchConnector-> _6s6sgYLrEeqXUY5-iTcA-A   {
+  		id _6s8hsYLrEeqXUY5-iTcA-A
+  		concurrent true
+  	}
+  	
+  	-BranchConnector-> _aal_MYLsEeqXUY5-iTcA-A via (601,100) (200,100)  {
+  		id _aauiEYLsEeqXUY5-iTcA-A
+  		concurrent true
+  	}
+  }
+  
+  Branch _C_b8UYLsEeqXUY5-iTcA-A at 329,100 size 120,50 {
+  	name "success"
+  	ComplexOutputPort _C_pXsYLsEeqXUY5-iTcA-A at 5,27 size 110,18 {
+  		name "allUsers"
+  		isList true
+  		libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
+  		-ComplexDirectDataFlow-> _QG4JIYLrEeqXUY5-iTcA-A via (319,136) (319,236) decorate "" at (0,0) {
+  			id _mJeBIYLsEeqXUY5-iTcA-A
+  			dfViewWorkaround true
+  		}
+  	}
+  	-ControlFlow-> _QFtrgYLrEeqXUY5-iTcA-A  decorate "" at (0,0) {
+  		id _GJ6UQYLsEeqXUY5-iTcA-A
+  		concurrent true
+  	}
+  }
+  
+  Branch _aRPdoYVXEeqVaIrIaAJAXw at 520,260 size 120,25 index 18 {
+  	name "success"
+  	-ControlFlow-> _QFtrgYLrEeqXUY5-iTcA-A  decorate "" at (0,0) {
+  		id _lFzzcYVXEeqVaIrIaAJAXw
+  		concurrent true
+  	}
+  }
+  
+  Branch _aal_MYLsEeqXUY5-iTcA-A at 140,180 size 120,25 index 11 {
+  	name "denied"
+  	-ControlFlow-> _D0HXAYLrEeqXUY5-iTcA-A via (70,192) decorate "" at (0,0) {
+  		id _r6AcYYLsEeqXUY5-iTcA-A
+  		concurrent true
+  	}
+  }
+  
+  GuardContainer _dbfMEYVXEeqVaIrIaAJAXw at 665,345 size 156,172 index 19 {
+  	label "label"
+  	GuardedProcessSIB _dbfzIYVXEeqVaIrIaAJAXw at 5,5 size 141,90 {
+  		label "UpdateUserGaurd"
+  		libraryComponentUID "_1yiE4YVWEeqVaIrIaAJAXw"
+  		ComplexInputPort _dcEa4YVXEeqVaIrIaAJAXw at 5,67 size 131,18 {
+  			name "baseuserIn"
+  			isList false
+  			libraryComponentUID "_UdYs4MwNEeWZVvvwxpYu8A"
+  		}
+  	}
+  	
+  	GuardProcessSIB _gjPAIYVXEeqVaIrIaAJAXw at 5,99 size 141,65 {
+  		label "CreateAccountSecurity"
+  		libraryComponentUID "_LfgE4X_3EeqtutZK3Ck3vg"
+  	}
+  	-BranchConnector-> _aRPdoYVXEeqVaIrIaAJAXw via (742,272)  {
+  		id _aRQrwYVXEeqVaIrIaAJAXw
+  		concurrent true
+  	}
+  	
+  	-BranchConnector-> _gjzn4YVXEeqVaIrIaAJAXw   {
+  		id _gj9Y4YVXEeqVaIrIaAJAXw
+  		concurrent true
+  	}
+  }
+  
+  GuardContainer _eORsMYLsEeqXUY5-iTcA-A at 309,-70 size 159,158 index 12 {
+  	label "label"
+  	GuardedProcessSIB _eOSTQYLsEeqXUY5-iTcA-A at 5,5 size 147,65 {
+  		label "RetrieveAllUsersGaurd"
+  		libraryComponentUID "_SSJV0YJGEeqg5-aJvFRQRA"
+  	}
+  	
+  	GuardProcessSIB _hR6cUYLsEeqXUY5-iTcA-A at 10,80 size 142,65 {
+  		name ""
+  		label "PermissionCheckSecurity"
+  		libraryComponentUID "_LfgE4X_3EeqtutZK3Ck3vg"
+  	}
+  	-BranchConnector-> _C_b8UYLsEeqXUY5-iTcA-A   {
+  		id _C_dxgYLsEeqXUY5-iTcA-A
+  		concurrent true
+  	}
+  	
+  	-BranchConnector-> _hSd18YLsEeqXUY5-iTcA-A via (70,8)  {
+  		id _hSm_4YLsEeqXUY5-iTcA-A
+  		concurrent true
+  	}
+  }
+  
+  Branch _gjzn4YVXEeqVaIrIaAJAXw at 441,418 size 120,25 index 20 {
+  	name "denied"
+  	-ControlFlow-> _QFtrgYLrEeqXUY5-iTcA-A  decorate "" at (0,0) {
+  		id _lnQ6sYVXEeqVaIrIaAJAXw
+  		concurrent true
+  	}
+  }
+  
+  Branch _hSd18YLsEeqXUY5-iTcA-A at 10,112 size 120,25 index 13 {
+  	name "denied"
+  	-ControlFlow-> _D0HXAYLrEeqXUY5-iTcA-A  decorate "" at (0,0) {
+  		id _jGxFIYLsEeqXUY5-iTcA-A
+  		concurrent true
+  	}
+  }
+  
+  ProcessSIB _vvBmIYLsEeqXUY5-iTcA-A at 10,413 size 131,90 index 14 {
+  	minorPage false
+  	label "RemoveStudentUser"
+  	libraryComponentUID "_9C-yQWE8EeqErIHjN9OXbA"
+  	ComplexInputPort _vvdD8YLsEeqXUY5-iTcA-A at 5,67 size 121,18 {
+  		name "studentuser"
+  		isList false
+  		libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
+  	}
+  	-BranchConnector-> _vv3ToYLsEeqXUY5-iTcA-A   {
+  		id _vv4hwYLsEeqXUY5-iTcA-A
+  		concurrent true
+  	}
+  }
+  
+  Branch _vv3ToYLsEeqXUY5-iTcA-A at 170,352 size 120,25 index 15 {
+  	name "success"
+  	-ControlFlow-> _QFtrgYLrEeqXUY5-iTcA-A  decorate "" at (0,0) {
+  		id _xUGtkYLsEeqXUY5-iTcA-A
+  		concurrent true
+  	}
+  }
+  
+  GUISIB _6gBqkYLsEeqXUY5-iTcA-A at 329,453 size 120,90 index 16 {
+  	name "ViewProgess"
+  	majorPage true
+  	label "ViewProgess"
+  	libraryComponentUID "_10h9wWSNEeqJqMh6s9r8IA"
+  	ComplexInputPort _6g1i4YLsEeqXUY5-iTcA-A at 5,67 size 110,18 {
+  		name "currentStudent"
+  		isList false
+  		libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
+  	}
+  	-BranchConnector-> _6hNWUYLsEeqXUY5-iTcA-A   {
+  		id _6hPLgYLsEeqXUY5-iTcA-A
+  		concurrent true
+  	}
+  }
+  
+  Branch _6hNWUYLsEeqXUY5-iTcA-A at 329,352 size 120,25 index 17 {
+  	name "Return"
+  	-ControlFlow-> _QFtrgYLrEeqXUY5-iTcA-A  decorate "" at (0,0) {
+  		id __eH8QYLsEeqXUY5-iTcA-A
+  		concurrent true
+  	}
+  }
+}

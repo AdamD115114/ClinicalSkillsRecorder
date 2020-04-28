@@ -1,0 +1,291 @@
+GUI _kymGcU2GEeqQN-t2MiOxbw {
+  fullWidth false
+  disableAutoLayout false
+  additionalJavaScript [  ]
+  additionalStylesheets [  ]
+  title "generalFooter"
+  Template _kyrmAU2GEeqQN-t2MiOxbw at 340,100 size 840,460 {
+  	blockName "body"
+  	disableAutoLayout true
+  	generalStyle GeneralStyling _kytbME2GEeqQN-t2MiOxbw {
+  			tallness Quarter
+  			marginBottom None
+  			attributes [  ]
+  			marginTop None
+  		}
+  	Box _BgO_EYPLEeqJoJgR0nOI2w at 10,30 size 820,400 {
+  		invisible true
+  		generalStyle GeneralStyling _BgQ0QIPLEeqJoJgR0nOI2w {
+  				tallness Fitting
+  				marginBottom None
+  				attributes [  ]
+  				marginTop None
+  			}
+  		MoveUp _BgQNMYPLEeqJoJgR0nOI2w at 2,2 size 14,7 {
+  		}
+  		
+  		MoveDown _BgQNM4PLEeqJoJgR0nOI2w at 2,10 size 14,7 {
+  		}
+  		
+  		Row _kyuCQU2GEeqQN-t2MiOxbw at 10,60 size 800,200 {
+  			generalStyle GeneralStyling _ky2lIE2GEeqQN-t2MiOxbw {
+  					tallness Fitting
+  					marginBottom None
+  					attributes [  ]
+  					marginTop Triple
+  				}
+  			MoveUp _kyv3cU2GEeqQN-t2MiOxbw at 2,2 size 14,7 {
+  			}
+  			
+  			MoveDown _kywegU2GEeqQN-t2MiOxbw at 2,10 size 14,7 {
+  			}
+  			
+  			Col _kyxsoU2GEeqQN-t2MiOxbw at 10,30 size 120,150 {
+  				wideness Sixth
+  				layout Layout _ky1-EE2GEeqQN-t2MiOxbw {
+  						size Default
+  						offset None
+  						alignment Center
+  					}
+  				generalStyle GeneralStyling _ky0v8E2GEeqQN-t2MiOxbw {
+  						tallness Fitting
+  						marginBottom None
+  						attributes [  ]
+  						marginTop None
+  					}
+  				MoveLeft _kyy6wE2GEeqQN-t2MiOxbw at 2,2 size 7,14 {
+  				}
+  				
+  				MoveRight _kyzh0U2GEeqQN-t2MiOxbw at 10,2 size 7,14 {
+  				}
+  				
+  				Image _YtQcIYPHEeqJoJgR0nOI2w at 10,30 size 100,90 {
+  					dimensionX 100
+  					path "/asset/Logos/LERO_PICTURE.PNG"
+  					dimensionY 100
+  					generalStyle GeneralStyling _YtUGgIPHEeqJoJgR0nOI2w {
+  							tallness Fitting
+  							marginBottom None
+  							attributes [  ]
+  							marginTop None
+  						}
+  					styling ImageStyling _YtVUoIPHEeqJoJgR0nOI2w {
+  							border Default
+  							responsive true
+  						}
+  					MoveUp _YtSRUYPHEeqJoJgR0nOI2w at 2,2 size 14,7 {
+  					}
+  					
+  					MoveDown _YtS4YYPHEeqJoJgR0nOI2w at 2,10 size 14,7 {
+  					}
+  				}
+  			}
+  			
+  			Col _sCqI0U2IEeqQN-t2MiOxbw at 660,30 size 120,150 {
+  				wideness Sixth
+  				layout Layout _sCtzME2IEeqQN-t2MiOxbw {
+  						size Default
+  						offset None
+  						alignment Center
+  					}
+  				generalStyle GeneralStyling _sCslEE2IEeqQN-t2MiOxbw {
+  						tallness Fitting
+  						marginBottom None
+  						attributes [  ]
+  						marginTop None
+  					}
+  				MoveLeft _sCqv4U2IEeqQN-t2MiOxbw at 2,2 size 7,14 {
+  				}
+  				
+  				MoveRight _sCrW8U2IEeqQN-t2MiOxbw at 10,2 size 7,14 {
+  				}
+  				
+  				Image _Za-dwYPHEeqJoJgR0nOI2w at 10,30 size 100,90 {
+  					dimensionX 100
+  					path "/asset/Logos/CSIS.jpg"
+  					dimensionY 100
+  					generalStyle GeneralStyling _ZbAS8IPHEeqJoJgR0nOI2w {
+  							tallness Fitting
+  							marginBottom None
+  							attributes [  ]
+  							marginTop None
+  						}
+  					styling ImageStyling _ZbBhEIPHEeqJoJgR0nOI2w {
+  							border Default
+  							responsive true
+  						}
+  					MoveUp _Za_r4YPHEeqJoJgR0nOI2w at 2,2 size 14,7 {
+  					}
+  					
+  					MoveDown _Za_r44PHEeqJoJgR0nOI2w at 2,10 size 14,7 {
+  					}
+  				}
+  			}
+  			
+  			Col _Wb_2EYPFEeqJoJgR0nOI2w at 270,30 size 120,150 {
+  				wideness Sixth
+  				layout Layout _WcC5YIPFEeqJoJgR0nOI2w {
+  						size Default
+  						offset None
+  						alignment Center
+  					}
+  				generalStyle GeneralStyling _WcBrQIPFEeqJoJgR0nOI2w {
+  						tallness Fitting
+  						marginBottom None
+  						attributes [  ]
+  						marginTop None
+  					}
+  				MoveLeft _WcAdIYPFEeqJoJgR0nOI2w at 2,2 size 7,14 {
+  				}
+  				
+  				MoveRight _WcAdI4PFEeqJoJgR0nOI2w at 10,2 size 7,14 {
+  				}
+  				
+  				Image _ZHQQgYPHEeqJoJgR0nOI2w at 10,30 size 100,90 {
+  					dimensionX 100
+  					path "/asset/Logos/PARAMEDICS_LOGO.png"
+  					dimensionY 100
+  					generalStyle GeneralStyling _ZHTT0IPHEeqJoJgR0nOI2w {
+  							tallness Fitting
+  							marginBottom None
+  							attributes [  ]
+  							marginTop None
+  						}
+  					styling ImageStyling _ZHT64IPHEeqJoJgR0nOI2w {
+  							border Default
+  							responsive true
+  						}
+  					MoveUp _ZHReoYPHEeqJoJgR0nOI2w at 2,2 size 14,7 {
+  					}
+  					
+  					MoveDown _ZHSFsYPHEeqJoJgR0nOI2w at 2,10 size 14,7 {
+  					}
+  				}
+  			}
+  			
+  			Col _89kecYPFEeqJoJgR0nOI2w at 140,30 size 120,150 {
+  				wideness Sixth
+  				layout Layout _89nhwIPFEeqJoJgR0nOI2w {
+  						size Default
+  						offset None
+  						alignment Center
+  					}
+  				generalStyle GeneralStyling _89mToIPFEeqJoJgR0nOI2w {
+  						tallness Fitting
+  						marginBottom None
+  						attributes [  ]
+  						marginTop None
+  					}
+  				MoveLeft _89lFgYPFEeqJoJgR0nOI2w at 2,2 size 7,14 {
+  				}
+  				
+  				MoveRight _89lFg4PFEeqJoJgR0nOI2w at 10,2 size 7,14 {
+  				}
+  				
+  				Image _Ztl3wYPHEeqJoJgR0nOI2w at 10,30 size 100,90 {
+  					dimensionX 100
+  					path "/asset/Logos/ULText.jpg"
+  					dimensionY 100
+  					generalStyle GeneralStyling _ZtoUAIPHEeqJoJgR0nOI2w {
+  							tallness Fitting
+  							marginBottom None
+  							attributes [  ]
+  							marginTop None
+  						}
+  					styling ImageStyling _ZtpiIIPHEeqJoJgR0nOI2w {
+  							border Default
+  							responsive true
+  						}
+  					MoveUp _ZtnF4YPHEeqJoJgR0nOI2w at 2,2 size 14,7 {
+  					}
+  					
+  					MoveDown _Ztns8YPHEeqJoJgR0nOI2w at 2,10 size 14,7 {
+  					}
+  				}
+  			}
+  			
+  			Col _9WWK0YPFEeqJoJgR0nOI2w at 530,30 size 120,150 {
+  				wideness Sixth
+  				layout Layout _9WZOIIPFEeqJoJgR0nOI2w {
+  						size Default
+  						offset None
+  						alignment Center
+  					}
+  				generalStyle GeneralStyling _9WYAAIPFEeqJoJgR0nOI2w {
+  						tallness Fitting
+  						marginBottom None
+  						attributes [  ]
+  						marginTop None
+  					}
+  				MoveLeft _9WWx4YPFEeqJoJgR0nOI2w at 2,2 size 7,14 {
+  				}
+  				
+  				MoveRight _9WWx44PFEeqJoJgR0nOI2w at 10,2 size 7,14 {
+  				}
+  				
+  				Image _Z_C0IYPHEeqJoJgR0nOI2w at 10,30 size 100,90 {
+  					dimensionX 100
+  					path "/asset/Logos/GEMS_LOGO.PNG"
+  					dimensionY 100
+  					generalStyle GeneralStyling _Z_F3cIPHEeqJoJgR0nOI2w {
+  							tallness Fitting
+  							marginBottom None
+  							attributes [  ]
+  							marginTop None
+  						}
+  					styling ImageStyling _Z_HFkIPHEeqJoJgR0nOI2w {
+  							border Default
+  							responsive true
+  						}
+  					MoveUp _Z_EpUYPHEeqJoJgR0nOI2w at 2,2 size 14,7 {
+  					}
+  					
+  					MoveDown _Z_EpU4PHEeqJoJgR0nOI2w at 2,10 size 14,7 {
+  					}
+  				}
+  			}
+  			
+  			Col _KKRksYSUEeqppsAcIpAkmA at 400,30 size 120,150 {
+  				wideness Sixth
+  				layout Layout _KKZggISUEeqppsAcIpAkmA {
+  						size Default
+  						offset None
+  						alignment Center
+  					}
+  				generalStyle GeneralStyling _KKXEQISUEeqppsAcIpAkmA {
+  						tallness Fitting
+  						marginBottom None
+  						attributes [  ]
+  						marginTop None
+  					}
+  				MoveLeft _KKSy0YSUEeqppsAcIpAkmA at 2,2 size 7,14 {
+  				}
+  				
+  				MoveRight _KKTZ4YSUEeqppsAcIpAkmA at 10,2 size 7,14 {
+  				}
+  				
+  				Image _LUy3EYSUEeqppsAcIpAkmA at 10,30 size 100,90 {
+  					dimensionX 100
+  					path "/asset/Logos/HRI.png"
+  					dimensionY 100
+  					generalStyle GeneralStyling _LU3vkISUEeqppsAcIpAkmA {
+  							tallness Fitting
+  							marginBottom None
+  							attributes [  ]
+  							marginTop None
+  						}
+  					styling ImageStyling _LU7Z8ISUEeqppsAcIpAkmA {
+  							border Default
+  							responsive true
+  						}
+  					MoveUp _LU1TUYSUEeqppsAcIpAkmA at 2,2 size 14,7 {
+  					}
+  					
+  					MoveDown _LU16YYSUEeqppsAcIpAkmA at 2,10 size 14,7 {
+  					}
+  				}
+  			}
+  		}
+  	}
+  }
+}

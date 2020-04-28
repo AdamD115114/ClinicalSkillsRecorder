@@ -1,0 +1,359 @@
+GUI _qbA_AYTSEeqVaIrIaAJAXw {
+  fullWidth false
+  disableAutoLayout false
+  additionalJavaScript [  ]
+  additionalStylesheets [  ]
+  title "HomePageFooter"
+  Template _qbHFoYTSEeqVaIrIaAJAXw at 260,10 size 840,530 {
+  	blockName "body"
+  	disableAutoLayout false
+  	generalStyle GeneralStyling _qbI60ITSEeqVaIrIaAJAXw {
+  			tallness Fitting
+  			marginBottom None
+  			attributes [  ]
+  			marginTop None
+  		}
+  	Box _0O4s0YTSEeqVaIrIaAJAXw at 10,30 size 820,470 {
+  		invisible true
+  		generalStyle GeneralStyling _0O9lUITSEeqVaIrIaAJAXw {
+  				tallness Fitting
+  				marginBottom None
+  				attributes [  ]
+  				marginTop None
+  			}
+  		MoveUp _0O7wIITSEeqVaIrIaAJAXw at 2,2 size 14,7 {
+  		}
+  		
+  		MoveDown _0O8XMITSEeqVaIrIaAJAXw at 2,10 size 14,7 {
+  		}
+  		
+  		Row _qbKI8YTSEeqVaIrIaAJAXw at 10,60 size 800,200 {
+  			generalStyle GeneralStyling _qbUhAITSEeqVaIrIaAJAXw {
+  					tallness Fitting
+  					marginBottom None
+  					attributes [  ]
+  					marginTop Triple
+  				}
+  			MoveUp _qbKwAYTSEeqVaIrIaAJAXw at 2,2 size 14,7 {
+  			}
+  			
+  			MoveDown _qbLXEYTSEeqVaIrIaAJAXw at 2,10 size 14,7 {
+  			}
+  			
+  			Col _qbMlMITSEeqVaIrIaAJAXw at 10,30 size 120,150 {
+  				wideness Sixth
+  				layout Layout _qbPBcITSEeqVaIrIaAJAXw {
+  						size Default
+  						offset None
+  						alignment Center
+  					}
+  				generalStyle GeneralStyling _qbOaYITSEeqVaIrIaAJAXw {
+  						tallness Fitting
+  						marginBottom None
+  						attributes [  ]
+  						marginTop None
+  					}
+  				MoveLeft _qbMlMoTSEeqVaIrIaAJAXw at 2,2 size 7,14 {
+  				}
+  				
+  				MoveRight _qbNMQYTSEeqVaIrIaAJAXw at 10,2 size 7,14 {
+  				}
+  				
+  				Image _8tOLEYTSEeqVaIrIaAJAXw at 10,30 size 100,90 {
+  					dimensionX 100
+  					path "/asset/Logos/LERO_PICTURE.PNG"
+  					dimensionY 100
+  					generalStyle GeneralStyling _8tWG4ITSEeqVaIrIaAJAXw {
+  							tallness Fitting
+  							marginBottom None
+  							attributes [  ]
+  							marginTop None
+  						}
+  					styling ImageStyling _8tZKMITSEeqVaIrIaAJAXw {
+  							border Default
+  							responsive true
+  						}
+  					MoveUp _8tQAQYTSEeqVaIrIaAJAXw at 2,2 size 14,7 {
+  					}
+  					
+  					MoveDown _8tQnUYTSEeqVaIrIaAJAXw at 2,10 size 14,7 {
+  					}
+  				}
+  			}
+  			
+  			Col _6HqeEYTSEeqVaIrIaAJAXw at 140,30 size 120,150 {
+  				wideness Sixth
+  				layout Layout _6HuIcITSEeqVaIrIaAJAXw {
+  						size Default
+  						offset None
+  						alignment Center
+  					}
+  				generalStyle GeneralStyling _6Hs6UITSEeqVaIrIaAJAXw {
+  						tallness Fitting
+  						marginBottom None
+  						attributes [  ]
+  						marginTop None
+  					}
+  				MoveLeft _6HrFIYTSEeqVaIrIaAJAXw at 2,2 size 7,14 {
+  				}
+  				
+  				MoveRight _6HrsMYTSEeqVaIrIaAJAXw at 10,2 size 7,14 {
+  				}
+  				
+  				Image _-NSPoYTSEeqVaIrIaAJAXw at 10,30 size 100,90 {
+  					dimensionX 100
+  					path "/asset/Logos/ULText.jpg"
+  					dimensionY 100
+  					generalStyle GeneralStyling _-NUr4ITSEeqVaIrIaAJAXw {
+  							tallness Fitting
+  							marginBottom None
+  							attributes [  ]
+  							marginTop None
+  						}
+  					styling ImageStyling _-NWhEITSEeqVaIrIaAJAXw {
+  							border Default
+  							responsive true
+  						}
+  					MoveUp _-NTdwYTSEeqVaIrIaAJAXw at 2,2 size 14,7 {
+  					}
+  					
+  					MoveDown _-NTdw4TSEeqVaIrIaAJAXw at 2,10 size 14,7 {
+  					}
+  				}
+  			}
+  			
+  			Col _6kY2UYTSEeqVaIrIaAJAXw at 270,30 size 120,150 {
+  				wideness Sixth
+  				layout Layout _6kb5oITSEeqVaIrIaAJAXw {
+  						size Default
+  						offset None
+  						alignment Center
+  					}
+  				generalStyle GeneralStyling _6kbSkITSEeqVaIrIaAJAXw {
+  						tallness Fitting
+  						marginBottom None
+  						attributes [  ]
+  						marginTop None
+  					}
+  				MoveLeft _6kZdYYTSEeqVaIrIaAJAXw at 2,2 size 7,14 {
+  				}
+  				
+  				MoveRight _6kaEcYTSEeqVaIrIaAJAXw at 10,2 size 7,14 {
+  				}
+  				
+  				Image _-gOZwITSEeqVaIrIaAJAXw at 10,30 size 100,90 {
+  					dimensionX 100
+  					path "/asset/Logos/PARAMEDICS_LOGO.png"
+  					dimensionY 100
+  					generalStyle GeneralStyling _-gRdEITSEeqVaIrIaAJAXw {
+  							tallness Fitting
+  							marginBottom None
+  							attributes [  ]
+  							marginTop None
+  						}
+  					styling ImageStyling _-gSrMITSEeqVaIrIaAJAXw {
+  							border Default
+  							responsive true
+  						}
+  					MoveUp _-gQO8YTSEeqVaIrIaAJAXw at 2,2 size 14,7 {
+  					}
+  					
+  					MoveDown _-gQO84TSEeqVaIrIaAJAXw at 2,10 size 14,7 {
+  					}
+  				}
+  			}
+  			
+  			Col _60txUYTSEeqVaIrIaAJAXw at 400,30 size 120,150 {
+  				wideness Sixth
+  				layout Layout _60w0oITSEeqVaIrIaAJAXw {
+  						size Default
+  						offset None
+  						alignment Center
+  					}
+  				generalStyle GeneralStyling _60vmgITSEeqVaIrIaAJAXw {
+  						tallness Fitting
+  						marginBottom None
+  						attributes [  ]
+  						marginTop None
+  					}
+  				MoveLeft _60uYYYTSEeqVaIrIaAJAXw at 2,2 size 7,14 {
+  				}
+  				
+  				MoveRight _60uYY4TSEeqVaIrIaAJAXw at 10,2 size 7,14 {
+  				}
+  				
+  				Image _-ujwsYTSEeqVaIrIaAJAXw at 10,30 size 100,90 {
+  					dimensionX 100
+  					path "/asset/Logos/HRI.png"
+  					dimensionY 100
+  					generalStyle GeneralStyling _-unbEITSEeqVaIrIaAJAXw {
+  							tallness Fitting
+  							marginBottom None
+  							attributes [  ]
+  							marginTop None
+  						}
+  					styling ImageStyling _-upQQITSEeqVaIrIaAJAXw {
+  							border Default
+  							responsive true
+  						}
+  					MoveUp _-ull4YTSEeqVaIrIaAJAXw at 2,2 size 14,7 {
+  					}
+  					
+  					MoveDown _-umM8YTSEeqVaIrIaAJAXw at 2,10 size 14,7 {
+  					}
+  				}
+  			}
+  			
+  			Col _7H-rkYTSEeqVaIrIaAJAXw at 530,30 size 120,150 {
+  				wideness Sixth
+  				layout Layout _7IBu4ITSEeqVaIrIaAJAXw {
+  						size Default
+  						offset None
+  						alignment Center
+  					}
+  				generalStyle GeneralStyling _7IAgwITSEeqVaIrIaAJAXw {
+  						tallness Fitting
+  						marginBottom None
+  						attributes [  ]
+  						marginTop None
+  					}
+  				MoveLeft _7H_SoYTSEeqVaIrIaAJAXw at 2,2 size 7,14 {
+  				}
+  				
+  				MoveRight _7H_So4TSEeqVaIrIaAJAXw at 10,2 size 7,14 {
+  				}
+  				
+  				Image _--Ah8YTSEeqVaIrIaAJAXw at 10,30 size 100,90 {
+  					dimensionX 100
+  					path "/asset/Logos/GEMS_LOGO.PNG"
+  					dimensionY 100
+  					generalStyle GeneralStyling _--EzYITSEeqVaIrIaAJAXw {
+  							tallness Fitting
+  							marginBottom None
+  							attributes [  ]
+  							marginTop None
+  						}
+  					styling ImageStyling _--GBgITSEeqVaIrIaAJAXw {
+  							border Default
+  							responsive true
+  						}
+  					MoveUp _--CXIYTSEeqVaIrIaAJAXw at 2,2 size 14,7 {
+  					}
+  					
+  					MoveDown _--CXI4TSEeqVaIrIaAJAXw at 2,10 size 14,7 {
+  					}
+  				}
+  			}
+  			
+  			Col _7Xbc0YTSEeqVaIrIaAJAXw at 660,30 size 120,150 {
+  				wideness Sixth
+  				layout Layout _7XegIITSEeqVaIrIaAJAXw {
+  						size Default
+  						offset None
+  						alignment Center
+  					}
+  				generalStyle GeneralStyling _7Xd5EITSEeqVaIrIaAJAXw {
+  						tallness Fitting
+  						marginBottom None
+  						attributes [  ]
+  						marginTop None
+  					}
+  				MoveLeft _7XcD4YTSEeqVaIrIaAJAXw at 2,2 size 7,14 {
+  				}
+  				
+  				MoveRight _7Xcq8YTSEeqVaIrIaAJAXw at 10,2 size 7,14 {
+  				}
+  				
+  				Image __MqpAYTSEeqVaIrIaAJAXw at 10,30 size 100,90 {
+  					dimensionX 100
+  					path "/asset/Logos/CSIS.jpg"
+  					dimensionY 100
+  					generalStyle GeneralStyling __MuTYITSEeqVaIrIaAJAXw {
+  							tallness Fitting
+  							marginBottom None
+  							attributes [  ]
+  							marginTop None
+  						}
+  					styling ImageStyling __MwIkITSEeqVaIrIaAJAXw {
+  							border Default
+  							responsive true
+  						}
+  					MoveUp __Mr3IYTSEeqVaIrIaAJAXw at 2,2 size 14,7 {
+  					}
+  					
+  					MoveDown __MseMYTSEeqVaIrIaAJAXw at 2,10 size 14,7 {
+  					}
+  				}
+  			}
+  		}
+  		
+  		Row _5FU3UYTSEeqVaIrIaAJAXw at 10,270 size 250,170 {
+  			generalStyle GeneralStyling _5FczIITSEeqVaIrIaAJAXw {
+  					tallness Fitting
+  					marginBottom None
+  					attributes [  ]
+  					marginTop None
+  				}
+  			MoveUp _5FVeYYTSEeqVaIrIaAJAXw at 2,2 size 14,7 {
+  			}
+  			
+  			MoveDown _5FWFcYTSEeqVaIrIaAJAXw at 2,10 size 14,7 {
+  			}
+  			
+  			Col _5FYhsYTSEeqVaIrIaAJAXw at 10,30 size 220,120 {
+  				wideness Full
+  				layout Layout _5FcMEITSEeqVaIrIaAJAXw {
+  						size Default
+  						offset None
+  						alignment Center
+  					}
+  				generalStyle GeneralStyling _5Fa98ITSEeqVaIrIaAJAXw {
+  						tallness Fitting
+  						marginBottom None
+  						attributes [  ]
+  						marginTop None
+  					}
+  				MoveLeft _5FZIwYTSEeqVaIrIaAJAXw at 2,2 size 7,14 {
+  				}
+  				
+  				MoveRight _5FZIw4TSEeqVaIrIaAJAXw at 10,2 size 7,14 {
+  				}
+  				
+  				Text _ArFu0YTTEeqVaIrIaAJAXw at 10,30 size 200,60 {
+  					generalStyle GeneralStyling _ArKAQITTEeqVaIrIaAJAXw {
+  							tallness Fitting
+  							marginBottom None
+  							attributes [  ]
+  							marginTop None
+  						}
+  					content [ StaticContent _ArMcgITTEeqVaIrIaAJAXw {
+  							renderMarkdown false
+  							maxChars 0
+  							html false
+  							rawContent "Details: <br />
+  							\n  							\n  							\n  							\n\n\n\n\n\n\n\n\n\nDeveloped by: Adam Doherty <br />
+  							\n  							\n  							\n  							\n\n\n\nContact details: 14170671@studentmail.ul.ie <br/>
+  							\n  							\n  							\n  							\n\nThis application was developed as part of an Final Year Project. <br/>
+  							\n  							\n  							\n  							\n\nLM110 - Computer Games Development 2020"
+  							styling TextStyling _ArNqoITTEeqVaIrIaAJAXw {
+  									small false
+  									highlight false
+  									deleted false
+  									color Default
+  									underline false
+  									bold false
+  									alignment Left
+  									italic false
+  								}
+  						} ]
+  					MoveUp _ArILEYTTEeqVaIrIaAJAXw at 2,2 size 14,7 {
+  					}
+  					
+  					MoveDown _ArILE4TTEeqVaIrIaAJAXw at 2,10 size 14,7 {
+  					}
+  				}
+  			}
+  		}
+  	}
+  }
+}

@@ -1,0 +1,218 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>info.scce.dime</groupId>
+	<artifactId>wildfly-starter</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>${project.artifactId}</name>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<profiles>
+		<profile>
+			<id>default</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-antrun-plugin</artifactId>
+						<version>1.1</version>
+						<executions>
+							<execution>
+								<id>copy-standalone</id>
+								<phase>initialize</phase>
+								<goals>
+									<goal>run</goal>
+								</goals>
+								<configuration>
+									<tasks>
+										<echo>Copying Wildfly Config</echo>
+										<copy file="../standalone.xml"
+											  tofile="${wildfly.path}/standalone/configuration/standalone.xml"
+											  overwrite="true"/>
+									</tasks>
+								</configuration>
+							</execution>
+							<execution>
+								<id>clean</id>
+								<phase>clean</phase>
+								<goals>
+									<goal>run</goal>
+								</goals>
+								<configuration>
+									<tasks>
+										<echo>Removing old app</echo>
+										<delete>
+    											<fileset dir="${wildfly.path}/standalone/deployments/" includes="app-${project.version}.*"/>
+  										</delete>
+  										<echo>Removing old app-dywa-bridge</echo>
+										<delete>
+    											<fileset dir="${wildfly.path}/standalone/deployments/" includes="app-dywa-bridge-${project.version}.*"/>
+  										</delete>
+										<echo>Removing old dywa</echo>
+										<delete>
+    											<fileset dir="${wildfly.path}/standalone/deployments/" includes="dywa.*"/>
+  										</delete>
+										<echo>Removing old files</echo>
+										<delete>
+											<fileset dir="${wildfly.path}/standalone/data/files" includes="*"/>
+										</delete>
+									</tasks>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+		<profile>
+			<id>embedded</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-antrun-plugin</artifactId>
+						<version>1.1</version>
+						<executions>
+							<execution>
+								<id>copy-standalone</id>
+								<phase>initialize</phase>
+								<goals>
+									<goal>run</goal>
+								</goals>
+								<configuration>
+									<tasks>
+										<echo>Copying (embedded) Wildfly Config</echo>
+										<copy file="../standalone-embedded.xml"
+											  tofile="${wildfly.path}/standalone/configuration/standalone.xml"
+											  overwrite="true"/>
+									</tasks>
+								</configuration>
+							</execution>
+							<execution>
+								<id>clean-embedded</id>
+								<phase>clean</phase>
+								<goals>
+									<goal>run</goal>
+								</goals>
+								<configuration>
+									<tasks>
+										<echo>Removing old database</echo>
+										<delete>
+											<fileset dir="${wildfly.path}/standalone/data" includes="dywa.*.db"/>
+										</delete>
+									</tasks>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+		<profile>
+			<id>startwildfly</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.wildfly.plugins</groupId>
+						<artifactId>wildfly-maven-plugin</artifactId>
+						<version>1.0.2.Final</version>
+						<configuration>
+							<jboss-home>${wildfly.path}</jboss-home>
+						</configuration>
+						<executions>
+							<execution>
+								<phase>install</phase>
+								<goals>
+									<goal>run</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+		
+		<profile>
+			<id>stopwildfly</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.wildfly.plugins</groupId>
+						<artifactId>wildfly-maven-plugin</artifactId>
+						<version>1.0.2.Final</version>
+						<configuration>
+							<jboss-home>${wildfly.path}</jboss-home>
+						</configuration>
+						<executions>
+							<execution>
+								<phase>install</phase>
+								<goals>
+									<goal>shutdown</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+		<profile>
+			<id>deploy</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-dependency-plugin</artifactId>
+						<version>2.4</version>
+						<executions>
+							<execution>
+								<phase>initialize</phase>
+								<goals>
+									<goal>copy</goal>
+								</goals>
+								<configuration>
+									<artifactItems>
+										<artifactItem>
+											<groupId>de.ls5.dywa</groupId>
+											<artifactId>app</artifactId>
+											<version>0.8.1</version>
+											<type>ear</type>
+											<overWrite>true</overWrite>
+											<outputDirectory>${wildfly.path}/standalone/deployments</outputDirectory>
+											<destFileName>dywa.ear</destFileName>
+										</artifactItem>
+									</artifactItems>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
+
+        <repositories>
+                <repository>
+                        <id>maven-public</id>
+                        <name>LS5 Public Repository</name>
+                        <url>https://ls5svn.cs.tu-dortmund.de/maven-public/</url>
+                        <layout>default</layout>
+                        <snapshots>
+                                <enabled>true</enabled>
+                        </snapshots>
+                </repository>
+                <repository>
+                        <id>cinco-meta-snapshot</id>
+                        <name>Cinco Meta Snapshot Repository</name>
+                        <url>https://ls5download.cs.tu-dortmund.de:8888/repository/cinco-meta-snapshot/</url>
+                </repository>
+        </repositories>
+</project>

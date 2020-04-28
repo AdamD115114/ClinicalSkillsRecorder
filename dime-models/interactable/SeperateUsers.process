@@ -1,0 +1,121 @@
+Process _YxICgWIoEeqFafoKsDXqEA {
+  modelName "SeperateUsers"
+  description "SeperateUsers"
+  dataFlowView true
+  processType Interactable
+  isStateful false
+  StartSIB _YxOwMWIoEeqFafoKsDXqEA at 350,260 size 100,65 {
+  	-ControlFlow-> _o4zQsWIoEeqFafoKsDXqEA  decorate "" at (0,0) {
+  		id _vt0o4WMGEeqqINxqP6QxFg
+  		concurrent true
+  	}
+  }
+  
+  EndSIB _YxQlYWIoEeqFafoKsDXqEA at 280,520 size 100,65 {
+  	branchName "supervisor"
+  }
+  
+  AtomicSIB _o4zQsWIoEeqFafoKsDXqEA at 340,360 size 120,90 {
+  	label "BooleanSwitch"
+  	libraryComponentUID "common.BooleanSwitch"
+  	PrimitiveInputPort _o47zkWIoEeqFafoKsDXqEA at 5,67 size 110,18 {
+  		dataType Boolean
+  		name "value"
+  		isList false
+  	}
+  	-BranchConnector-> _o5GysWIoEeqFafoKsDXqEA   {
+  		id _o5IA0WIoEeqFafoKsDXqEA
+  		concurrent true
+  	}
+  	
+  	-BranchConnector-> _o5OugWIoEeqFafoKsDXqEA   {
+  		id _o5P8oWIoEeqFafoKsDXqEA
+  		concurrent true
+  	}
+  }
+  
+  Branch _o5GysWIoEeqFafoKsDXqEA at 270,470 size 120,25 {
+  	name "true"
+  	-ControlFlow-> _YxQlYWIoEeqFafoKsDXqEA  decorate "" at (0,0) {
+  		id _yImoIWIoEeqFafoKsDXqEA
+  		concurrent true
+  	}
+  }
+  
+  Branch _o5OugWIoEeqFafoKsDXqEA at 410,470 size 120,25 {
+  	name "false"
+  	-ControlFlow-> _vzzT8WIoEeqFafoKsDXqEA  decorate "" at (0,0) {
+  		id _xFK1MWIoEeqFafoKsDXqEA
+  		concurrent true
+  	}
+  }
+  
+  EndSIB _vzzT8WIoEeqFafoKsDXqEA at 420,520 size 100,65 {
+  	branchName "student"
+  }
+  
+  DataContext _kIOtgWMAEeqU5dSz35CSIQ at 70,100 size 180,482 {
+  	dfViewWorkaround true
+  	ComplexVariable _oPjvQWMAEeqU5dSz35CSIQ at 10,40 size 160,51 {
+  		expanded true
+  		name "studentuser"
+  		dfViewWorkaround true
+  		isList false
+  		libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
+  		ComplexAttribute _qf4zIWMAEeqU5dSz35CSIQ at 10,23 size 140,25 {
+  			dfViewWorkaround true
+  			libraryComponentUID "_jY03YHUEEeaJnsj-qiQmGw"
+  		}
+  		-ComplexAttributeConnector-> _usfHsWMGEeqqINxqP6QxFg  decorate "Ellipse" at (0,0) {
+  			id _usyCoWMGEeqqINxqP6QxFg
+  			attributeName "baseUser"
+  		}
+  	}
+  	
+  	ComplexVariable _usfHsWMGEeqqINxqP6QxFg at 10,140 size 160,213 {
+  		expanded true
+  		name "baseUser"
+  		dfViewWorkaround true
+  		isList false
+  		libraryComponentUID "_UdYs4MwNEeWZVvvwxpYu8A"
+  		ComplexAttribute _utOukWMGEeqqINxqP6QxFg at 10,23 size 140,25 {
+  			dfViewWorkaround true
+  			libraryComponentUID "_fOkXgMwNEeWZVvvwxpYu8A"
+  		}
+  		
+  		PrimitiveAttribute _utOuk2MGEeqqINxqP6QxFg at 10,50 size 140,25 {
+  			dfViewWorkaround true
+  			libraryComponentUID "_YIIgUMwNEeWZVvvwxpYu8A"
+  		}
+  		
+  		PrimitiveAttribute _utYfkWMGEeqqINxqP6QxFg at 10,77 size 140,25 {
+  			dfViewWorkaround true
+  			libraryComponentUID "_3QnzMM46EeWKGIrSDzlNog"
+  		}
+  		
+  		PrimitiveAttribute _uthpgWMGEeqqINxqP6QxFg at 10,104 size 140,25 {
+  			dfViewWorkaround true
+  			libraryComponentUID "_VE6ToM5BEeWKGIrSDzlNog"
+  		}
+  		
+  		PrimitiveAttribute _utragWMGEeqqINxqP6QxFg at 10,131 size 140,25 {
+  			dfViewWorkaround true
+  			libraryComponentUID "_WYcYEM5BEeWKGIrSDzlNog"
+  		}
+  		
+  		PrimitiveAttribute _ut0kcWMGEeqqINxqP6QxFg at 10,158 size 140,25 {
+  			dfViewWorkaround true
+  			libraryComponentUID "_1aiCkG_QEeaqHezD6-M0AA"
+  		}
+  		
+  		PrimitiveAttribute _ut0kc2MGEeqqINxqP6QxFg at 10,185 size 140,25 {
+  			dfViewWorkaround true
+  			libraryComponentUID "_w9OqkU12Eeq209oVN1gUOw"
+  			-PrimitiveRead-> _o47zkWIoEeqFafoKsDXqEA  decorate "" at (0,0) {
+  				id _wNIbEWMGEeqqINxqP6QxFg
+  				dfViewWorkaround true
+  			}
+  		}
+  	}
+  }
+}

@@ -1,0 +1,168 @@
+Data _tH3fEMwMEeWZVvvwxpYu8A {
+  modelName "Data"
+  ConcreteType _dh6BYMwNEeWZVvvwxpYu8A at 30,31 size 161,73 {
+  	name "StudentUser"
+  	UserAttribute _fPY24MwNEeWZVvvwxpYu8A at 5,32 size 151,18 {
+  		name "baseUser"
+  		isList false
+  		dataType _UdYs4MwNEeWZVvvwxpYu8A
+  		oppositeAttribute _fOkXgMwNEeWZVvvwxpYu8A
+  	}
+  	
+  	BidirectionalAttribute _jY03YHUEEeaJnsj-qiQmGw at 5,50 size 151,18 {
+  		name "skillsLog"
+  		isList true
+  		dataType _hoAaAHUEEeaJnsj-qiQmGw
+  		oppositeAttribute _jZLcsHUEEeaJnsj-qiQmGw
+  	}
+  	-BidirectionalAssociation-> _hoAaAHUEEeaJnsj-qiQmGw  decorate "Text" at (-17,8) decorate "Text" at (-11,8) {
+  		id _jYv-4HUEEeaJnsj-qiQmGw
+  		isHidden false
+  		sourceAttr _jZLcsHUEEeaJnsj-qiQmGw
+  		targetAttr _jY03YHUEEeaJnsj-qiQmGw
+  	}
+  }
+  
+  UserType _UdYs4MwNEeWZVvvwxpYu8A at 39,200 size 143,163 {
+  	name "BaseUser"
+  	UserAttribute _fOkXgMwNEeWZVvvwxpYu8A at 5,32 size 133,18 {
+  		name "concreteUser"
+  		isList true
+  		dataType _dh6BYMwNEeWZVvvwxpYu8A
+  		oppositeAttribute _fPY24MwNEeWZVvvwxpYu8A
+  	}
+  	
+  	PrimitiveAttribute _YIIgUMwNEeWZVvvwxpYu8A at 5,50 size 133,18 {
+  		dataType Text
+  		name "password"
+  		isList false
+  	}
+  	
+  	PrimitiveAttribute _3QnzMM46EeWKGIrSDzlNog at 5,68 size 133,18 {
+  		dataType File
+  		name "image"
+  		isList false
+  	}
+  	
+  	PrimitiveAttribute _VE6ToM5BEeWKGIrSDzlNog at 5,86 size 133,18 {
+  		dataType Text
+  		name "firstName"
+  		isList false
+  	}
+  	
+  	PrimitiveAttribute _WYcYEM5BEeWKGIrSDzlNog at 5,104 size 133,18 {
+  		dataType Text
+  		name "lastName"
+  		isList false
+  	}
+  	
+  	PrimitiveAttribute _1aiCkG_QEeaqHezD6-M0AA at 5,122 size 133,18 {
+  		dataType Text
+  		name "username"
+  		isList false
+  	}
+  	
+  	PrimitiveAttribute _w9OqkU12Eeq209oVN1gUOw at 5,140 size 133,18 {
+  		dataType Boolean
+  		name "supervisor"
+  		isList false
+  	}
+  	-UserAssociation-> _dh6BYMwNEeWZVvvwxpYu8A  decorate "Text" at (4,-8) decorate "Text" at (12,-7) {
+  		id _fOZ_cMwNEeWZVvvwxpYu8A
+  		isHidden false
+  		sourceAttr _fPY24MwNEeWZVvvwxpYu8A
+  		targetAttr _fOkXgMwNEeWZVvvwxpYu8A
+  	}
+  }
+  
+  ConcreteType _hoAaAHUEEeaJnsj-qiQmGw at 348,13 size 140,109 {
+  	name "SkillsLog"
+  	BidirectionalAttribute _jZLcsHUEEeaJnsj-qiQmGw at 5,32 size 130,18 {
+  		name "author"
+  		isList false
+  		dataType _dh6BYMwNEeWZVvvwxpYu8A
+  		oppositeAttribute _jY03YHUEEeaJnsj-qiQmGw
+  	}
+  	
+  	PrimitiveAttribute _pFeRIHUEEeaJnsj-qiQmGw at 5,50 size 130,18 {
+  		dataType Text
+  		name "skillCategory"
+  		isList false
+  	}
+  	
+  	PrimitiveAttribute _MHfQ8Hm8Eeany527l2d94g at 5,68 size 130,18 {
+  		dataType Text
+  		name "skill"
+  		isList false
+  	}
+  	
+  	PrimitiveAttribute _wSTSoYP6EeqVMoACphFIfA at 5,86 size 130,18 {
+  		dataType Text
+  		name "timeStamp"
+  		isList false
+  	}
+  }
+  
+  EnumType _1AG6gF4nEeqBtq1_HiCcCw at 277,191 size 140,181 {
+  	name "Category"
+  	EnumLiteral _1aP40F4nEeqBtq1_HiCcCw at 5,32 size 130,18 {
+  		name "MEDICATION"
+  		isList false
+  	}
+  	
+  	EnumLiteral _6zB7YV4nEeqBtq1_HiCcCw at 5,50 size 130,18 {
+  		name "AIRWAY & BREATHING MANAGEMENT"
+  		isList false
+  	}
+  	
+  	EnumLiteral _BhG88V4oEeqBtq1_HiCcCw at 5,68 size 130,18 {
+  		name "CARDIAC"
+  		isList false
+  	}
+  	
+  	EnumLiteral _CJdWYV4oEeqBtq1_HiCcCw at 5,86 size 130,18 {
+  		name "HAEMORRHAGE CONTROL"
+  		isList false
+  	}
+  	
+  	EnumLiteral _C0VfYV4oEeqBtq1_HiCcCw at 5,104 size 130,18 {
+  		name "MEDICATION ADMINISTRATION"
+  		isList false
+  	}
+  	
+  	EnumLiteral _FD5HMF4oEeqBtq1_HiCcCw at 5,122 size 130,18 {
+  		name "TRAUMA"
+  		isList false
+  	}
+  	
+  	EnumLiteral _GOYkYV4oEeqBtq1_HiCcCw at 5,140 size 130,18 {
+  		name "OTHER"
+  		isList false
+  	}
+  	
+  	EnumLiteral _RIoJgXm1EeqjX5xL-Kw_UA at 5,158 size 130,18 {
+  		name "PATIENT ASSESSMENT"
+  		isList false
+  	}
+  }
+  
+  ConcreteType _KlUvcV4oEeqBtq1_HiCcCw at 550,245 size 140,73 {
+  	name "SkillsList"
+  	PrimitiveAttribute _O-70AV4oEeqBtq1_HiCcCw at 5,32 size 130,18 {
+  		dataType Text
+  		name "skills"
+  		isList true
+  	}
+  	
+  	ComplexAttribute _S0cF8V4oEeqBtq1_HiCcCw at 5,50 size 130,18 {
+  		name "category"
+  		isList false
+  		dataType _1AG6gF4nEeqBtq1_HiCcCw
+  	}
+  	-Association-> _1AG6gF4nEeqBtq1_HiCcCw  decorate "Text" at (-58,8) decorate "" at (0,0) {
+  		id _S0TjEV4oEeqBtq1_HiCcCw
+  		isHidden false
+  		sourceAttr _S0cF8V4oEeqBtq1_HiCcCw
+  	}
+  }
+}

@@ -1,0 +1,53 @@
+Process _OubLMWE7EeqErIHjN9OXbA {
+  modelName "MakeManager"
+  description "MakeManager"
+  dataFlowView true
+  processType Interactable
+  isStateful false
+  StartSIB _Oue1kWE7EeqErIHjN9OXbA at 350,50 size 100,90 {
+  	ComplexOutputPort _Qfcc4WE7EeqErIHjN9OXbA at 5,67 size 90,18 {
+  		name "baseUser"
+  		isList false
+  		libraryComponentUID "_UdYs4MwNEeWZVvvwxpYu8A"
+  		-ComplexDirectDataFlow-> _ZC2oYWE7EeqErIHjN9OXbA via (330,126) (330,246) decorate "" at (0,0) {
+  			id _f9IS4WE7EeqErIHjN9OXbA
+  			dfViewWorkaround true
+  		}
+  	}
+  	-ControlFlow-> _ZCvToWE7EeqErIHjN9OXbA  decorate "" at (0,0) {
+  		id _ez2WoWE7EeqErIHjN9OXbA
+  		concurrent true
+  	}
+  }
+  
+  EndSIB _OugDsWE7EeqErIHjN9OXbA at 350,360 size 100,65 {
+  	branchName "success"
+  }
+  
+  SetAttributeValueSIB _ZCvToWE7EeqErIHjN9OXbA at 340,170 size 120,108 {
+  	label "Set supervisor"
+  	libraryComponentUID "_w9OqkU12Eeq209oVN1gUOw"
+  	ComplexInputPort _ZC2oYWE7EeqErIHjN9OXbA at 5,67 size 110,18 {
+  		name "baseuser"
+  		isList false
+  		libraryComponentUID "_UdYs4MwNEeWZVvvwxpYu8A"
+  	}
+  	
+  	BooleanInputStatic _blqjYWE7EeqErIHjN9OXbA at 5,85 size 110,18 {
+  		name "supervisor"
+  		value true
+  	}
+  	-BranchConnector-> _ZDLYgWE7EeqErIHjN9OXbA   {
+  		id _ZDQRAWE7EeqErIHjN9OXbA
+  		concurrent true
+  	}
+  }
+  
+  Branch _ZDLYgWE7EeqErIHjN9OXbA at 340,300 size 120,25 {
+  	name "success"
+  	-ControlFlow-> _OugDsWE7EeqErIHjN9OXbA  decorate "" at (0,0) {
+  		id _hJO5oWE7EeqErIHjN9OXbA
+  		concurrent true
+  	}
+  }
+}

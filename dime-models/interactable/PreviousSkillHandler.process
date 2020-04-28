@@ -1,0 +1,167 @@
+Process _mOz0wYAmEeqgd4ylQ2UEbA {
+  modelName "PreviousSkillHandler"
+  description "PreviousSkillHandler"
+  dataFlowView true
+  processType Interactable
+  isStateful false
+  StartSIB _mO6icYAmEeqgd4ylQ2UEbA at 350,50 size 100,108 {
+  	PrimitiveOutputPort _n0YEYYAmEeqgd4ylQ2UEbA at 5,67 size 90,18 {
+  		dataType File
+  		name "inputFile"
+  		isList false
+  		-PrimitiveDirectDataFlow-> _xH_IUYAnEeqgd4ylQ2UEbA via (330,126) (330,246) decorate "" at (0,0) {
+  			id _0IJGoYAnEeqgd4ylQ2UEbA
+  			dfViewWorkaround true
+  		}
+  	}
+  	
+  	ComplexOutputPort _qNvvgYAmEeqgd4ylQ2UEbA at 5,85 size 90,18 {
+  		name "NewUser"
+  		isList false
+  		libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
+  		-ComplexDirectDataFlow-> _xIHEIYAnEeqgd4ylQ2UEbA via (314,144) (314,264) decorate "" at (0,0) {
+  			id _zs7xUYAnEeqgd4ylQ2UEbA
+  			dfViewWorkaround true
+  		}
+  		
+  		-ComplexUpdate-> _nN5KcIJbEeqXUY5-iTcA-A via (210,144) decorate "" at (0,0) {
+  			id _oeM7wYJbEeqXUY5-iTcA-A
+  			dfViewWorkaround true
+  		}
+  	}
+  	-ControlFlow-> _xH5BsYAnEeqgd4ylQ2UEbA  decorate "" at (0,0) {
+  		id _zLyzIYAnEeqgd4ylQ2UEbA
+  		concurrent true
+  	}
+  }
+  
+  EndSIB _mO8XoYAmEeqgd4ylQ2UEbA at 350,540 size 100,65 {
+  	branchName "success"
+  }
+  
+  AtomicSIB _xH5BsYAnEeqgd4ylQ2UEbA at 340,170 size 120,108 {
+  	label "importDataSIB"
+  	libraryComponentUID "app.demo.importDataSIB"
+  	PrimitiveInputPort _xH_IUYAnEeqgd4ylQ2UEbA at 5,67 size 110,18 {
+  		dataType File
+  		name "inputFile"
+  		isList false
+  	}
+  	
+  	ComplexInputPort _xIHEIYAnEeqgd4ylQ2UEbA at 5,85 size 110,18 {
+  		name "newUser"
+  		isList false
+  		libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
+  	}
+  	-BranchConnector-> _xIQOEIAnEeqgd4ylQ2UEbA   {
+  		id _xISDQIAnEeqgd4ylQ2UEbA
+  		concurrent true
+  	}
+  }
+  
+  Branch _xIQOEIAnEeqgd4ylQ2UEbA at 340,288 size 120,50 {
+  	name "success"
+  	ComplexOutputPort _xIVtoYAnEeqgd4ylQ2UEbA at 5,27 size 110,18 {
+  		name "importSkillsLog"
+  		isList true
+  		libraryComponentUID "_hoAaAHUEEeaJnsj-qiQmGw"
+  		-ComplexDirectDataFlow-> _BK9egYJeEeqXUY5-iTcA-A via (330,324) (330,426) decorate "" at (0,0) {
+  			id _DuaSsYJeEeqXUY5-iTcA-A
+  			dfViewWorkaround true
+  		}
+  	}
+  	-ControlFlow-> _BKzGcYJeEeqXUY5-iTcA-A  decorate "" at (0,0) {
+  		id _CsfisYJeEeqXUY5-iTcA-A
+  		concurrent true
+  	}
+  }
+  
+  IterateSIB _BKzGcYJeEeqXUY5-iTcA-A at 346,350 size 120,90 index 5 {
+  	label "Iterate SkillsLogs"
+  	libraryComponentUID "_hoAaAHUEEeaJnsj-qiQmGw"
+  	ComplexInputPort _BK9egYJeEeqXUY5-iTcA-A at 5,67 size 110,18 {
+  		name "list"
+  		isList true
+  		libraryComponentUID "_hoAaAHUEEeaJnsj-qiQmGw"
+  	}
+  	-BranchConnector-> _BLKS0YJeEeqXUY5-iTcA-A   {
+  		id _BLPLUYJeEeqXUY5-iTcA-A
+  		concurrent true
+  	}
+  	
+  	-BranchConnector-> _BLgREYJeEeqXUY5-iTcA-A via (566,395)  {
+  		id _BLlJkYJeEeqXUY5-iTcA-A
+  		concurrent true
+  	}
+  }
+  
+  DataContext _muOL4YJbEeqXUY5-iTcA-A at 120,70 size 180,600 index 4 {
+  	dfViewWorkaround true
+  	ComplexVariable _nN5KcIJbEeqXUY5-iTcA-A at 10,380 size 160,51 {
+  		expanded true
+  		name "studentuser"
+  		dfViewWorkaround true
+  		isList false
+  		libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
+  		ComplexAttribute _ncTZ4YJbEeqXUY5-iTcA-A at 10,23 size 140,25 {
+  			dfViewWorkaround true
+  			libraryComponentUID "_fPY24MwNEeWZVvvwxpYu8A"
+  		}
+  		-ComplexAttributeConnector-> _IFzwwYJeEeqXUY5-iTcA-A  decorate "Ellipse" at (0,0) {
+  			id _IF9hwYJeEeqXUY5-iTcA-A
+  			attributeName "skillsLog"
+  		}
+  	}
+  	
+  	ComplexVariable _IFzwwYJeEeqXUY5-iTcA-A at 10,470 size 160,105 {
+  		expanded true
+  		name "skillsLog"
+  		dfViewWorkaround true
+  		isList true
+  		libraryComponentUID "_hoAaAHUEEeaJnsj-qiQmGw"
+  		PrimitiveListAttribute _IGUHEYJeEeqXUY5-iTcA-A at 10,23 size 140,25 {
+  			attributeName size
+  			dfViewWorkaround true
+  			primitiveType Integer
+  			libraryComponentUID "_hoAaAHUEEeaJnsj-qiQmGw"
+  		}
+  		
+  		ComplexListAttribute _IGyBIYJeEeqXUY5-iTcA-A at 10,50 size 140,25 {
+  			attributeName last
+  			dfViewWorkaround true
+  			libraryComponentUID "_hoAaAHUEEeaJnsj-qiQmGw"
+  		}
+  		
+  		ComplexListAttribute _IHE8EYJeEeqXUY5-iTcA-A at 10,77 size 140,25 {
+  			attributeName first
+  			dfViewWorkaround true
+  			libraryComponentUID "_hoAaAHUEEeaJnsj-qiQmGw"
+  		}
+  	}
+  }
+  
+  Branch _BLKS0YJeEeqXUY5-iTcA-A at 346,471 size 120,50 {
+  	name "next"
+  	ComplexOutputPort _BLS1sYJeEeqXUY5-iTcA-A at 5,27 size 110,18 {
+  		name "element"
+  		isList false
+  		libraryComponentUID "_hoAaAHUEEeaJnsj-qiQmGw"
+  		-ComplexUpdate-> _IFzwwYJeEeqXUY5-iTcA-A via (314,507) (314,590) decorate "" at (0,0) {
+  			id _JbUyMYJeEeqXUY5-iTcA-A
+  			dfViewWorkaround true
+  		}
+  	}
+  	-ControlFlow-> _BKzGcYJeEeqXUY5-iTcA-A  decorate "" at (0,0) {
+  		id _FeVYMYJeEeqXUY5-iTcA-A
+  		concurrent true
+  	}
+  }
+  
+  Branch _BLgREYJeEeqXUY5-iTcA-A at 506,471 size 120,25 {
+  	name "exit"
+  	-ControlFlow-> _mO8XoYAmEeqgd4ylQ2UEbA via (565,572) decorate "" at (0,0) {
+  		id _FzbecYJeEeqXUY5-iTcA-A
+  		concurrent true
+  	}
+  }
+}

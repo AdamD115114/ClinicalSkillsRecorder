@@ -1,0 +1,86 @@
+Process _3asBkIGZEean_JMeS26Lgg {
+  modelName "CreateSkillLog"
+  description "CreateSkillLog"
+  dataFlowView true
+  processType Interactable
+  isStateful false
+  StartSIB _3a75MIGZEean_JMeS26Lgg at 290,80 size 100,126 {
+  	ComplexOutputPort _4iU_EIGZEean_JMeS26Lgg at 5,67 size 90,18 {
+  		name "concreteuser"
+  		isList false
+  		libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
+  		-ComplexDirectDataFlow-> _17JHgYDmEeqfiYaJbkQcLA via (270,156) (270,332) decorate "" at (0,0) {
+  			id _2x1e8YDmEeqfiYaJbkQcLA
+  			dfViewWorkaround true
+  		}
+  	}
+  	
+  	PrimitiveOutputPort _774GsYA9Eeqgd4ylQ2UEbA at 5,85 size 90,18 {
+  		dataType Text
+  		name "SkillPicked"
+  		isList false
+  		-PrimitiveDirectDataFlow-> _EQUc8YCdEeqfiYaJbkQcLA via (270,174) (270,314) decorate "" at (0,0) {
+  			id _EkcS0YCdEeqfiYaJbkQcLA
+  			dfViewWorkaround true
+  		}
+  	}
+  	
+  	ComplexOutputPort _Cm8QgYA-Eeqgd4ylQ2UEbA at 5,103 size 90,18 {
+  		name "categorypicked"
+  		isList false
+  		libraryComponentUID "_1AG6gF4nEeqBtq1_HiCcCw"
+  		-ComplexDirectDataFlow-> _E9KhAIA-Eeqgd4ylQ2UEbA via (270,192) (270,296) decorate "" at (0,0) {
+  			id _HHPL4YA-Eeqgd4ylQ2UEbA
+  			dfViewWorkaround true
+  		}
+  	}
+  	-ControlFlow-> _E8-60YA-Eeqgd4ylQ2UEbA  decorate "" at (0,0) {
+  		id _GRJRYYA-Eeqgd4ylQ2UEbA
+  		concurrent true
+  	}
+  }
+  
+  EndSIB _3a-8gIGZEean_JMeS26Lgg at 290,430 size 100,65 {
+  	branchName "success"
+  }
+  
+  ProcessSIB _E8-60YA-Eeqgd4ylQ2UEbA at 280,220 size 120,126 {
+  	minorPage false
+  	label "PrepareSkillLog"
+  	libraryComponentUID "_ej2SMYA8Eeqgd4ylQ2UEbA"
+  	ComplexInputPort _E9KhAIA-Eeqgd4ylQ2UEbA at 5,67 size 110,18 {
+  		name "categoryPicked"
+  		isList false
+  		libraryComponentUID "_1AG6gF4nEeqBtq1_HiCcCw"
+  	}
+  	
+  	PrimitiveInputPort _EQUc8YCdEeqfiYaJbkQcLA at 5,85 size 110,18 {
+  		dataType Text
+  		name "skillIn"
+  		isList false
+  	}
+  	
+  	ComplexInputPort _17JHgYDmEeqfiYaJbkQcLA at 5,103 size 110,18 {
+  		name "studentuser3"
+  		isList false
+  		libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
+  	}
+  	-BranchConnector-> _E9ZKgYA-Eeqgd4ylQ2UEbA   {
+  		id _E9aYoYA-Eeqgd4ylQ2UEbA
+  		concurrent true
+  	}
+  }
+  
+  Branch _E9ZKgYA-Eeqgd4ylQ2UEbA at 280,358 size 120,50 {
+  	name "success"
+  	ComplexOutputPort _E9fRIYA-Eeqgd4ylQ2UEbA at 5,27 size 110,18 {
+  		name "skillslogOut"
+  		isList false
+  		libraryComponentUID "_hoAaAHUEEeaJnsj-qiQmGw"
+  	}
+  	-ControlFlow-> _3a-8gIGZEean_JMeS26Lgg  decorate "" at (0,0) {
+  		id _KL-IMIA-Eeqgd4ylQ2UEbA
+  		concurrent true
+  	}
+  }
+}

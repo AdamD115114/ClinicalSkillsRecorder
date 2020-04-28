@@ -1,0 +1,112 @@
+GUI _jw-g4YPKEeqJoJgR0nOI2w {
+  fullWidth false
+  disableAutoLayout false
+  additionalJavaScript [  ]
+  additionalStylesheets [  ]
+  title "GeneralHeader"
+  Template _jxJgAIPKEeqJoJgR0nOI2w at 260,10 size 300,260 {
+  	blockName "body"
+  	disableAutoLayout false
+  	generalStyle GeneralStyling _jxKuIIPKEeqJoJgR0nOI2w {
+  			tallness Fitting
+  			marginBottom None
+  			attributes [  ]
+  			marginTop None
+  		}
+  	Row _jxL8QYPKEeqJoJgR0nOI2w at 10,30 size 280,200 {
+  		generalStyle GeneralStyling _jxs5oIPKEeqJoJgR0nOI2w {
+  				tallness Fitting
+  				marginBottom None
+  				attributes [  ]
+  				marginTop Single
+  			}
+  		MoveUp _jxMjUYPKEeqJoJgR0nOI2w at 2,2 size 14,7 {
+  		}
+  		
+  		MoveDown _jxNKYYPKEeqJoJgR0nOI2w at 2,10 size 14,7 {
+  		}
+  		
+  		Col _jxnaEYPKEeqJoJgR0nOI2w at 10,30 size 120,150 {
+  			wideness Quarter
+  			layout Layout _jxsSkIPKEeqJoJgR0nOI2w {
+  					size Default
+  					offset Quarter
+  					alignment Left
+  				}
+  			generalStyle GeneralStyling _jxrEcIPKEeqJoJgR0nOI2w {
+  					tallness Fitting
+  					marginBottom None
+  					attributes [  ]
+  					marginTop None
+  				}
+  			MoveLeft _jxooMYPKEeqJoJgR0nOI2w at 2,2 size 7,14 {
+  			}
+  			
+  			MoveRight _jxpPQIPKEeqJoJgR0nOI2w at 10,2 size 7,14 {
+  			}
+  			
+  			Image _sIq5sYPMEeqJoJgR0nOI2w at 10,30 size 100,90 {
+  				dimensionX 125
+  				path "/asset/Logos/UL_LOGO.png"
+  				dimensionY 125
+  				generalStyle GeneralStyling _sIt9AIPMEeqJoJgR0nOI2w {
+  						tallness Fitting
+  						marginBottom None
+  						attributes [  ]
+  						marginTop None
+  					}
+  				styling ImageStyling _sIukEIPMEeqJoJgR0nOI2w {
+  						border Default
+  						responsive true
+  					}
+  				MoveUp _sIsH0YPMEeqJoJgR0nOI2w at 2,2 size 14,7 {
+  				}
+  				
+  				MoveDown _sIsu4YPMEeqJoJgR0nOI2w at 2,10 size 14,7 {
+  				}
+  			}
+  		}
+  		
+  		Col _AZJxcYSrEeqppsAcIpAkmA at 140,30 size 120,150 {
+  			wideness Quarter
+  			layout Layout _AZM0wISrEeqppsAcIpAkmA {
+  					size Default
+  					offset None
+  					alignment Left
+  				}
+  			generalStyle GeneralStyling _AZLmoISrEeqppsAcIpAkmA {
+  					tallness Fitting
+  					marginBottom None
+  					attributes [  ]
+  					marginTop None
+  				}
+  			MoveLeft _AZKYgYSrEeqppsAcIpAkmA at 2,2 size 7,14 {
+  			}
+  			
+  			MoveRight _AZKYg4SrEeqppsAcIpAkmA at 10,2 size 7,14 {
+  			}
+  			
+  			Image _FE23IYShEeqppsAcIpAkmA at 10,30 size 100,90 {
+  				dimensionX 500
+  				path "/asset/Logos/ClinicalSkillsText.png"
+  				dimensionY 50
+  				generalStyle GeneralStyling _FE5TYIShEeqppsAcIpAkmA {
+  						tallness Half
+  						marginBottom None
+  						attributes [  ]
+  						marginTop Triple
+  					}
+  				styling ImageStyling _FE6hgIShEeqppsAcIpAkmA {
+  						border Default
+  						responsive true
+  					}
+  				MoveUp _FE4FQYShEeqppsAcIpAkmA at 2,2 size 14,7 {
+  				}
+  				
+  				MoveDown _FE4sUYShEeqppsAcIpAkmA at 2,10 size 14,7 {
+  				}
+  			}
+  		}
+  	}
+  }
+}

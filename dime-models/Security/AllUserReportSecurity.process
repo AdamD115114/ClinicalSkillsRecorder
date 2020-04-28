@@ -1,0 +1,236 @@
+Process _RoCGcYHFEeqbzaBwevDrEg {
+  modelName "AllUserReportSecurity"
+  description "AllUserReportSecurity"
+  dataFlowView true
+  processType FileDownloadSecurity
+  isStateful false
+  DataContext _R7WrEYHFEeqbzaBwevDrEg at 50,50 size 180,800 {
+  	dfViewWorkaround true
+  	ComplexVariable _emv_oYHFEeqbzaBwevDrEg at 10,69 size 160,51 {
+  		expanded true
+  		name "studentuser"
+  		dfViewWorkaround true
+  		isList false
+  		libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
+  		ComplexAttribute _fMYcQYHFEeqbzaBwevDrEg at 10,23 size 140,25 {
+  			dfViewWorkaround true
+  			libraryComponentUID "_jY03YHUEEeaJnsj-qiQmGw"
+  		}
+  		-ComplexAttributeConnector-> _fZRowYHFEeqbzaBwevDrEg  decorate "Ellipse" at (0,0) {
+  			id _fZWhQYHFEeqbzaBwevDrEg
+  			attributeName "baseUser"
+  		}
+  	}
+  	
+  	ComplexVariable _fZRowYHFEeqbzaBwevDrEg at 10,130 size 160,213 {
+  		expanded true
+  		name "baseUser"
+  		dfViewWorkaround true
+  		isList false
+  		libraryComponentUID "_UdYs4MwNEeWZVvvwxpYu8A"
+  		ComplexAttribute _fZfrMYHFEeqbzaBwevDrEg at 10,23 size 140,25 {
+  			dfViewWorkaround true
+  			libraryComponentUID "_fOkXgMwNEeWZVvvwxpYu8A"
+  		}
+  		
+  		PrimitiveAttribute _fZjVkYHFEeqbzaBwevDrEg at 10,50 size 140,25 {
+  			dfViewWorkaround true
+  			libraryComponentUID "_YIIgUMwNEeWZVvvwxpYu8A"
+  		}
+  		
+  		PrimitiveAttribute _fZnnAYHFEeqbzaBwevDrEg at 10,77 size 140,25 {
+  			dfViewWorkaround true
+  			libraryComponentUID "_3QnzMM46EeWKGIrSDzlNog"
+  		}
+  		
+  		PrimitiveAttribute _fZrRYYHFEeqbzaBwevDrEg at 10,104 size 140,25 {
+  			dfViewWorkaround true
+  			libraryComponentUID "_VE6ToM5BEeWKGIrSDzlNog"
+  		}
+  		
+  		PrimitiveAttribute _fZuUsYHFEeqbzaBwevDrEg at 10,131 size 140,25 {
+  			dfViewWorkaround true
+  			libraryComponentUID "_WYcYEM5BEeWKGIrSDzlNog"
+  		}
+  		
+  		PrimitiveAttribute _fZxYAYHFEeqbzaBwevDrEg at 10,158 size 140,25 {
+  			dfViewWorkaround true
+  			libraryComponentUID "_1aiCkG_QEeaqHezD6-M0AA"
+  		}
+  		
+  		PrimitiveAttribute _fZ1pcYHFEeqbzaBwevDrEg at 10,185 size 140,25 {
+  			dfViewWorkaround true
+  			libraryComponentUID "_w9OqkU12Eeq209oVN1gUOw"
+  			-PrimitiveRead-> _gzinUYHFEeqbzaBwevDrEg  decorate "" at (0,0) {
+  				id _iAOc4YHFEeqbzaBwevDrEg
+  				dfViewWorkaround true
+  			}
+  		}
+  	}
+  }
+  
+  StartSIB _R7X5MYHFEeqbzaBwevDrEg at 350,50 size 100,90 {
+  	ComplexOutputPort _UxS9cYHFEeqbzaBwevDrEg at 5,67 size 90,18 {
+  		name "currentUser"
+  		isList false
+  		libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
+  		-ComplexUpdate-> _emv_oYHFEeqbzaBwevDrEg  decorate "" at (0,0) {
+  			id _huVboYHFEeqbzaBwevDrEg
+  			dfViewWorkaround true
+  		}
+  	}
+  	-ControlFlow-> _gzXoMYHFEeqbzaBwevDrEg  decorate "" at (0,0) {
+  		id _hg6DoYHFEeqbzaBwevDrEg
+  		concurrent true
+  	}
+  }
+  
+  EndSIB _R7ZuYYHFEeqbzaBwevDrEg at 350,740 size 100,90 {
+  	branchName "result"
+  	PrimitiveInputPort _R7cxsYHFEeqbzaBwevDrEg at 5,67 size 90,1 {
+  		dataType File
+  		name "file"
+  		isList false
+  	}
+  }
+  
+  EndSIB _R7gcEYHFEeqbzaBwevDrEg at 500,630 size 100,65 {
+  	branchName "not found"
+  }
+  
+  AtomicSIB _gzXoMYHFEeqbzaBwevDrEg at 340,180 size 120,90 {
+  	label "BooleanSwitch"
+  	libraryComponentUID "common.BooleanSwitch"
+  	PrimitiveInputPort _gzinUYHFEeqbzaBwevDrEg at 5,67 size 110,18 {
+  		dataType Boolean
+  		name "value"
+  		isList false
+  	}
+  	-BranchConnector-> _gztmcYHFEeqbzaBwevDrEg   {
+  		id _gzu0kYHFEeqbzaBwevDrEg
+  		concurrent true
+  	}
+  	
+  	-BranchConnector-> _gz07MYHFEeqbzaBwevDrEg   {
+  		id _gz2JUYHFEeqbzaBwevDrEg
+  		concurrent true
+  	}
+  	
+  	-BranchConnector-> _gz8P8YHFEeqbzaBwevDrEg   {
+  		id _gz9eEYHFEeqbzaBwevDrEg
+  		concurrent true
+  	}
+  	
+  	-BranchConnector-> _g0DksYHFEeqbzaBwevDrEg   {
+  		id _g0Ey0YHFEeqbzaBwevDrEg
+  		concurrent true
+  	}
+  }
+  
+  Branch _gztmcYHFEeqbzaBwevDrEg at 340,350 size 120,25 {
+  	name "true"
+  	-ControlFlow-> _lmh1MYHFEeqbzaBwevDrEg  decorate "" at (0,0) {
+  		id _oCp5YYHFEeqbzaBwevDrEg
+  		concurrent true
+  	}
+  }
+  
+  Branch _gz07MYHFEeqbzaBwevDrEg at 470,360 size 120,25 {
+  	name "false"
+  	-ControlFlow-> _R7gcEYHFEeqbzaBwevDrEg  decorate "" at (0,0) {
+  		id __SI3wYHFEeqbzaBwevDrEg
+  		concurrent true
+  	}
+  }
+  
+  Branch _gz8P8YHFEeqbzaBwevDrEg at 589,360 size 120,25 {
+  	name "noresult"
+  	-ControlFlow-> _R7gcEYHFEeqbzaBwevDrEg  decorate "" at (0,0) {
+  		id __mxrAYHFEeqbzaBwevDrEg
+  		concurrent true
+  	}
+  }
+  
+  Branch _g0DksYHFEeqbzaBwevDrEg at 730,360 size 120,25 {
+  	name "failure"
+  	-ControlFlow-> _R7gcEYHFEeqbzaBwevDrEg  decorate "" at (0,0) {
+  		id _ABEaUYHGEeqbzaBwevDrEg
+  		concurrent true
+  	}
+  }
+  
+  RetrieveOfTypeSIB _lmh1MYHFEeqbzaBwevDrEg at 340,400 size 120,65 {
+  	label "Retrieve from SkillsLog"
+  	libraryComponentUID "_hoAaAHUEEeaJnsj-qiQmGw"
+  	-BranchConnector-> _lmqYEYHFEeqbzaBwevDrEg   {
+  		id _lmvQkYHFEeqbzaBwevDrEg
+  		concurrent true
+  	}
+  	
+  	-BranchConnector-> _lnCLgYHFEeqbzaBwevDrEg   {
+  		id _lnISIYHFEeqbzaBwevDrEg
+  		concurrent true
+  	}
+  }
+  
+  Branch _lmqYEYHFEeqbzaBwevDrEg at 340,500 size 120,50 {
+  	name "success"
+  	ComplexOutputPort _lm1XMYHFEeqbzaBwevDrEg at 5,27 size 110,18 {
+  		name "retrieved"
+  		isList true
+  		libraryComponentUID "_hoAaAHUEEeaJnsj-qiQmGw"
+  		-ComplexDirectDataFlow-> _taaBMYHFEeqbzaBwevDrEg via (330,536) (330,636) decorate "" at (0,0) {
+  			id _7mDnkYHFEeqbzaBwevDrEg
+  			dfViewWorkaround true
+  		}
+  	}
+  	-ControlFlow-> _taPpIYHFEeqbzaBwevDrEg  decorate "" at (0,0) {
+  		id _vTseEYHFEeqbzaBwevDrEg
+  		concurrent true
+  	}
+  }
+  
+  Branch _lnCLgYHFEeqbzaBwevDrEg at 470,513 size 120,25 {
+  	name "none found"
+  	-ControlFlow-> _R7gcEYHFEeqbzaBwevDrEg  decorate "" at (0,0) {
+  		id _qOFPIYHFEeqbzaBwevDrEg
+  		concurrent true
+  	}
+  }
+  
+  AtomicSIB _taPpIYHFEeqbzaBwevDrEg at 340,560 size 120,108 {
+  	label "exportToFile"
+  	libraryComponentUID "app.demo.exportToFile"
+  	ComplexInputPort _taaBMYHFEeqbzaBwevDrEg at 5,67 size 110,18 {
+  		name "skillsLog"
+  		isList true
+  		libraryComponentUID "_hoAaAHUEEeaJnsj-qiQmGw"
+  	}
+  	
+  	BooleanInputStatic _NUMCoYM5EeqBOdzFYQHGSQ at 5,85 size 110,18 {
+  		name "flag"
+  		value true
+  	}
+  	-BranchConnector-> _taoqsYHFEeqbzaBwevDrEg   {
+  		id _tap40YHFEeqbzaBwevDrEg
+  		concurrent true
+  	}
+  }
+  
+  Branch _taoqsYHFEeqbzaBwevDrEg at 340,670 size 120,50 {
+  	name "success"
+  	PrimitiveOutputPort _tazCwYHFEeqbzaBwevDrEg at 5,27 size 110,18 {
+  		dataType File
+  		name "fileRef"
+  		isList false
+  		-PrimitiveDirectDataFlow-> _R7cxsYHFEeqbzaBwevDrEg via (330,706) (330,807) decorate "" at (0,0) {
+  			id _9v1XgYHFEeqbzaBwevDrEg
+  			dfViewWorkaround true
+  		}
+  	}
+  	-ControlFlow-> _R7ZuYYHFEeqbzaBwevDrEg  decorate "" at (0,0) {
+  		id _9THmUYHFEeqbzaBwevDrEg
+  		concurrent true
+  	}
+  }
+}

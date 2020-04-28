@@ -1,0 +1,143 @@
+MEDICATION,Aspirin PO
+MEDICATION,Oxygen
+MEDICATION,Glucose gel Buccal
+MEDICATION,GTN SL 
+MEDICATION,Epinephrine (1:1,000) auto injector
+MEDICATION,Salbutamol Aerosol
+MEDICATION,Chlorphenamine PO IM 
+MEDICATION,Epinephrine (1:1,000) IM
+MEDICATION,Glucagon IM 
+MEDICATION,Ibuprofen PO 
+MEDICATION,Methoxyflurane INH
+MEDICATION,Naloxone IN
+MEDICATION,Nitrous Oxide & Oxygen (Entonox®)
+MEDICATION,Paracetamol PO
+MEDICATION,Salbutamol nebule
+MEDICATION,Clopidogrel PO
+MEDICATION,Cyclizine IM 
+MEDICATION,Hydrocortisone IM 
+MEDICATION,Ipratropium Bromide nebule
+MEDICATION,Midazolam IM/Buccal/IN 
+MEDICATION,Naloxone IM/SC
+MEDICATION,Ondansetron IM 
+MEDICATION,Oxytocin IM
+MEDICATION,Ticagrelor 
+MEDICATION,Sodium Chloride 0.9% IV/IO
+break,break
+AIRWAY & BREATHING MANAGEMENT,FBAO management 
+AIRWAY & BREATHING MANAGEMENT,Head tilt chin lift 
+AIRWAY & BREATHING MANAGEMENT,Pocket mask 
+AIRWAY & BREATHING MANAGEMENT,Recovery position 
+AIRWAY & BREATHING MANAGEMENT,Non rebreather mask
+AIRWAY & BREATHING MANAGEMENT,OPA 
+AIRWAY & BREATHING MANAGEMENT,Suctioning 
+AIRWAY & BREATHING MANAGEMENT,Venturi mask
+AIRWAY & BREATHING MANAGEMENT,BVM 
+AIRWAY & BREATHING MANAGEMENT,SpO2 monitoring 
+AIRWAY & BREATHING MANAGEMENT,Jaw thrust 
+AIRWAY & BREATHING MANAGEMENT,Nasal cannula 
+AIRWAY & BREATHING MANAGEMENT,Oxygen humidification
+AIRWAY & BREATHING MANAGEMENT,NPA 
+AIRWAY & BREATHING MANAGEMENT,Supraglottic airway adult  (uncuffed)
+AIRWAY & BREATHING MANAGEMENT,Supraglottic airway adult (cuffed)
+AIRWAY & BREATHING MANAGEMENT,CPAP / BiPAP 
+AIRWAY & BREATHING MANAGEMENT,Non‐invasive ventilation device
+AIRWAY & BREATHING MANAGEMENT,Peak Expiratory Flow 
+AIRWAY & BREATHING MANAGEMENT,End Tidal CO2 monitoring 
+AIRWAY & BREATHING MANAGEMENT,Supraglottic airway paediatric
+break,break
+CARDIAC,AED adult & paediatric 
+CARDIAC,CPR adult, child & infant
+CARDIAC,Recognise death and  resuscitation not indicated 
+CARDIAC,Neonate resuscitation 
+CARDIAC,ECG monitoring (lead II) 
+CARDIAC,Mechanical assist CPR device 
+CARDIAC,Cease resuscitation ‐ adult 
+CARDIAC,12 lead ECG
+CARDIAC,Manual defibrillation
+CARDIAC,Right sided ECG in ACS 
+break,break
+HAEMORRHAGE CONTROL,Direct pressure
+HAEMORRHAGE CONTROL,Nose bleed 
+HAEMORRHAGE CONTROL,Haemostatic agent 
+HAEMORRHAGE CONTROL,Tourniquet use 
+HAEMORRHAGE CONTROL,Wound closure clips
+HAEMORRHAGE CONTROL,Nasal pack
+HAEMORRHAGE CONTROL,Pressure points
+break,break
+MEDICATION ADMINISTRATION,Oral 
+MEDICATION ADMINISTRATION,Buccal route
+MEDICATION ADMINISTRATION,Per aerosol (inhaler) + spacer
+MEDICATION ADMINISTRATION,Sublingual 
+MEDICATION ADMINISTRATION,Intramuscular injection
+MEDICATION ADMINISTRATION,Intranasal 
+MEDICATION ADMINISTRATION,Per nebuliser 
+MEDICATION ADMINISTRATION,Subcutaneous injection 
+MEDICATION ADMINISTRATION,IV & IO Infusion maintenance 
+MEDICATION ADMINISTRATION,Infusion calculations
+MEDICATION ADMINISTRATION,Intraosseous injection/infusion
+MEDICATION ADMINISTRATION,Intravenous injection/infusion 
+MEDICATION ADMINISTRATION,Per rectum
+break,break
+TRAUMA,Burns care
+TRAUMA,Application of a sling
+TRAUMA,Soft tissue injury 
+TRAUMA,Active Spinal Motion Restriction
+TRAUMA,Hot packs for active rewarming  (hypothermia) 
+TRAUMA,Cervical collar application
+TRAUMA,Helmet stabilisation/removal
+TRAUMA,Splinting device application to  upper limb 
+TRAUMA,Splinting device application to  lower limb 
+TRAUMA,Log roll  
+TRAUMA,Move patient with a carrying sheet
+TRAUMA,Extrication using a long board 
+TRAUMA,Rapid Extraction
+TRAUMA,Secure and move a patient with an  extrication device 
+TRAUMA,Move a patient with a split device  (Orthopaedic stretcher)
+TRAUMA,Passive Spinal Motion Restriction
+TRAUMA,Pelvic Splinting device
+TRAUMA,Move and secure patient into a  vacuum mattress 
+TRAUMA,Move and secure a patient to a  paediatric board 
+TRAUMA,Traction splint application
+TRAUMA,Lateral dislocation of patella –  reduction   
+TRAUMA,Taser gun barb removal 
+break,break
+OTHER,Use of Red Card 
+OTHER,Assist in the normal delivery of a  baby
+OTHER,De‐escalation and breakaway  skills
+OTHER,ASHICE radio report
+OTHER,IMIST‐AMBO handover 
+OTHER,External massage of uterus 
+OTHER,Broselow tape 
+OTHER,Management of presenting  umbilical cord (finger control) 
+OTHER,Verification of Death 
+OTHER,Intraosseous cannulation 
+OTHER,Intravenous cannulation
+OTHER,Urinary catheterisation
+break,break
+PATIENT ASSESSMENT,Assess responsiveness
+PATIENT ASSESSMENT,Check breathing 
+PATIENT ASSESSMENT,FAST assessment
+PATIENT ASSESSMENT,Capillary refill 
+PATIENT ASSESSMENT,AVPU
+PATIENT ASSESSMENT,Pulse check 
+PATIENT ASSESSMENT,Breathing & pulse rate 
+PATIENT ASSESSMENT,Primary survey 
+PATIENT ASSESSMENT,SAMPLE history 
+PATIENT ASSESSMENT,Secondary survey 
+PATIENT ASSESSMENT,CSM assessment 
+PATIENT ASSESSMENT,Rule of Nines 
+PATIENT ASSESSMENT,Assess pupils
+PATIENT ASSESSMENT,Blood pressure 
+PATIENT ASSESSMENT,Capacity evaluation
+PATIENT ASSESSMENT,Chest auscultation
+PATIENT ASSESSMENT,Glucometery 
+PATIENT ASSESSMENT,Paediatric Assessment Triangle
+PATIENT ASSESSMENT,Pain assessment 
+PATIENT ASSESSMENT,Patient Clinical Status 
+PATIENT ASSESSMENT,Temperature oC
+PATIENT ASSESSMENT,Triage sieve 
+PATIENT ASSESSMENT,Glasgow Coma Scale (GCS)
+PATIENT ASSESSMENT,Pre‐hospital Early Warning Score 
+PATIENT ASSESSMENT,Treat and referral 
+PATIENT ASSESSMENT,Triage sort

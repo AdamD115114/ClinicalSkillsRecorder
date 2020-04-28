@@ -1,0 +1,160 @@
+Process _LfgE4X_3EeqtutZK3Ck3vg {
+  modelName "PermissionCheck"
+  description "PermissionCheck"
+  dataFlowView true
+  processType Security
+  isStateful false
+  DataContext _MEvf8X_3EeqtutZK3Ck3vg at 120,250 size 180,411 {
+  	dfViewWorkaround true
+  	ComplexVariable _lBYfsYAjEeqgd4ylQ2UEbA at 10,70 size 160,51 {
+  		expanded true
+  		name "studentuser"
+  		dfViewWorkaround true
+  		isList false
+  		libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
+  		ComplexAttribute _lTb5AYAjEeqgd4ylQ2UEbA at 10,23 size 140,25 {
+  			dfViewWorkaround true
+  			libraryComponentUID "_jY03YHUEEeaJnsj-qiQmGw"
+  		}
+  		-ComplexAttributeConnector-> _mnQ4YYAjEeqgd4ylQ2UEbA  decorate "Ellipse" at (0,0) {
+  			id _mnW_AYAjEeqgd4ylQ2UEbA
+  			attributeName "baseUser"
+  		}
+  	}
+  	
+  	ComplexVariable _mnQ4YYAjEeqgd4ylQ2UEbA at 10,170 size 160,213 {
+  		expanded true
+  		name "baseUser"
+  		dfViewWorkaround true
+  		isList false
+  		libraryComponentUID "_UdYs4MwNEeWZVvvwxpYu8A"
+  		ComplexAttribute _mnmPkYAjEeqgd4ylQ2UEbA at 10,23 size 140,25 {
+  			dfViewWorkaround true
+  			libraryComponentUID "_fOkXgMwNEeWZVvvwxpYu8A"
+  		}
+  		
+  		PrimitiveAttribute _mnrvIYAjEeqgd4ylQ2UEbA at 10,50 size 140,25 {
+  			dfViewWorkaround true
+  			libraryComponentUID "_YIIgUMwNEeWZVvvwxpYu8A"
+  		}
+  		
+  		PrimitiveAttribute _mn6_sYAjEeqgd4ylQ2UEbA at 10,77 size 140,25 {
+  			dfViewWorkaround true
+  			libraryComponentUID "_3QnzMM46EeWKGIrSDzlNog"
+  		}
+  		
+  		PrimitiveAttribute _mn_RIYAjEeqgd4ylQ2UEbA at 10,104 size 140,25 {
+  			dfViewWorkaround true
+  			libraryComponentUID "_VE6ToM5BEeWKGIrSDzlNog"
+  		}
+  		
+  		PrimitiveAttribute _moFXwYAjEeqgd4ylQ2UEbA at 10,131 size 140,25 {
+  			dfViewWorkaround true
+  			libraryComponentUID "_WYcYEM5BEeWKGIrSDzlNog"
+  		}
+  		
+  		PrimitiveAttribute _moLeYYAjEeqgd4ylQ2UEbA at 10,158 size 140,25 {
+  			dfViewWorkaround true
+  			libraryComponentUID "_1aiCkG_QEeaqHezD6-M0AA"
+  		}
+  		
+  		PrimitiveAttribute _moRlAYAjEeqgd4ylQ2UEbA at 10,185 size 140,25 {
+  			dfViewWorkaround true
+  			libraryComponentUID "_w9OqkU12Eeq209oVN1gUOw"
+  			-PrimitiveRead-> _qcKGUYAjEeqgd4ylQ2UEbA via (308,616) (308,499) decorate "" at (0,0) {
+  				id _vPhHoYAjEeqgd4ylQ2UEbA
+  				dfViewWorkaround true
+  			}
+  		}
+  	}
+  }
+  
+  StartSIB _MExVIX_3EeqtutZK3Ck3vg at 360,290 size 100,90 {
+  	ComplexOutputPort _jmB8AYAjEeqgd4ylQ2UEbA at 5,67 size 90,18 {
+  		name "currentUser"
+  		isList false
+  		libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
+  		-ComplexUpdate-> _lBYfsYAjEeqgd4ylQ2UEbA  decorate "" at (0,0) {
+  			id _l8Ud8YAjEeqgd4ylQ2UEbA
+  			dfViewWorkaround true
+  		}
+  	}
+  	-ControlFlow-> _qb3LYYAjEeqgd4ylQ2UEbA  decorate "" at (0,0) {
+  		id _tK3IQYAjEeqgd4ylQ2UEbA
+  		concurrent true
+  	}
+  }
+  
+  EndSIB _MEx8MX_3EeqtutZK3Ck3vg at 341,596 size 100,65 {
+  	branchName "granted"
+  }
+  
+  EndSIB _ME0YcX_3EeqtutZK3Ck3vg at 440,596 size 100,65 {
+  	branchName "denied"
+  }
+  
+  EndSIB _ME1mkX_3EeqtutZK3Ck3vg at 611,596 size 130,65 {
+  	branchName "permanently denied"
+  }
+  
+  AtomicSIB _qb3LYYAjEeqgd4ylQ2UEbA at 350,420 size 120,90 {
+  	label "BooleanSwitch"
+  	libraryComponentUID "common.BooleanSwitch"
+  	PrimitiveInputPort _qcKGUYAjEeqgd4ylQ2UEbA at 5,67 size 110,18 {
+  		dataType Boolean
+  		name "value"
+  		isList false
+  	}
+  	-BranchConnector-> _qce2cYAjEeqgd4ylQ2UEbA   {
+  		id _qcig0YAjEeqgd4ylQ2UEbA
+  		concurrent true
+  	}
+  	
+  	-BranchConnector-> _qctf8YAjEeqgd4ylQ2UEbA   {
+  		id _qcvVIYAjEeqgd4ylQ2UEbA
+  		concurrent true
+  	}
+  	
+  	-BranchConnector-> _qc5tMYAjEeqgd4ylQ2UEbA   {
+  		id _qc8JcYAjEeqgd4ylQ2UEbA
+  		concurrent true
+  	}
+  	
+  	-BranchConnector-> _qdHIkYAjEeqgd4ylQ2UEbA   {
+  		id _qdJk0YAjEeqgd4ylQ2UEbA
+  		concurrent true
+  	}
+  }
+  
+  Branch _qce2cYAjEeqgd4ylQ2UEbA at 331,520 size 120,25 {
+  	name "true"
+  	-ControlFlow-> _MEx8MX_3EeqtutZK3Ck3vg  decorate "" at (0,0) {
+  		id _tcENAYAjEeqgd4ylQ2UEbA
+  		concurrent true
+  	}
+  }
+  
+  Branch _qctf8YAjEeqgd4ylQ2UEbA at 430,520 size 120,25 {
+  	name "false"
+  	-ControlFlow-> _ME0YcX_3EeqtutZK3Ck3vg  decorate "" at (0,0) {
+  		id _t5ZpQYAjEeqgd4ylQ2UEbA
+  		concurrent true
+  	}
+  }
+  
+  Branch _qc5tMYAjEeqgd4ylQ2UEbA at 549,520 size 120,25 {
+  	name "noresult"
+  	-ControlFlow-> _ME1mkX_3EeqtutZK3Ck3vg  decorate "" at (0,0) {
+  		id _uKVoQYAjEeqgd4ylQ2UEbA
+  		concurrent true
+  	}
+  }
+  
+  Branch _qdHIkYAjEeqgd4ylQ2UEbA at 680,520 size 120,25 {
+  	name "failure"
+  	-ControlFlow-> _ME1mkX_3EeqtutZK3Ck3vg  decorate "" at (0,0) {
+  		id _uYupkYAjEeqgd4ylQ2UEbA
+  		concurrent true
+  	}
+  }
+}

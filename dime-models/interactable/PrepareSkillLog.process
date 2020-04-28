@@ -1,0 +1,276 @@
+Process _ej2SMYA8Eeqgd4ylQ2UEbA {
+  modelName "PrepareSkillLog"
+  description "PrepareSkillLog"
+  dataFlowView true
+  processType Interactable
+  isStateful false
+  StartSIB _ej58kYA8Eeqgd4ylQ2UEbA at 350,-310 size 100,126 {
+  	ComplexOutputPort _fwfrgYA8Eeqgd4ylQ2UEbA at 5,67 size 90,18 {
+  		name "categoryPicked"
+  		isList false
+  		libraryComponentUID "_1AG6gF4nEeqBtq1_HiCcCw"
+  		-ComplexDirectDataFlow-> _lwPAYYA8Eeqgd4ylQ2UEbA via (315,-234) (315,88) decorate "" at (0,0) {
+  			id _aaDF0YDtEeqTnfaGH9KVpA
+  			dfViewWorkaround true
+  		}
+  	}
+  	
+  	PrimitiveOutputPort _4EagwYCcEeqfiYaJbkQcLA at 5,85 size 90,18 {
+  		dataType Text
+  		name "skillIn"
+  		isList false
+  		-PrimitiveDirectDataFlow-> _6ZPJ0YDuEeqTnfaGH9KVpA via (325,-216) (325,-72) (467,-72) (467,-37) decorate "" at (0,0) {
+  			id _nT4XoYDwEeqzEZaJ__sW_A
+  			dfViewWorkaround true
+  		}
+  		
+  		-PrimitiveDirectDataFlow-> _skwtUIDuEeqTnfaGH9KVpA via (330,-216) (330,-94) decorate "" at (0,0) {
+  			id _EeJ5cYDxEeqzEZaJ__sW_A
+  			dfViewWorkaround true
+  		}
+  	}
+  	
+  	ComplexOutputPort _yXrn0YDmEeqfiYaJbkQcLA at 5,103 size 90,18 {
+  		name "studentuser3"
+  		isList false
+  		libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
+  		-ComplexDirectDataFlow-> _AyxewYDvEeqTnfaGH9KVpA via (265,-198) (265,303) (496,303) decorate "" at (0,0) {
+  			id _RLahIYDvEeqTnfaGH9KVpA
+  			dfViewWorkaround true
+  		}
+  	}
+  	-ControlFlow-> _skbWIYDuEeqTnfaGH9KVpA  decorate "" at (0,0) {
+  		id _wdvxEYDuEeqTnfaGH9KVpA
+  		concurrent true
+  	}
+  }
+  
+  EndSIB _ej7xwYA8Eeqgd4ylQ2UEbA at 350,509 size 100,90 {
+  	branchName "success"
+  	ComplexInputPort _5LIS0YA8Eeqgd4ylQ2UEbA at 5,67 size 90,18 {
+  		name "skillslogOut"
+  		isList false
+  		libraryComponentUID "_hoAaAHUEEeaJnsj-qiQmGw"
+  	}
+  }
+  
+  AtomicSIB _lwLWAYA8Eeqgd4ylQ2UEbA at 324,12 size 152,90 {
+  	label "convertCategoryToText"
+  	libraryComponentUID "app.demo.convertCategoryToText"
+  	ComplexInputPort _lwPAYYA8Eeqgd4ylQ2UEbA at 5,67 size 142,18 {
+  		name "input"
+  		isList false
+  		libraryComponentUID "_1AG6gF4nEeqBtq1_HiCcCw"
+  	}
+  	-BranchConnector-> _lwTR0YA8Eeqgd4ylQ2UEbA   {
+  		id _lwT44YA8Eeqgd4ylQ2UEbA
+  		concurrent true
+  	}
+  }
+  
+  Branch _lwTR0YA8Eeqgd4ylQ2UEbA at 340,112 size 120,50 {
+  	name "success"
+  	PrimitiveOutputPort _lwW8MYA8Eeqgd4ylQ2UEbA at 5,27 size 110,18 {
+  		dataType Text
+  		name "Converted"
+  		isList false
+  		-PrimitiveDirectDataFlow-> _ByvuAYDvEeqTnfaGH9KVpA via (331,147) (331,167) (492,167) (492,129) decorate "" at (0,0) {
+  			id _OqqboYDvEeqTnfaGH9KVpA
+  			dfViewWorkaround true
+  		}
+  	}
+  	-ControlFlow-> _6Y4kgYDuEeqTnfaGH9KVpA via (484,138) (484,-75) decorate "" at (0,0) {
+  		id _EzuLsYDvEeqTnfaGH9KVpA
+  		concurrent true
+  	}
+  }
+  
+  CreateSIB _skbWIYDuEeqTnfaGH9KVpA at 340,-170 size 120,90 {
+  	label "Create SkillsLog"
+  	libraryComponentUID "_hoAaAHUEEeaJnsj-qiQmGw"
+  	PrimitiveInputPort _skwtUIDuEeqTnfaGH9KVpA at 5,67 size 110,18 {
+  		dataType Text
+  		name "internalName"
+  		isList false
+  	}
+  	-BranchConnector-> _slK9AYDuEeqTnfaGH9KVpA   {
+  		id _slS40YDuEeqTnfaGH9KVpA
+  		concurrent true
+  	}
+  }
+  
+  Branch _slK9AYDuEeqTnfaGH9KVpA at 340,-70 size 120,50 {
+  	name "success"
+  	ComplexOutputPort _slbbsYDuEeqTnfaGH9KVpA at 5,27 size 110,18 {
+  		name "created"
+  		isList false
+  		libraryComponentUID "_hoAaAHUEEeaJnsj-qiQmGw"
+  		-ComplexDirectDataFlow-> _6ZC8kYDuEeqTnfaGH9KVpA via (330,-34) (330,-76) (469,-76) (469,-54) decorate "" at (0,0) {
+  			id _qNGpsYD_EeqbzaBwevDrEg
+  			dfViewWorkaround true
+  		}
+  		
+  		-ComplexDirectDataFlow-> _Bybk8YDvEeqTnfaGH9KVpA via (296,-34) (296,116) decorate "" at (0,0) {
+  			id _qi9k8YD_EeqbzaBwevDrEg
+  			dfViewWorkaround true
+  		}
+  		
+  		-ComplexDirectDataFlow-> _AyiOMYDvEeqTnfaGH9KVpA via (285,-34) (285,286) (495,286) decorate "" at (0,0) {
+  			id _rx7ScYD_EeqbzaBwevDrEg
+  			dfViewWorkaround true
+  		}
+  		
+  		-ComplexDirectDataFlow-> _5LIS0YA8Eeqgd4ylQ2UEbA via (314,-34) (314,585) decorate "" at (0,0) {
+  			id _sqiVcYD_EeqbzaBwevDrEg
+  			dfViewWorkaround true
+  		}
+  		
+  		-ComplexDirectDataFlow-> _8wKhgYP6EeqVMoACphFIfA via (276,-34) (276,386) decorate "" at (0,0) {
+  			id _DZrzMYP7EeqVMoACphFIfA
+  			dfViewWorkaround true
+  		}
+  	}
+  	-ControlFlow-> _lwLWAYA8Eeqgd4ylQ2UEbA  decorate "" at (0,0) {
+  		id _o7lXcYD_EeqbzaBwevDrEg
+  		concurrent true
+  	}
+  }
+  
+  SetAttributeValueSIB _6Y4kgYDuEeqTnfaGH9KVpA at 509,-130 size 120,108 {
+  	label "Set skill"
+  	libraryComponentUID "_MHfQ8Hm8Eeany527l2d94g"
+  	ComplexInputPort _6ZC8kYDuEeqTnfaGH9KVpA at 5,67 size 110,18 {
+  		name "skillslog"
+  		isList false
+  		libraryComponentUID "_hoAaAHUEEeaJnsj-qiQmGw"
+  	}
+  	
+  	PrimitiveInputPort _6ZPJ0YDuEeqTnfaGH9KVpA at 5,85 size 110,18 {
+  		dataType Text
+  		name "skill"
+  		isList false
+  	}
+  	-BranchConnector-> _6Zb-IYDuEeqTnfaGH9KVpA   {
+  		id _6Zg2oYDuEeqTnfaGH9KVpA
+  		concurrent true
+  	}
+  }
+  
+  Branch _6Zb-IYDuEeqTnfaGH9KVpA at 509,-12 size 120,25 {
+  	name "success"
+  	-ControlFlow-> _ByOwoYDvEeqTnfaGH9KVpA  decorate "" at (0,0) {
+  		id _K6HiMYDvEeqTnfaGH9KVpA
+  		concurrent true
+  	}
+  }
+  
+  SetAttributeValueSIB _AyYdMYDvEeqTnfaGH9KVpA at 509,210 size 120,108 {
+  	label "Set author"
+  	libraryComponentUID "_jZLcsHUEEeaJnsj-qiQmGw"
+  	ComplexInputPort _AyiOMYDvEeqTnfaGH9KVpA at 5,67 size 110,18 {
+  		name "skillslog"
+  		isList false
+  		libraryComponentUID "_hoAaAHUEEeaJnsj-qiQmGw"
+  	}
+  	
+  	ComplexInputPort _AyxewYDvEeqTnfaGH9KVpA at 5,85 size 110,18 {
+  		name "author"
+  		isList false
+  		libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
+  	}
+  	-BranchConnector-> _AzDyoYDvEeqTnfaGH9KVpA   {
+  		id _AzOxwYDvEeqTnfaGH9KVpA
+  		concurrent true
+  	}
+  }
+  
+  Branch _AzDyoYDvEeqTnfaGH9KVpA at 509,328 size 120,25 {
+  	name "success"
+  	-ControlFlow-> _AAzy4YP7EeqVMoACphFIfA  decorate "" at (0,0) {
+  		id _A6cJkYP7EeqVMoACphFIfA
+  		concurrent true
+  	}
+  }
+  
+  SetAttributeValueSIB _ByOwoYDvEeqTnfaGH9KVpA at 509,40 size 120,108 {
+  	label "Set skillCategory"
+  	libraryComponentUID "_pFeRIHUEEeaJnsj-qiQmGw"
+  	ComplexInputPort _Bybk8YDvEeqTnfaGH9KVpA at 5,67 size 110,18 {
+  		name "skillslog"
+  		isList false
+  		libraryComponentUID "_hoAaAHUEEeaJnsj-qiQmGw"
+  	}
+  	
+  	PrimitiveInputPort _ByvuAYDvEeqTnfaGH9KVpA at 5,85 size 110,18 {
+  		dataType Text
+  		name "skillcategory"
+  		isList false
+  	}
+  	-BranchConnector-> _BzDQAYDvEeqTnfaGH9KVpA   {
+  		id _BzKkwYDvEeqTnfaGH9KVpA
+  		concurrent true
+  	}
+  }
+  
+  Branch _BzDQAYDvEeqTnfaGH9KVpA at 509,158 size 120,25 {
+  	name "success"
+  	-ControlFlow-> _AyYdMYDvEeqTnfaGH9KVpA  decorate "" at (0,0) {
+  		id _QqlsAYDvEeqTnfaGH9KVpA
+  		concurrent true
+  	}
+  }
+  
+  SetAttributeValueSIB _8v2_gYP6EeqVMoACphFIfA at 340,310 size 120,108 {
+  	label "Set timeStamp"
+  	libraryComponentUID "_wSTSoYP6EeqVMoACphFIfA"
+  	ComplexInputPort _8wKhgYP6EeqVMoACphFIfA at 5,67 size 110,18 {
+  		name "skillslog"
+  		isList false
+  		libraryComponentUID "_hoAaAHUEEeaJnsj-qiQmGw"
+  	}
+  	
+  	PrimitiveInputPort _8wi8AYP6EeqVMoACphFIfA at 5,85 size 110,18 {
+  		dataType Text
+  		name "timestamp"
+  		isList false
+  	}
+  	-BranchConnector-> _8w9LsYP6EeqVMoACphFIfA   {
+  		id _8xKAAYP6EeqVMoACphFIfA
+  		concurrent true
+  	}
+  }
+  
+  Branch _8w9LsYP6EeqVMoACphFIfA at 340,430 size 120,25 {
+  	name "success"
+  	-ControlFlow-> _ej7xwYA8Eeqgd4ylQ2UEbA  decorate "" at (0,0) {
+  		id _-vulgYP6EeqVMoACphFIfA
+  		concurrent true
+  	}
+  }
+  
+  AtomicSIB _AAzy4YP7EeqVMoACphFIfA at 509,360 size 120,65 {
+  	label "getDate"
+  	libraryComponentUID "app.demo.getDate"
+  	-BranchConnector-> _ABP3wYP7EeqVMoACphFIfA   {
+  		id _ABRs8IP7EeqVMoACphFIfA
+  		concurrent true
+  	}
+  }
+  
+  Branch _ABP3wYP7EeqVMoACphFIfA at 509,435 size 120,50 {
+  	name "success"
+  	PrimitiveOutputPort _ABjZwYP7EeqVMoACphFIfA at 5,27 size 110,18 {
+  		dataType Text
+  		name "formattedDate"
+  		isList false
+  		-PrimitiveDirectDataFlow-> _8wi8AYP6EeqVMoACphFIfA via (330,470) (330,404) decorate "" at (0,0) {
+  			id _BtvOwYP7EeqVMoACphFIfA
+  			dfViewWorkaround true
+  		}
+  	}
+  	-ControlFlow-> _8v2_gYP6EeqVMoACphFIfA via (491,457) (491,366) decorate "" at (0,0) {
+  		id _BYfXgYP7EeqVMoACphFIfA
+  		concurrent true
+  	}
+  }
+}

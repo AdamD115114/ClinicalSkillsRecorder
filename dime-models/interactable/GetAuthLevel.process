@@ -1,0 +1,96 @@
+Process _MhLpIV_eEeqtEMq3xOLzNA {
+  modelName "GetAuthLevel"
+  description "GetAuthLevel"
+  dataFlowView true
+  processType Interactable
+  isStateful false
+  DataContext _MhP6kV_eEeqtEMq3xOLzNA at 50,50 size 180,441 {
+  	dfViewWorkaround true
+  	ComplexVariable _tZ6ZsV_eEeqtEMq3xOLzNA at 10,77 size 160,51 {
+  		expanded true
+  		name "studentuser"
+  		dfViewWorkaround true
+  		isList false
+  		libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
+  		ComplexAttribute _tufikV_eEeqtEMq3xOLzNA at 10,23 size 140,25 {
+  			dfViewWorkaround true
+  			libraryComponentUID "_jY03YHUEEeaJnsj-qiQmGw"
+  		}
+  		-ComplexAttributeConnector-> _vCgIIV_eEeqtEMq3xOLzNA  decorate "Ellipse" at (0,0) {
+  			id _vCrHQF_eEeqtEMq3xOLzNA
+  			attributeName "baseUser"
+  		}
+  	}
+  	
+  	ComplexVariable _vCgIIV_eEeqtEMq3xOLzNA at 10,170 size 160,213 {
+  		expanded true
+  		name "baseUser"
+  		dfViewWorkaround true
+  		isList false
+  		libraryComponentUID "_UdYs4MwNEeWZVvvwxpYu8A"
+  		ComplexAttribute _vC6-4F_eEeqtEMq3xOLzNA at 10,23 size 140,25 {
+  			dfViewWorkaround true
+  			libraryComponentUID "_fOkXgMwNEeWZVvvwxpYu8A"
+  		}
+  		
+  		PrimitiveAttribute _vC9bIV_eEeqtEMq3xOLzNA at 10,50 size 140,25 {
+  			dfViewWorkaround true
+  			libraryComponentUID "_YIIgUMwNEeWZVvvwxpYu8A"
+  		}
+  		
+  		PrimitiveAttribute _vDBFgV_eEeqtEMq3xOLzNA at 10,77 size 140,25 {
+  			dfViewWorkaround true
+  			libraryComponentUID "_3QnzMM46EeWKGIrSDzlNog"
+  		}
+  		
+  		PrimitiveAttribute _vDEv4V_eEeqtEMq3xOLzNA at 10,104 size 140,25 {
+  			dfViewWorkaround true
+  			libraryComponentUID "_VE6ToM5BEeWKGIrSDzlNog"
+  		}
+  		
+  		PrimitiveAttribute _vDJoYV_eEeqtEMq3xOLzNA at 10,131 size 140,25 {
+  			dfViewWorkaround true
+  			libraryComponentUID "_WYcYEM5BEeWKGIrSDzlNog"
+  		}
+  		
+  		PrimitiveAttribute _vDSLQV_eEeqtEMq3xOLzNA at 10,158 size 140,25 {
+  			dfViewWorkaround true
+  			libraryComponentUID "_1aiCkG_QEeaqHezD6-M0AA"
+  		}
+  		
+  		PrimitiveAttribute _vDbVMV_eEeqtEMq3xOLzNA at 10,185 size 140,25 {
+  			dfViewWorkaround true
+  			libraryComponentUID "_w9OqkU12Eeq209oVN1gUOw"
+  			-PrimitiveRead-> _gM_FYV_eEeqtEMq3xOLzNA via (311,417) decorate "" at (0,0) {
+  				id _x9mAQV_eEeqtEMq3xOLzNA
+  				dfViewWorkaround true
+  			}
+  		}
+  	}
+  }
+  
+  StartSIB _MhUzEV_eEeqtEMq3xOLzNA at 260,80 size 100,90 {
+  	ComplexOutputPort _sHcFMV_eEeqtEMq3xOLzNA at 5,67 size 90,18 {
+  		name "studentuser1"
+  		isList false
+  		libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
+  		-ComplexUpdate-> _tZ6ZsV_eEeqtEMq3xOLzNA  decorate "" at (0,0) {
+  			id _uZeZQV_eEeqtEMq3xOLzNA
+  			dfViewWorkaround true
+  		}
+  	}
+  	-ControlFlow-> _MhWBMV_eEeqtEMq3xOLzNA  decorate "" at (0,0) {
+  		id _jmrlEV_eEeqtEMq3xOLzNA
+  		concurrent true
+  	}
+  }
+  
+  EndSIB _MhWBMV_eEeqtEMq3xOLzNA at 260,230 size 100,90 {
+  	branchName "success"
+  	PrimitiveInputPort _gM_FYV_eEeqtEMq3xOLzNA at 5,67 size 90,18 {
+  		dataType Boolean
+  		name "AuthLevel"
+  		isList false
+  	}
+  }
+}

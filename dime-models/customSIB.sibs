@@ -1,0 +1,30 @@
+package app.demo
+import "dime-models/app.data" as Data
+
+sib exportToFile : info.scce.dime.app.demo.Native#exportToFile
+	skillsLog: [Data.SkillsLog]
+	flag     : boolean
+	-> success
+		fileRef : file
+		
+sib importDataSIB: info.scce.dime.app.demo.ImportData#importDataSIB
+		inputFile : file
+		newUser	  : Data.StudentUser
+		-> success
+		importSkillsLog: [Data.SkillsLog]
+		
+sib LoadSkills: info.scce.dime.app.demo.SkillsLoader#LoadSkills
+	-> success
+	skillsList : [Data.SkillsList]
+	
+sib convertCategoryToText: info.scce.dime.app.demo.SkillsLoader#convertCategoryToText
+	input : Data.Category
+	-> success
+	Converted : text
+	
+sib isAuthorNull:info.scce.dime.app.demo.Native#isAuthorNull
+	input : Data.SkillsLog
+	-> true
+	-> false
+	-> noresult 
+	-> failure

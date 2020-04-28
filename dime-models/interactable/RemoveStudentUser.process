@@ -1,0 +1,381 @@
+Process _9C-yQWE8EeqErIHjN9OXbA {
+  modelName "RemoveStudentUser"
+  description "RemoveStudentUser"
+  dataFlowView true
+  processType Interactable
+  isStateful false
+  StartSIB _9DB1kWE8EeqErIHjN9OXbA at 350,71 size 121,90 {
+  	ComplexOutputPort _A3Y4AWE9EeqErIHjN9OXbA at 5,67 size 111,18 {
+  		name "studentuser"
+  		isList false
+  		libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
+  		-ComplexUpdate-> _v2wu4WIIEeqhiNGvFqDFmQ via (246,147) (246,265) decorate "" at (0,0) {
+  			id _wd7ckWIIEeqhiNGvFqDFmQ
+  			dfViewWorkaround true
+  		}
+  	}
+  	-ControlFlow-> _WGvOQYL1EeqzbJRhtrJe6A  decorate "" at (0,0) {
+  		id _3xobkYL1EeqzbJRhtrJe6A
+  		concurrent true
+  	}
+  }
+  
+  EndSIB _9DDqwWE8EeqErIHjN9OXbA at 350,748 size 100,65 {
+  	branchName "success"
+  }
+  
+  DeleteSIB _rQc54GE-EeqtqPIEsLRzMg at 340,480 size 120,90 {
+  	force true
+  	label "Delete"
+  	ComplexInputPort _0CjBoWE-EeqtqPIEsLRzMg at 5,67 size 110,18 {
+  		name "delete1"
+  		isList false
+  		libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
+  	}
+  	-BranchConnector-> _rQmD0WE-EeqtqPIEsLRzMg   {
+  		id _rQq8UWE-EeqtqPIEsLRzMg
+  		concurrent true
+  	}
+  }
+  
+  Branch _rQmD0WE-EeqtqPIEsLRzMg at 340,579 size 120,25 {
+  	name "deleted"
+  	-ControlFlow-> _ZR9yUYMwEeqBOdzFYQHGSQ  decorate "" at (0,0) {
+  		id _dNfMsYMwEeqBOdzFYQHGSQ
+  		concurrent true
+  	}
+  }
+  
+  DataContext _leVigWIIEeqhiNGvFqDFmQ at 60,140 size 180,455 {
+  	dfViewWorkaround true
+  	ComplexVariable _v2wu4WIIEeqhiNGvFqDFmQ at 10,100 size 160,51 {
+  		expanded true
+  		name "studentuser"
+  		dfViewWorkaround true
+  		isList false
+  		libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
+  		ComplexAttribute _w4gfwWIIEeqhiNGvFqDFmQ at 10,23 size 140,25 {
+  			dfViewWorkaround true
+  			libraryComponentUID "_jY03YHUEEeaJnsj-qiQmGw"
+  			-ComplexRead-> _WG-e0YL1EeqzbJRhtrJe6A via (282,274) (282,257) decorate "" at (0,0) {
+  				id _sgLVcYL1EeqzbJRhtrJe6A
+  				dfViewWorkaround true
+  			}
+  		}
+  		-ComplexRead-> _0CjBoWE-EeqtqPIEsLRzMg via (254,266) (254,556) decorate "" at (0,0) {
+  			id _1pUjYGIIEeqhiNGvFqDFmQ
+  			dfViewWorkaround true
+  		}
+  		
+  		-ComplexAttributeConnector-> _pKTWkWILEeqhiNGvFqDFmQ  decorate "Ellipse" at (0,0) {
+  			id _pKdHkWILEeqhiNGvFqDFmQ
+  			attributeName "baseUser"
+  		}
+  	}
+  	
+  	ComplexVariable _pKTWkWILEeqhiNGvFqDFmQ at 10,200 size 160,213 {
+  		expanded true
+  		name "baseUser"
+  		dfViewWorkaround true
+  		isList false
+  		libraryComponentUID "_UdYs4MwNEeWZVvvwxpYu8A"
+  		ComplexAttribute _pK5zgWILEeqhiNGvFqDFmQ at 10,23 size 140,25 {
+  			dfViewWorkaround true
+  			libraryComponentUID "_fOkXgMwNEeWZVvvwxpYu8A"
+  		}
+  		
+  		PrimitiveAttribute _pLDkgWILEeqhiNGvFqDFmQ at 10,50 size 140,25 {
+  			dfViewWorkaround true
+  			libraryComponentUID "_YIIgUMwNEeWZVvvwxpYu8A"
+  		}
+  		
+  		PrimitiveAttribute _pLMucWILEeqhiNGvFqDFmQ at 10,77 size 140,25 {
+  			dfViewWorkaround true
+  			libraryComponentUID "_3QnzMM46EeWKGIrSDzlNog"
+  		}
+  		
+  		PrimitiveAttribute _pLWfcWILEeqhiNGvFqDFmQ at 10,104 size 140,25 {
+  			dfViewWorkaround true
+  			libraryComponentUID "_VE6ToM5BEeWKGIrSDzlNog"
+  		}
+  		
+  		PrimitiveAttribute _pLWfc2ILEeqhiNGvFqDFmQ at 10,131 size 140,25 {
+  			dfViewWorkaround true
+  			libraryComponentUID "_WYcYEM5BEeWKGIrSDzlNog"
+  		}
+  		
+  		PrimitiveAttribute _pLfpYWILEeqhiNGvFqDFmQ at 10,158 size 140,25 {
+  			dfViewWorkaround true
+  			libraryComponentUID "_1aiCkG_QEeaqHezD6-M0AA"
+  		}
+  		
+  		PrimitiveAttribute _pLpaYWILEeqhiNGvFqDFmQ at 10,185 size 140,25 {
+  			dfViewWorkaround true
+  			libraryComponentUID "_w9OqkU12Eeq209oVN1gUOw"
+  		}
+  		-ComplexRead-> _8sQaoWIIEeqhiNGvFqDFmQ via (305,444) (305,411) decorate "" at (0,0) {
+  			id _rd7mEWILEeqhiNGvFqDFmQ
+  			dfViewWorkaround true
+  		}
+  	}
+  }
+  
+  DeleteSIB _2a7mgGIIEeqhiNGvFqDFmQ at 340,337 size 120,90 {
+  	force true
+  	label "Delete"
+  	ComplexInputPort _8sQaoWIIEeqhiNGvFqDFmQ at 5,67 size 110,18 {
+  		name "delete1"
+  		isList false
+  		libraryComponentUID "_UdYs4MwNEeWZVvvwxpYu8A"
+  	}
+  	-BranchConnector-> _2bGloWIIEeqhiNGvFqDFmQ   {
+  		id _2bVPIWIIEeqhiNGvFqDFmQ
+  		concurrent true
+  	}
+  }
+  
+  Branch _2bGloWIIEeqhiNGvFqDFmQ at 340,437 size 120,25 {
+  	name "deleted"
+  	-ControlFlow-> _rQc54GE-EeqtqPIEsLRzMg  decorate "" at (0,0) {
+  		id _u7XlgYL1EeqzbJRhtrJe6A
+  		concurrent true
+  	}
+  }
+  
+  DeleteSIB _BDh84WIJEeqhiNGvFqDFmQ at 570,309 size 120,90 {
+  	force true
+  	label "Delete"
+  	ComplexInputPort _OUakIWIJEeqhiNGvFqDFmQ at 5,67 size 110,18 {
+  		name "delete1"
+  		isList false
+  		libraryComponentUID "_hoAaAHUEEeaJnsj-qiQmGw"
+  	}
+  	-BranchConnector-> _BDp4sWIJEeqhiNGvFqDFmQ   {
+  		id _BDwmYWIJEeqhiNGvFqDFmQ
+  		concurrent true
+  	}
+  }
+  
+  Branch _BDp4sWIJEeqhiNGvFqDFmQ at 449,285 size 120,25 {
+  	name "deleted"
+  	-ControlFlow-> _WGvOQYL1EeqzbJRhtrJe6A  decorate "" at (0,0) {
+  		id _1T504YL1EeqzbJRhtrJe6A
+  		concurrent true
+  	}
+  }
+  
+  IterateSIB _WGvOQYL1EeqzbJRhtrJe6A at 340,181 size 120,90 {
+  	label "Iterate SkillsLogs"
+  	libraryComponentUID "_hoAaAHUEEeaJnsj-qiQmGw"
+  	ComplexInputPort _WG-e0YL1EeqzbJRhtrJe6A at 5,67 size 110,18 {
+  		name "list"
+  		isList true
+  		libraryComponentUID "_hoAaAHUEEeaJnsj-qiQmGw"
+  	}
+  	-BranchConnector-> _WHT2AYL1EeqzbJRhtrJe6A   {
+  		id _WHcY4YL1EeqzbJRhtrJe6A
+  		concurrent true
+  	}
+  	
+  	-BranchConnector-> _WH6S8YL1EeqzbJRhtrJe6A   {
+  		id _WIAZkYL1EeqzbJRhtrJe6A
+  		concurrent true
+  	}
+  }
+  
+  Branch _WHT2AYL1EeqzbJRhtrJe6A at 570,201 size 120,50 {
+  	name "next"
+  	ComplexOutputPort _WHh4cYL1EeqzbJRhtrJe6A at 5,27 size 110,18 {
+  		name "element"
+  		isList false
+  		libraryComponentUID "_hoAaAHUEEeaJnsj-qiQmGw"
+  		-ComplexDirectDataFlow-> _OUakIWIJEeqhiNGvFqDFmQ via (560,237) (560,385) decorate "" at (0,0) {
+  			id _08D8oYL1EeqzbJRhtrJe6A
+  			dfViewWorkaround true
+  		}
+  	}
+  	-ControlFlow-> _BDh84WIJEeqhiNGvFqDFmQ  decorate "" at (0,0) {
+  		id _s8asQYNHEeqJoJgR0nOI2w
+  		concurrent true
+  	}
+  }
+  
+  Branch _WH6S8YL1EeqzbJRhtrJe6A at 340,297 size 120,25 {
+  	name "exit"
+  	-ControlFlow-> _2a7mgGIIEeqhiNGvFqDFmQ  decorate "" at (0,0) {
+  		id _3Y4kYYL1EeqzbJRhtrJe6A
+  		concurrent true
+  	}
+  }
+  
+  RetrieveOfTypeSIB _ZR9yUYMwEeqBOdzFYQHGSQ at 340,635 size 120,65 {
+  	label "Retrieve from SkillsLog"
+  	libraryComponentUID "_hoAaAHUEEeaJnsj-qiQmGw"
+  	-BranchConnector-> _ZSRUUYMwEeqBOdzFYQHGSQ   {
+  		id _ZSYpEYMwEeqBOdzFYQHGSQ
+  		concurrent true
+  	}
+  	
+  	-BranchConnector-> _ZS4YUYMwEeqBOdzFYQHGSQ   {
+  		id _ZS_tEYMwEeqBOdzFYQHGSQ
+  		concurrent true
+  	}
+  }
+  
+  Branch _ZSRUUYMwEeqBOdzFYQHGSQ at 490,643 size 120,50 {
+  	name "success"
+  	ComplexOutputPort _ZShL8YMwEeqBOdzFYQHGSQ at 5,27 size 110,18 {
+  		name "retrieved"
+  		isList true
+  		libraryComponentUID "_hoAaAHUEEeaJnsj-qiQmGw"
+  		-ComplexDirectDataFlow-> _jIjAcYMxEeqBOdzFYQHGSQ via (480,679) (480,712) decorate "" at (0,0) {
+  			id _lwiWYYMxEeqBOdzFYQHGSQ
+  			dfViewWorkaround true
+  		}
+  	}
+  	-ControlFlow-> _jINpQYMxEeqBOdzFYQHGSQ  decorate "" at (0,0) {
+  		id _lbodYYMxEeqBOdzFYQHGSQ
+  		concurrent true
+  	}
+  }
+  
+  Branch _ZS4YUYMwEeqBOdzFYQHGSQ at 340,710 size 120,25 {
+  	name "none found"
+  	-ControlFlow-> _9DDqwWE8EeqErIHjN9OXbA  decorate "" at (0,0) {
+  		id _cuoGcYMwEeqBOdzFYQHGSQ
+  		concurrent true
+  	}
+  }
+  
+  IterateSIB _jINpQYMxEeqBOdzFYQHGSQ at 640,636 size 120,90 {
+  	label "Iterate SkillsLogs"
+  	libraryComponentUID "_hoAaAHUEEeaJnsj-qiQmGw"
+  	ComplexInputPort _jIjAcYMxEeqBOdzFYQHGSQ at 5,67 size 110,18 {
+  		name "list"
+  		isList true
+  		libraryComponentUID "_hoAaAHUEEeaJnsj-qiQmGw"
+  	}
+  	-BranchConnector-> _jI-eQYMxEeqBOdzFYQHGSQ   {
+  		id _jJHBIYMxEeqBOdzFYQHGSQ
+  		concurrent true
+  	}
+  	
+  	-BranchConnector-> _jJsP8YMxEeqBOdzFYQHGSQ via (700,781)  {
+  		id _jJ1Z4YMxEeqBOdzFYQHGSQ
+  		concurrent true
+  	}
+  }
+  
+  Branch _jI-eQYMxEeqBOdzFYQHGSQ at 640,457 size 120,50 {
+  	name "next"
+  	ComplexOutputPort _jJQLEYMxEeqBOdzFYQHGSQ at 5,27 size 110,18 {
+  		name "element"
+  		isList false
+  		libraryComponentUID "_hoAaAHUEEeaJnsj-qiQmGw"
+  		-ComplexDirectDataFlow-> _QK71AYMzEeqBOdzFYQHGSQ via (630,493) (630,513) decorate "" at (0,0) {
+  			id _R2n6wYMzEeqBOdzFYQHGSQ
+  			dfViewWorkaround true
+  		}
+  		
+  		-ComplexDirectDataFlow-> _jDOwsIMzEeqBOdzFYQHGSQ via (630,493) (630,768) decorate "" at (0,0) {
+  			id _j4hZ8YMzEeqBOdzFYQHGSQ
+  			dfViewWorkaround true
+  		}
+  	}
+  	-ControlFlow-> _QKqIMYMzEeqBOdzFYQHGSQ  decorate "" at (0,0) {
+  		id _RmS_wYMzEeqBOdzFYQHGSQ
+  		concurrent true
+  	}
+  }
+  
+  Branch _jJsP8YMxEeqBOdzFYQHGSQ at 470,768 size 120,25 {
+  	name "exit"
+  	-ControlFlow-> _9DDqwWE8EeqErIHjN9OXbA  decorate "" at (0,0) {
+  		id _kxqBYYMzEeqBOdzFYQHGSQ
+  		concurrent true
+  	}
+  }
+  
+  AtomicSIB _QKqIMYMzEeqBOdzFYQHGSQ at 800,437 size 120,90 {
+  	label "isAuthorNull"
+  	libraryComponentUID "app.demo.isAuthorNull"
+  	ComplexInputPort _QK71AYMzEeqBOdzFYQHGSQ at 5,67 size 110,18 {
+  		name "input"
+  		isList false
+  		libraryComponentUID "_hoAaAHUEEeaJnsj-qiQmGw"
+  	}
+  	-BranchConnector-> _QLWrwYMzEeqBOdzFYQHGSQ   {
+  		id _QLYg8YMzEeqBOdzFYQHGSQ
+  		concurrent true
+  	}
+  	
+  	-BranchConnector-> _QLo_oYMzEeqBOdzFYQHGSQ   {
+  		id _QLq00YMzEeqBOdzFYQHGSQ
+  		concurrent true
+  	}
+  	
+  	-BranchConnector-> _eWNZMYM5EeqBOdzFYQHGSQ   {
+  		id _eWPOYYM5EeqBOdzFYQHGSQ
+  		concurrent true
+  	}
+  	
+  	-BranchConnector-> _eWhiQYM5EeqBOdzFYQHGSQ via (930,502)  {
+  		id _eWiwYYM5EeqBOdzFYQHGSQ
+  		concurrent true
+  	}
+  }
+  
+  Branch _QLWrwYMzEeqBOdzFYQHGSQ at 940,469 size 120,25 {
+  	name "true"
+  	-ControlFlow-> _fpRLQYMzEeqBOdzFYQHGSQ  decorate "" at (0,0) {
+  		id _wqrtwYNHEeqJoJgR0nOI2w
+  		concurrent true
+  	}
+  }
+  
+  Branch _QLo_oYMzEeqBOdzFYQHGSQ at 710,560 size 120,25 {
+  	name "false"
+  	-ControlFlow-> _jINpQYMxEeqBOdzFYQHGSQ  decorate "" at (0,0) {
+  		id _T_OmAYMzEeqBOdzFYQHGSQ
+  		concurrent true
+  	}
+  }
+  
+  DeleteSIB _fpRLQYMzEeqBOdzFYQHGSQ at 940,692 size 120,90 {
+  	force true
+  	label "Delete"
+  	ComplexInputPort _jDOwsIMzEeqBOdzFYQHGSQ at 5,67 size 110,18 {
+  		name "delete1"
+  		isList false
+  		libraryComponentUID "_hoAaAHUEEeaJnsj-qiQmGw"
+  	}
+  	-BranchConnector-> _fpfNsYMzEeqBOdzFYQHGSQ   {
+  		id _fpo-sYMzEeqBOdzFYQHGSQ
+  		concurrent true
+  	}
+  }
+  
+  Branch _fpfNsYMzEeqBOdzFYQHGSQ at 780,724 size 120,25 {
+  	name "deleted"
+  	-ControlFlow-> _jINpQYMxEeqBOdzFYQHGSQ  decorate "" at (0,0) {
+  		id _hSgZ8YMzEeqBOdzFYQHGSQ
+  		concurrent true
+  	}
+  }
+  
+  Branch _eWNZMYM5EeqBOdzFYQHGSQ at 800,635 size 120,25 {
+  	name "noresult"
+  	-ControlFlow-> _jINpQYMxEeqBOdzFYQHGSQ via (782,649) decorate "" at (0,0) {
+  		id _wZt5kYNHEeqJoJgR0nOI2w
+  		concurrent true
+  	}
+  }
+  
+  Branch _eWhiQYM5EeqBOdzFYQHGSQ at 870,668 size 120,25 {
+  	name "failure"
+  	-ControlFlow-> _jINpQYMxEeqBOdzFYQHGSQ  decorate "" at (0,0) {
+  		id _wFCqEYNHEeqJoJgR0nOI2w
+  		concurrent true
+  	}
+  }
+}

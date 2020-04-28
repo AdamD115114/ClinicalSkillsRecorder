@@ -1,0 +1,224 @@
+Process _FAm9kX_xEeqtutZK3Ck3vg {
+  modelName "DownloadSecurity"
+  description "DownloadSecurity"
+  dataFlowView true
+  processType FileDownloadSecurity
+  isStateful false
+  DataContext _F9hRwX_xEeqtutZK3Ck3vg at 50,140 size 180,325 {
+  	dfViewWorkaround true
+  	ComplexVariable __xyxsYAkEeqgd4ylQ2UEbA at 10,30 size 160,51 {
+  		expanded true
+  		name "studentuser"
+  		dfViewWorkaround true
+  		isList false
+  		libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
+  		ComplexAttribute _AAPdYYAlEeqgd4ylQ2UEbA at 10,23 size 140,25 {
+  			dfViewWorkaround true
+  			libraryComponentUID "_fPY24MwNEeWZVvvwxpYu8A"
+  		}
+  		-ComplexAttributeConnector-> _MakQEYAlEeqgd4ylQ2UEbA  decorate "Ellipse" at (0,0) {
+  			id _Masy8YAlEeqgd4ylQ2UEbA
+  			attributeName "skillsLog"
+  		}
+  	}
+  	
+  	ComplexVariable _MakQEYAlEeqgd4ylQ2UEbA at 10,120 size 160,105 {
+  		expanded true
+  		name "skillsLog"
+  		dfViewWorkaround true
+  		isList true
+  		libraryComponentUID "_hoAaAHUEEeaJnsj-qiQmGw"
+  		PrimitiveListAttribute _Ma8qkYAlEeqgd4ylQ2UEbA at 10,23 size 140,25 {
+  			attributeName size
+  			dfViewWorkaround true
+  			primitiveType Integer
+  			libraryComponentUID "_hoAaAHUEEeaJnsj-qiQmGw"
+  			-PrimitiveRead-> _RLQ-8YAlEeqgd4ylQ2UEbA  decorate "" at (0,0) {
+  				id _VdUqAYAlEeqgd4ylQ2UEbA
+  				dfViewWorkaround true
+  			}
+  		}
+  		
+  		ComplexListAttribute _MbQzoYAlEeqgd4ylQ2UEbA at 10,50 size 140,25 {
+  			attributeName last
+  			dfViewWorkaround true
+  			libraryComponentUID "_hoAaAHUEEeaJnsj-qiQmGw"
+  		}
+  		
+  		ComplexListAttribute _MbePAYAlEeqgd4ylQ2UEbA at 10,77 size 140,25 {
+  			attributeName first
+  			dfViewWorkaround true
+  			libraryComponentUID "_hoAaAHUEEeaJnsj-qiQmGw"
+  		}
+  		-ComplexRead-> _ndpZgX_xEeqtutZK3Ck3vg  decorate "" at (0,0) {
+  			id _Wti7wYAlEeqgd4ylQ2UEbA
+  			dfViewWorkaround true
+  		}
+  	}
+  }
+  
+  StartSIB _F9juAX_xEeqtutZK3Ck3vg at 320,120 size 100,90 {
+  	ComplexOutputPort _x-NtEYAkEeqgd4ylQ2UEbA at 5,67 size 90,18 {
+  		name "studentuser1"
+  		isList false
+  		libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
+  		-ComplexUpdate-> __xyxsYAkEeqgd4ylQ2UEbA  decorate "" at (0,0) {
+  			id _CvBX0YAlEeqgd4ylQ2UEbA
+  			dfViewWorkaround true
+  		}
+  	}
+  	-ControlFlow-> _RLIcEYAlEeqgd4ylQ2UEbA  decorate "" at (0,0) {
+  		id _SUGPQYAlEeqgd4ylQ2UEbA
+  		concurrent true
+  	}
+  }
+  
+  EndSIB _F9mKQX_xEeqtutZK3Ck3vg at 320,570 size 100,90 {
+  	branchName "result"
+  	PrimitiveInputPort _F9omgX_xEeqtutZK3Ck3vg at 5,67 size 90,1 {
+  		dataType File
+  		name "file"
+  		isList false
+  	}
+  }
+  
+  EndSIB _F9xwcX_xEeqtutZK3Ck3vg at 451,570 size 100,65 {
+  	branchName "not found"
+  }
+  
+  AtomicSIB _ndlIEX_xEeqtutZK3Ck3vg at 310,392 size 120,108 {
+  	label "exportToFile"
+  	libraryComponentUID "app.demo.exportToFile"
+  	ComplexInputPort _ndpZgX_xEeqtutZK3Ck3vg at 5,67 size 110,18 {
+  		name "skillsLog"
+  		isList true
+  		libraryComponentUID "_hoAaAHUEEeaJnsj-qiQmGw"
+  	}
+  	
+  	BooleanInputStatic _Apu6hIM_EeqBOdzFYQHGSQ at 5,85 size 110,18 {
+  		name "flag"
+  		value false
+  	}
+  	-BranchConnector-> _ndx8YX_xEeqtutZK3Ck3vg   {
+  		id _ndzxkX_xEeqtutZK3Ck3vg
+  		concurrent true
+  	}
+  }
+  
+  Branch _ndx8YX_xEeqtutZK3Ck3vg at 310,510 size 120,50 {
+  	name "success"
+  	PrimitiveOutputPort _nd5RIX_xEeqtutZK3Ck3vg at 5,27 size 110,18 {
+  		dataType File
+  		name "fileRef"
+  		isList false
+  		-PrimitiveDirectDataFlow-> _F9omgX_xEeqtutZK3Ck3vg via (300,546) (300,637) decorate "" at (0,0) {
+  			id _0hOcYYAkEeqgd4ylQ2UEbA
+  			dfViewWorkaround true
+  		}
+  	}
+  	-ControlFlow-> _F9mKQX_xEeqtutZK3Ck3vg  decorate "" at (0,0) {
+  		id _1YwhUYAkEeqgd4ylQ2UEbA
+  		concurrent true
+  	}
+  }
+  
+  AtomicSIB _RLIcEYAlEeqgd4ylQ2UEbA at 310,240 size 120,108 {
+  	label "IntegerGreater"
+  	libraryComponentUID "common.IntegerGreater"
+  	PrimitiveInputPort _RLQ-8YAlEeqgd4ylQ2UEbA at 5,67 size 110,18 {
+  		dataType Integer
+  		name "a"
+  		isList false
+  	}
+  	
+  	IntegerInputStatic _S_R6QIAlEeqgd4ylQ2UEbA at 5,85 size 110,18 {
+  		name "b"
+  		value 0
+  	}
+  	-BranchConnector-> _RLmWIYAlEeqgd4ylQ2UEbA   {
+  		id _RLnkQYAlEeqgd4ylQ2UEbA
+  		concurrent true
+  	}
+  	
+  	-BranchConnector-> _RLuR8YAlEeqgd4ylQ2UEbA   {
+  		id _RLvgEYAlEeqgd4ylQ2UEbA
+  		concurrent true
+  	}
+  	
+  	-BranchConnector-> _RL4C8YAlEeqgd4ylQ2UEbA   {
+  		id _RL54IYAlEeqgd4ylQ2UEbA
+  		concurrent true
+  	}
+  	
+  	-BranchConnector-> _RMBM4YAlEeqgd4ylQ2UEbA   {
+  		id _RMCbAYAlEeqgd4ylQ2UEbA
+  		concurrent true
+  	}
+  }
+  
+  Branch _RLmWIYAlEeqgd4ylQ2UEbA at 310,358 size 120,25 {
+  	name "true"
+  	-ControlFlow-> _ndlIEX_xEeqtutZK3Ck3vg  decorate "" at (0,0) {
+  		id _WKQogYAlEeqgd4ylQ2UEbA
+  		concurrent true
+  	}
+  }
+  
+  Branch _RLuR8YAlEeqgd4ylQ2UEbA at 390,358 size 120,25 {
+  	name "false"
+  	-ControlFlow-> _YTov0YAlEeqgd4ylQ2UEbA  decorate "" at (0,0) {
+  		id _d3y78YAlEeqgd4ylQ2UEbA
+  		concurrent true
+  	}
+  }
+  
+  Branch _RL4C8YAlEeqgd4ylQ2UEbA at 470,358 size 120,25 {
+  	name "noresult"
+  	-ControlFlow-> _YTov0YAlEeqgd4ylQ2UEbA  decorate "" at (0,0) {
+  		id _eLEdQYAlEeqgd4ylQ2UEbA
+  		concurrent true
+  	}
+  }
+  
+  Branch _RMBM4YAlEeqgd4ylQ2UEbA at 550,358 size 120,25 {
+  	name "failure"
+  	-ControlFlow-> _YTov0YAlEeqgd4ylQ2UEbA  decorate "" at (0,0) {
+  		id _eY8hMYAlEeqgd4ylQ2UEbA
+  		concurrent true
+  	}
+  }
+  
+  AtomicSIB _YTov0YAlEeqgd4ylQ2UEbA at 480,410 size 120,90 {
+  	label "LogDebugMessage"
+  	libraryComponentUID "common.LogDebugMessage"
+  	TextInputStatic _Z7tg4YAlEeqgd4ylQ2UEbA at 5,67 size 110,18 {
+  		name "message"
+  		value "SkillsLog is less than 1"
+  	}
+  	-BranchConnector-> _YUC_gYAlEeqgd4ylQ2UEbA   {
+  		id _YUENoYAlEeqgd4ylQ2UEbA
+  		concurrent true
+  	}
+  	
+  	-BranchConnector-> _YURB8IAlEeqgd4ylQ2UEbA   {
+  		id _YURpAYAlEeqgd4ylQ2UEbA
+  		concurrent true
+  	}
+  }
+  
+  Branch _YUC_gYAlEeqgd4ylQ2UEbA at 451,522 size 120,25 {
+  	name "success"
+  	-ControlFlow-> _F9xwcX_xEeqtutZK3Ck3vg  decorate "" at (0,0) {
+  		id _elz4gYAlEeqgd4ylQ2UEbA
+  		concurrent true
+  	}
+  }
+  
+  Branch _YURB8IAlEeqgd4ylQ2UEbA at 570,522 size 120,25 {
+  	name "failure"
+  	-ControlFlow-> _F9xwcX_xEeqtutZK3Ck3vg  decorate "" at (0,0) {
+  		id _fBKXwYAlEeqgd4ylQ2UEbA
+  		concurrent true
+  	}
+  }
+}

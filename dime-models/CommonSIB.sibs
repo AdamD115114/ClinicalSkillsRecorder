@@ -1,0 +1,9 @@
+package app.demo
+
+sib getDate:info.scce.dime.app.demo.Native#getDate
+	->success
+	formattedDate: text
+	
+sib genUUID : info.scce.dime.app.demo.Native#genUUID
+	-> success
+	uuid : text

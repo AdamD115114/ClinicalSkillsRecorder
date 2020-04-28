@@ -1,0 +1,34 @@
+DAD _9G1SoMwLEeWZVvvwxpYu8A {
+  mode Development
+  postScripts [  ]
+  appName "Clinical Skill Logging Application"
+  errorMessage ""
+  additionalStylesheets [  ]
+  preScripts [  ]
+  externalResources [  ]
+  Start _9xD7YMwLEeWZVvvwxpYu8A at 30,60 size 30,30 {
+  	-StartupProcessPointer-> _e0kD8NvjEeWvrN7BnrpCFw  decorate "Polyline" at (2,0) {
+  		id _fbjygNvjEeWvrN7BnrpCFw
+  	}
+  	
+  	-RootInteractionPointer-> __TU1IF-UEea6DvTF5PmsmA  decorate "Polyline" at (2,0) {
+  		id __yonUF-UEea6DvTF5PmsmA
+  	}
+  }
+  
+  ProcessComponent _e0kD8NvjEeWvrN7BnrpCFw at 100,40 size 128,32 {
+  	libraryComponentUID "_sA1GYNviEeWsF7MALrkAZQ"
+  }
+  
+  ProcessComponent __TU1IF-UEea6DvTF5PmsmA at 100,80 size 128,32 {
+  	libraryComponentUID "_LWgagF-SEeakMeYoloYxpg"
+  }
+  
+  DataComponent _F_rGIMwNEeWZVvvwxpYu8A at 260,40 size 128,32 {
+  	libraryComponentUID "_tH3fEMwMEeWZVvvwxpYu8A"
+  }
+  
+  SystemUser _DyCqAF4SEear0NzybbrMtw at 260,89 size 128,32 {
+  	libraryComponentUID "_UdYs4MwNEeWZVvvwxpYu8A"
+  }
+}
