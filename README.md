@@ -35,5 +35,6 @@ Included in this submission .zip are two folders.
 The demo folder contains example skills imports to be used if testing the creationof a new users.
 
 # Developer Details
+
 Developed by: Adam Doherty
 Contact Email: 14170671@studentmail.ul.ie
