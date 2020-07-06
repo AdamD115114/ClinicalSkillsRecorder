@@ -2,7 +2,7 @@ Process _73nsMXdSEeqXnshXx9EVlQ {
   modelName "GenReport"
   description "GenReport"
   dataFlowView true
-  processType Interactable
+  processType Basic
   isStateful false
   StartSIB _73uZ4XdSEeqXnshXx9EVlQ at 350,50 size 100,90 {
   	ComplexOutputPort __X-0kXdSEeqXnshXx9EVlQ at 5,67 size 90,18 {

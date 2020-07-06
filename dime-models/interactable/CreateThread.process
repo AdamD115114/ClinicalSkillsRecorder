@@ -2,7 +2,7 @@ Process _3asBkIGZEean_JMeS26Lgg {
   modelName "CreateSkillLog"
   description "CreateSkillLog"
   dataFlowView true
-  processType Interactable
+  processType Basic
   isStateful false
   StartSIB _3a75MIGZEean_JMeS26Lgg at 290,80 size 100,126 {
   	ComplexOutputPort _4iU_EIGZEean_JMeS26Lgg at 5,67 size 90,18 {
@@ -45,7 +45,6 @@ Process _3asBkIGZEean_JMeS26Lgg {
   }
   
   ProcessSIB _E8-60YA-Eeqgd4ylQ2UEbA at 280,220 size 120,126 {
-  	minorPage false
   	label "PrepareSkillLog"
   	libraryComponentUID "_ej2SMYA8Eeqgd4ylQ2UEbA"
   	ComplexInputPort _E9KhAIA-Eeqgd4ylQ2UEbA at 5,67 size 110,18 {

@@ -4,9 +4,9 @@ GUI _zZLnoV7lEeqsQ7mBBi2uzg {
   additionalJavaScript [  ]
   additionalStylesheets [  ]
   title "ManageUsers"
-  DataContext _zZPSAV7lEeqsQ7mBBi2uzg at 20,20 size 200,591 {
+  DataContext _zZPSAV7lEeqsQ7mBBi2uzg at 20,20 size 200,595 {
   	dfViewWorkaround true
-  	ComplexVariable _SSLlAV76Eeqf9N7ymesWyA at 10,150 size 180,25 {
+  	ComplexVariable _SSLlAV76Eeqf9N7ymesWyA at 10,40 size 180,25 {
   		expanded false
   		isLive false
   		isInput true
@@ -14,7 +14,7 @@ GUI _zZLnoV7lEeqsQ7mBBi2uzg {
   		dfViewWorkaround true
   		isList true
   		libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
-  		-TableLoad-> _vid_UF7mEeqsQ7mBBi2uzg via (250,186) (250,1006) (1011,1006) decorate "" at (0,0) {
+  		-TableLoad-> _vid_UF7mEeqsQ7mBBi2uzg via (-10,210) (-10,1200) decorate "" at (0,0) {
   			id _esB2kV76Eeqf9N7ymesWyA
   		}
   		
@@ -24,7 +24,7 @@ GUI _zZLnoV7lEeqsQ7mBBi2uzg {
   		}
   	}
   	
-  	ComplexVariable _6t6AYF8PEeqe3eMzCPi2SQ at 10,200 size 180,51 {
+  	ComplexVariable _6t6AYF8PEeqe3eMzCPi2SQ at 10,140 size 180,25 {
   		expanded true
   		isLive false
   		isInput false
@@ -32,75 +32,53 @@ GUI _zZLnoV7lEeqsQ7mBBi2uzg {
   		dfViewWorkaround true
   		isList false
   		libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
-  		ComplexAttribute _Rf7igV8XEeqe3eMzCPi2SQ at 10,23 size 160,25 {
-  			isLive false
-  			libraryComponentUID "_jY03YHUEEeaJnsj-qiQmGw"
-  		}
-  		-AddComplexToSubmission-> _9QfG8WE1EeqErIHjN9OXbA via (229,252) (229,1007) (1560,1007) decorate "" at (0,0) decorate "Text" at (0,0) {
-  			id _tYT34WE2EeqErIHjN9OXbA
-  		}
-  		
   		-ComplexAttributeConnector-> _pwgE4WFQEeq_WfwltvVkeg  decorate "Ellipse" at (0,0) {
   			id _pw8w0WFQEeq_WfwltvVkeg
   			associationName "baseUser"
   		}
   		
-  		-TableColumnLoad-> _xdycgV7mEeqsQ7mBBi2uzg via (252,245) (252,840) (252,1146) decorate "" at (0,0) {
-  			id _qyXxkWFQEeq_WfwltvVkeg
+  		-ComplexAttributeConnector-> _cJyoAb9dEeqs2OWb69o-pA  decorate "Ellipse" at (0,0) {
+  			id _cJ-1Qb9dEeqs2OWb69o-pA
+  			associationName "skillsLog"
   		}
   		
-  		-AddComplexToSubmission-> _MYe5wWS4EeqdiagGhgTr_A via (228,248) (228,1008) (1140,1008) decorate "" at (0,0) decorate "Text" at (-107,-23) {
-  			id _V1UAkWS4EeqdiagGhgTr_A
+  		-AddComplexToSubmission-> _MYe5wWS4EeqdiagGhgTr_A  decorate "" at (0,0) decorate "Text" at (0,0) {
+  			id _vyvkkb9dEeqs2OWb69o-pA
+  			outputName "current"
+  		}
+  		
+  		-AddComplexToSubmission-> _9QfG8WE1EeqErIHjN9OXbA  decorate "" at (0,0) decorate "Text" at (0,0) {
+  			id _w3FWcb9dEeqs2OWb69o-pA
+  			outputName "current"
   		}
   	}
   	
-  	ComplexVariable _pwgE4WFQEeq_WfwltvVkeg at 10,300 size 180,213 {
-  		expanded true
+  	ComplexVariable _pwgE4WFQEeq_WfwltvVkeg at 10,300 size 180,78 {
+  		expanded false
   		isLive false
   		isInput false
   		name "baseUser"
   		dfViewWorkaround true
   		isList false
   		libraryComponentUID "_UdYs4MwNEeWZVvvwxpYu8A"
-  		ComplexAttribute _px2IsWFQEeq_WfwltvVkeg at 10,23 size 160,25 {
-  			isLive false
-  			libraryComponentUID "_fOkXgMwNEeWZVvvwxpYu8A"
-  		}
-  		
-  		PrimitiveAttribute _pyCV8WFQEeq_WfwltvVkeg at 10,50 size 160,25 {
-  			isLive false
-  			libraryComponentUID "_YIIgUMwNEeWZVvvwxpYu8A"
-  		}
-  		
-  		PrimitiveAttribute _pyisQWFQEeq_WfwltvVkeg at 10,77 size 160,25 {
-  			isLive false
-  			libraryComponentUID "_3QnzMM46EeWKGIrSDzlNog"
-  		}
-  		
-  		PrimitiveAttribute _pytrYWFQEeq_WfwltvVkeg at 10,104 size 160,25 {
+  		PrimitiveAttribute _pytrYWFQEeq_WfwltvVkeg at 10,23 size 160,25 {
   			isLive false
   			libraryComponentUID "_VE6ToM5BEeWKGIrSDzlNog"
-  			-PrimitivDataTarget-> _vid_UF7mEeqsQ7mBBi2uzg via (231,435) (231,1008) (1009,1008) decorate "Text" at (0,0) decorate "" at (0,0) {
-  				id _KaJd0YTCEeqVaIrIaAJAXw
+  			-TableColumnLoad-> _xdycgV7mEeqsQ7mBBi2uzg  decorate "" at (0,0) {
+  				id _ZAsJEb9dEeqs2OWb69o-pA
   			}
   		}
   		
-  		PrimitiveAttribute _py4DcWFQEeq_WfwltvVkeg at 10,131 size 160,25 {
+  		PrimitiveAttribute _py4DcWFQEeq_WfwltvVkeg at 10,50 size 160,25 {
   			isLive false
   			libraryComponentUID "_WYcYEM5BEeWKGIrSDzlNog"
+  			-TableColumnLoad-> _xz9g0V7mEeqsQ7mBBi2uzg  decorate "" at (0,0) {
+  				id _aAYEcb9dEeqs2OWb69o-pA
+  			}
   		}
-  		
-  		PrimitiveAttribute _pzDpoGFQEeq_WfwltvVkeg at 10,158 size 160,25 {
-  			isLive false
-  			libraryComponentUID "_1aiCkG_QEeaqHezD6-M0AA"
-  		}
-  		
-  		PrimitiveAttribute _pzRFAGFQEeq_WfwltvVkeg at 10,185 size 160,25 {
-  			isLive false
-  			libraryComponentUID "_w9OqkU12Eeq209oVN1gUOw"
-  		}
-  		-AddComplexToSubmission-> _3MlLUV7mEeqsQ7mBBi2uzg via (119,1015) (1350,1015) decorate "" at (0,0) decorate "Text" at (0,0) {
-  			id _1aRogWINEeqI7aMYajOO9Q
+  		-AddComplexToSubmission-> _3MlLUV7mEeqsQ7mBBi2uzg  decorate "" at (0,0) decorate "Text" at (0,0) {
+  			id _p9YTsb9dEeqs2OWb69o-pA
+  			outputName "baseUser"
   		}
   	}
   	
@@ -114,6 +92,25 @@ GUI _zZLnoV7lEeqsQ7mBBi2uzg {
   		libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
   		-ComplexRead-> _JMtP4YM5EeqBOdzFYQHGSQ via (120,756) decorate "" at (0,0) {
   			id _NnMRwYHGEeqbzaBwevDrEg
+  		}
+  	}
+  	
+  	ComplexVariable _cJyoAb9dEeqs2OWb69o-pA at 10,200 size 180,51 {
+  		expanded false
+  		isLive false
+  		isInput false
+  		name "skillsLog"
+  		dfViewWorkaround true
+  		isList true
+  		libraryComponentUID "_hoAaAHUEEeaJnsj-qiQmGw"
+  		PrimitiveListAttribute _cK2_Ab9dEeqs2OWb69o-pA at 10,23 size 160,25 {
+  			isLive false
+  			attributeName size
+  			primitiveType Integer
+  			libraryComponentUID "_hoAaAHUEEeaJnsj-qiQmGw"
+  			-TableColumnLoad-> _pP2HgWFTEeq_WfwltvVkeg  decorate "" at (0,0) {
+  				id _dn0sQb9dEeqs2OWb69o-pA
+  			}
   		}
   	}
   }
@@ -207,13 +204,15 @@ GUI _zZLnoV7lEeqsQ7mBBi2uzg {
   						
   						Table _vid_UF7mEeqsQ7mBBi2uzg at 10,60 size 1390,220 {
   							striped true
-  							hover false
   							numbering true
   							pagination 0
   							autoSorted true
-  							responsive true
   							condensed true
+  							reSortable false
   							bordered true
+  							hover false
+  							responsive true
+  							name "table"
   							choices NONE
   							generalStyle GeneralStyling _viiQwF7mEeqsQ7mBBi2uzg {
   									tallness Fitting
@@ -221,6 +220,7 @@ GUI _zZLnoV7lEeqsQ7mBBi2uzg {
   									attributes [  ]
   									marginTop None
   								}
+  							dropTargets [  ]
   							MoveUp _vifNcV7mEeqsQ7mBBi2uzg at 2,2 size 14,7 {
   							}
   							
@@ -739,6 +739,7 @@ GUI _zZLnoV7lEeqsQ7mBBi2uzg {
   									
   									GuardSIB _JMWqkYM5EeqBOdzFYQHGSQ at 10,80 size 150,90 {
   										name "AllUserReportSecurity"
+  										cachable true
   										label "AllUserReportSecurity"
   										libraryComponentUID "_RoCGcYHFEeqbzaBwevDrEg"
   										generalStyle GeneralStyling _JXYpcIHGEeqbzaBwevDrEg {

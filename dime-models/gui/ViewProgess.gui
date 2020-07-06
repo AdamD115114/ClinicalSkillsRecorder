@@ -291,13 +291,15 @@ GUI _10h9wWSNEeqJqMh6s9r8IA {
   					
   					Table _JilcwWSOEeqJqMh6s9r8IA at 10,60 size 480,170 {
   						striped true
-  						hover false
   						numbering false
   						pagination 0
   						autoSorted true
-  						responsive true
   						condensed true
+  						reSortable false
   						bordered true
+  						hover false
+  						responsive true
+  						name "table"
   						choices NONE
   						generalStyle GeneralStyling _JipuMGSOEeqJqMh6s9r8IA {
   								tallness Fitting
@@ -305,6 +307,7 @@ GUI _10h9wWSNEeqJqMh6s9r8IA {
   								attributes [  ]
   								marginTop None
   							}
+  						dropTargets [  ]
   						MoveUp _JinR8WSOEeqJqMh6s9r8IA at 2,2 size 14,7 {
   						}
   						
@@ -481,6 +484,7 @@ GUI _10h9wWSNEeqJqMh6s9r8IA {
   								
   								GuardSIB _Cyf90YM_EeqBOdzFYQHGSQ at 10,80 size 150,90 {
   									name "DownloadSecurity"
+  									cachable true
   									label "DownloadSecurity"
   									libraryComponentUID "_FAm9kX_xEeqtutZK3Ck3vg"
   									generalStyle GeneralStyling _dBDrsIDqEeqTnfaGH9KVpA {

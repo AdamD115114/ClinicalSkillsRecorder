@@ -2,7 +2,7 @@ Process _JIQtoYAsEeqgd4ylQ2UEbA {
   modelName "CreateNewUser1"
   description "CreateNewUser1"
   dataFlowView true
-  processType Interaction
+  processType Basic
   isStateful false
   StartSIB _JITw8YAsEeqgd4ylQ2UEbA at 350,-20 size 100,65 {
   	-ControlFlow-> _OqJawYJOEeqmJ4CvZ57k3g  decorate "" at (0,0) {
@@ -16,7 +16,6 @@ Process _JIQtoYAsEeqgd4ylQ2UEbA {
   }
   
   ProcessSIB _qxef8YAsEeqgd4ylQ2UEbA at 340,320 size 120,162 {
-  	minorPage false
   	label "CreateAccountFlow"
   	libraryComponentUID "_gdZH8U_PEeqI8c2lYoiaDQ"
   	PrimitiveInputPort _qxqtMYAsEeqgd4ylQ2UEbA at 5,67 size 110,18 {

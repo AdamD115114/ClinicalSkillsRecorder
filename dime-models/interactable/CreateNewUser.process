@@ -2,7 +2,7 @@ Process _gdZH8U_PEeqI8c2lYoiaDQ {
   modelName "CreateAccountFlow"
   description "CreateAccountFlow"
   dataFlowView true
-  processType Interactable
+  processType Basic
   isStateful false
   StartSIB _gdiR4U_PEeqI8c2lYoiaDQ at 350,0 size 100,162 {
   	PrimitiveOutputPort _Slv9cVMWEeqcOZB7_6FPGQ at 5,67 size 90,18 {
@@ -61,7 +61,6 @@ Process _gdZH8U_PEeqI8c2lYoiaDQ {
   }
   
   ProcessSIB _rzePYU_PEeqI8c2lYoiaDQ at 340,220 size 120,162 {
-  	minorPage false
   	label "CreateUser"
   	libraryComponentUID "_cBxicNzDEeW2rv4DARGjjw"
   	PrimitiveInputPort _r0LaAU_PEeqI8c2lYoiaDQ at 5,67 size 110,18 {
@@ -120,7 +119,6 @@ Process _gdZH8U_PEeqI8c2lYoiaDQ {
   }
   
   ProcessSIB _cw3owYAoEeqgd4ylQ2UEbA at 340,460 size 120,108 {
-  	minorPage false
   	label "PreviousSkillHandler"
   	libraryComponentUID "_mOz0wYAmEeqgd4ylQ2UEbA"
   	PrimitiveInputPort _cxFEIYAoEeqgd4ylQ2UEbA at 5,67 size 110,18 {

@@ -2,7 +2,7 @@ Process _5XnWQXhSEeqG_aiPUWSXVw {
   modelName "loadSkillsLists"
   description "loadSkillsLists"
   dataFlowView true
-  processType Interactable
+  processType Basic
   isStateful false
   StartSIB _5Xtc4XhSEeqG_aiPUWSXVw at 350,160 size 100,65 {
   	-ControlFlow-> _fRQTQXnEEeqjX5xL-Kw_UA  decorate "" at (0,0) {
@@ -23,6 +23,7 @@ Process _5XnWQXhSEeqG_aiPUWSXVw {
   RetrieveOfTypeSIB _fRQTQXnEEeqjX5xL-Kw_UA at 340,240 size 120,65 {
   	label "Retrieve from Category"
   	libraryComponentUID "_1AG6gF4nEeqBtq1_HiCcCw"
+  	ignoredBranch [  ]
   	-BranchConnector-> _fRXA8XnEEeqjX5xL-Kw_UA   {
   		id _fRZdMXnEEeqjX5xL-Kw_UA
   		concurrent true
@@ -62,6 +63,9 @@ Process _5XnWQXhSEeqG_aiPUWSXVw {
   AtomicSIB _GWjEAYh8EeqggPuT2vnOeg at 500,325 size 120,90 {
   	label "LogDebugMessage"
   	libraryComponentUID "common.LogDebugMessage"
+  	ignoredBranch [ IgnoreBranch _sc9xAL9cEeqs2OWb69o-pA {
+  			name "failure"
+  		} ]
   	TextInputStatic _LYIukYh8EeqggPuT2vnOeg at 5,67 size 110,18 {
   		name "message"
   		value "No Categories Found in DataLayer"

@@ -2,7 +2,7 @@ Process _8c4wwYA3Eeqgd4ylQ2UEbA {
   modelName "DisplaySkills"
   description "DisplaySkills"
   dataFlowView true
-  processType Interactable
+  processType Basic
   isStateful false
   StartSIB _8c9CMYA3Eeqgd4ylQ2UEbA at 340,50 size 100,90 {
   	ComplexOutputPort __Ic_IYA3Eeqgd4ylQ2UEbA at 5,67 size 90,18 {
@@ -32,6 +32,7 @@ Process _8c4wwYA3Eeqgd4ylQ2UEbA {
   RetrieveOfTypeSIB _ZCeRIYA4Eeqgd4ylQ2UEbA at 300,196 size 180,90 {
   	label "Retrieve from SkillsList"
   	libraryComponentUID "_KlUvcV4oEeqBtq1_HiCcCw"
+  	ignoredBranch [  ]
   	ComplexInputPort _aNlZYYA4Eeqgd4ylQ2UEbA at 5,67 size 170,18 {
   		name "category"
   		isList false
@@ -76,6 +77,9 @@ Process _8c4wwYA3Eeqgd4ylQ2UEbA {
   AtomicSIB _cKt0cYA4Eeqgd4ylQ2UEbA at 510,311 size 120,90 {
   	label "LogDebugMessage"
   	libraryComponentUID "common.LogDebugMessage"
+  	ignoredBranch [ IgnoreBranch _oW5TgL9cEeqs2OWb69o-pA {
+  			name "failure"
+  		} ]
   	TextInputStatic _fW8f4YA4Eeqgd4ylQ2UEbA at 5,67 size 110,18 {
   		name "message"
   		value "No SkillsLists Found"

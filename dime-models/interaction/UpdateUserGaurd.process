@@ -2,7 +2,7 @@ Process _1yiE4YVWEeqVaIrIaAJAXw {
   modelName "UpdateUserGaurd"
   description "UpdateUserGaurd"
   dataFlowView true
-  processType Interaction
+  processType Basic
   isStateful false
   StartSIB _1yu5MYVWEeqVaIrIaAJAXw at 350,50 size 100,90 {
   	ComplexOutputPort _8yqfwYVWEeqVaIrIaAJAXw at 5,67 size 90,18 {
@@ -116,7 +116,6 @@ Process _1yiE4YVWEeqVaIrIaAJAXw {
   }
   
   ProcessSIB _DNE-cYVXEeqVaIrIaAJAXw at 350,450 size 120,162 {
-  	minorPage false
   	label "UpdateBaseUser"
   	libraryComponentUID "_5p3KEWErEeqErIHjN9OXbA"
   	ComplexInputPort _DNjfkYVXEeqVaIrIaAJAXw at 5,67 size 110,18 {
@@ -163,7 +162,6 @@ Process _1yiE4YVWEeqVaIrIaAJAXw {
   }
   
   ProcessSIB _LnlsoYVXEeqVaIrIaAJAXw at 600,270 size 120,90 {
-  	minorPage false
   	label "MakeManager"
   	libraryComponentUID "_OubLMWE7EeqErIHjN9OXbA"
   	ComplexInputPort _LnzvEYVXEeqVaIrIaAJAXw at 5,67 size 110,18 {

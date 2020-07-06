@@ -2,7 +2,7 @@ Process _mOz0wYAmEeqgd4ylQ2UEbA {
   modelName "PreviousSkillHandler"
   description "PreviousSkillHandler"
   dataFlowView true
-  processType Interactable
+  processType Basic
   isStateful false
   StartSIB _mO6icYAmEeqgd4ylQ2UEbA at 350,50 size 100,108 {
   	PrimitiveOutputPort _n0YEYYAmEeqgd4ylQ2UEbA at 5,67 size 90,18 {
