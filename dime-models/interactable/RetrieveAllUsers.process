@@ -2,7 +2,7 @@ Process _x49UkV7xEeq8Ne6T1dHaVQ {
   modelName "RetrieveAllUsers"
   description "RetrieveAllUsers"
   dataFlowView true
-  processType Interactable
+  processType Basic
   isStateful false
   StartSIB _x5FQYV7xEeq8Ne6T1dHaVQ at 350,50 size 100,65 {
   	-ControlFlow-> _8UEu8V75Eeqf9N7ymesWyA  decorate "" at (0,0) {

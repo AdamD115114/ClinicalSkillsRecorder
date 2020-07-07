@@ -2,7 +2,7 @@ Process _MhLpIV_eEeqtEMq3xOLzNA {
   modelName "GetAuthLevel"
   description "GetAuthLevel"
   dataFlowView true
-  processType Interactable
+  processType Basic
   isStateful false
   DataContext _MhP6kV_eEeqtEMq3xOLzNA at 50,50 size 180,441 {
   	dfViewWorkaround true

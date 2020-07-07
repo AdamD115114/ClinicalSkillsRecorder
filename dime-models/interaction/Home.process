@@ -2,7 +2,7 @@ Process _LWgagF-SEeakMeYoloYxpg {
   modelName "Home"
   description "Home"
   dataFlowView true
-  processType Interaction
+  processType Basic
   isStateful false
   StartSIB _LYO40F-SEeakMeYoloYxpg at 319,241 size 100,65 {
   	-ControlFlow-> _nZa1AV5sEeqcB9FGsKamTw via (368,343) (539,343) decorate "" at (0,0) {
@@ -12,7 +12,6 @@ Process _LWgagF-SEeakMeYoloYxpg {
   }
   
   ProcessSIB _Z4Vj4E18EeqMlr9v5HYbOw at 640,119 size 120,126 {
-  	minorPage false
   	label "CreateThread"
   	libraryComponentUID "_3asBkIGZEean_JMeS26Lgg"
   	ComplexInputPort _Z4t-YU18EeqMlr9v5HYbOw at 5,67 size 110,18 {
@@ -224,7 +223,6 @@ Process _LWgagF-SEeakMeYoloYxpg {
   }
   
   ProcessSIB _Lb6OkXnGEeq3KrSNPJfQgQ at 805,550 size 120,65 index 12 {
-  	minorPage false
   	label "loadSkillsLists"
   	libraryComponentUID "_5XnWQXhSEeqG_aiPUWSXVw"
   	-BranchConnector-> _LcvVAXnGEeq3KrSNPJfQgQ   {
@@ -251,7 +249,6 @@ Process _LWgagF-SEeakMeYoloYxpg {
   }
   
   ProcessSIB _XmVYYYA6Eeqgd4ylQ2UEbA at 805,148 size 120,90 index 14 {
-  	minorPage false
   	label "DisplaySkills"
   	libraryComponentUID "_8c4wwYA3Eeqgd4ylQ2UEbA"
   	ComplexInputPort _Xn0mIYA6Eeqgd4ylQ2UEbA at 5,67 size 110,18 {

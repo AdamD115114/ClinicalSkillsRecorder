@@ -4,7 +4,7 @@ GUI _xAQDcYA5Eeqgd4ylQ2UEbA {
   additionalJavaScript [  ]
   additionalStylesheets [  ]
   title "PickSkill"
-  DataContext _xATt0IA5Eeqgd4ylQ2UEbA at 0,540 size 200,261 {
+  DataContext _xATt0IA5Eeqgd4ylQ2UEbA at 0,540 size 200,215 {
   	dfViewWorkaround true
   	PrimitiveVariable _AV7M8YA6Eeqgd4ylQ2UEbA at 30,160 size 140,25 {
   		isInput false
@@ -21,7 +21,7 @@ GUI _xAQDcYA5Eeqgd4ylQ2UEbA {
   		}
   	}
   	
-  	ComplexVariable _RVC6EYD2EeqbzaBwevDrEg at 10,50 size 180,78 {
+  	ComplexVariable _RVC6EYD2EeqbzaBwevDrEg at 10,30 size 180,78 {
   		expanded true
   		isLive false
   		isInput true
@@ -179,7 +179,6 @@ GUI _xAQDcYA5Eeqgd4ylQ2UEbA {
   								multiple false
   								disabled false
   								label "Skill"
-  								choices [ "{{skills.Display}}" ]
   								generalStyle GeneralStyling _2Hg4MIA5Eeqgd4ylQ2UEbA {
   										tallness Fitting
   										marginBottom None

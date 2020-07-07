@@ -2,7 +2,7 @@ Process _I7OXAHnBEeany527l2d94g {
   modelName "RetrieveAll"
   description "RetrieveAll"
   dataFlowView true
-  processType Interactable
+  processType Basic
   isStateful false
   StartSIB _I7YIAHnBEeany527l2d94g at 350,50 size 100,65 {
   	-ControlFlow-> _N3uzMIGWEeaUhtlPOLCZpw  decorate "Polyline" at (2,0) {
@@ -14,6 +14,7 @@ Process _I7OXAHnBEeany527l2d94g {
   RetrieveOfTypeSIB _N3uzMIGWEeaUhtlPOLCZpw at 325,190 size 150,65 {
   	label "Retrieve all Thread"
   	libraryComponentUID "_hoAaAHUEEeaJnsj-qiQmGw"
+  	ignoredBranch [  ]
   	-BranchConnector-> _N37AcIGWEeaUhtlPOLCZpw   {
   		id _N4EKYIGWEeaUhtlPOLCZpw
   		concurrent true
@@ -62,6 +63,9 @@ Process _I7OXAHnBEeany527l2d94g {
   AtomicSIB _vZwT8IiCEeqlKvSgdEyxWw at 510,260 size 120,90 {
   	label "LogDebugMessage"
   	libraryComponentUID "common.LogDebugMessage"
+  	ignoredBranch [ IgnoreBranch _rSWYAL9cEeqs2OWb69o-pA {
+  			name "failure"
+  		} ]
   	TextInputStatic _D9alQYiDEeqlKvSgdEyxWw at 5,67 size 110,18 {
   		name "message"
   		value "No SkillLogs available in Data Layer"

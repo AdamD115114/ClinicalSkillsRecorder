@@ -2,7 +2,7 @@ Process _ej2SMYA8Eeqgd4ylQ2UEbA {
   modelName "PrepareSkillLog"
   description "PrepareSkillLog"
   dataFlowView true
-  processType Interactable
+  processType Basic
   isStateful false
   StartSIB _ej58kYA8Eeqgd4ylQ2UEbA at 350,-310 size 100,126 {
   	ComplexOutputPort _fwfrgYA8Eeqgd4ylQ2UEbA at 5,67 size 90,18 {

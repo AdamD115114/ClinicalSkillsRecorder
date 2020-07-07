@@ -143,7 +143,7 @@ GUI _kymGcU2GEeqQN-t2MiOxbw {
   				
   				Image _ZHQQgYPHEeqJoJgR0nOI2w at 10,30 size 100,90 {
   					dimensionX 100
-  					path "/asset/Logos/PARAMEDICS_LOGO.png"
+  					path "/asset/Logos/PARAMEDICS_LOGO.PNG"
   					dimensionY 100
   					generalStyle GeneralStyling _ZHTT0IPHEeqJoJgR0nOI2w {
   							tallness Fitting
@@ -266,7 +266,7 @@ GUI _kymGcU2GEeqQN-t2MiOxbw {
   				
   				Image _LUy3EYSUEeqppsAcIpAkmA at 10,30 size 100,90 {
   					dimensionX 100
-  					path "/asset/Logos/HRI.png"
+  					path "/asset/Logos/HRI.PNG"
   					dimensionY 100
   					generalStyle GeneralStyling _LU3vkISUEeqppsAcIpAkmA {
   							tallness Fitting

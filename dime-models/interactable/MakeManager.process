@@ -2,7 +2,7 @@ Process _OubLMWE7EeqErIHjN9OXbA {
   modelName "MakeManager"
   description "MakeManager"
   dataFlowView true
-  processType Interactable
+  processType Basic
   isStateful false
   StartSIB _Oue1kWE7EeqErIHjN9OXbA at 350,50 size 100,90 {
   	ComplexOutputPort _Qfcc4WE7EeqErIHjN9OXbA at 5,67 size 90,18 {

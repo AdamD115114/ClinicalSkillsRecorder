@@ -157,7 +157,6 @@ GUI _NGHA8F4TEear0NzybbrMtw {
   				multiple false
   				disabled false
   				label "Category"
-  				choices [  ]
   				generalStyle GeneralStyling _0NFOoH_zEeqtutZK3Ck3vg {
   						tallness Fitting
   						marginBottom None

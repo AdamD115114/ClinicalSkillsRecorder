@@ -2,7 +2,7 @@ Process _5p3KEWErEeqErIHjN9OXbA {
   modelName "UpdateBaseUser"
   description "UpdateBaseUser"
   dataFlowView true
-  processType Interactable
+  processType Basic
   isStateful false
   StartSIB _5p93wWErEeqErIHjN9OXbA at 350,50 size 100,162 {
   	ComplexOutputPort _GdjfAWEsEeqErIHjN9OXbA at 5,67 size 90,18 {

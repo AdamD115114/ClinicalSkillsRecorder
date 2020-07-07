@@ -2,7 +2,7 @@ Process _SSJV0YJGEeqg5-aJvFRQRA {
   modelName "RetrieveAllUsersGaurd"
   description "RetrieveAllUsersGaurd"
   dataFlowView true
-  processType Interaction
+  processType Basic
   isStateful false
   StartSIB _SSRRoYJGEeqg5-aJvFRQRA at 350,50 size 100,65 {
   	-ControlFlow-> _UN-JUYJGEeqg5-aJvFRQRA  decorate "" at (0,0) {
@@ -21,7 +21,6 @@ Process _SSJV0YJGEeqg5-aJvFRQRA {
   }
   
   ProcessSIB _UN-JUYJGEeqg5-aJvFRQRA at 340,170 size 120,65 {
-  	minorPage false
   	label "RetrieveAllUsers"
   	libraryComponentUID "_x49UkV7xEeq8Ne6T1dHaVQ"
   	-BranchConnector-> _UOTggYJGEeqg5-aJvFRQRA   {

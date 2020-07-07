@@ -2,7 +2,7 @@ Process _sA1GYNviEeWsF7MALrkAZQ {
   modelName "Startup"
   description "Startup"
   dataFlowView true
-  processType Interactable
+  processType Basic
   isStateful false
   StartSIB _sBIBUNviEeWsF7MALrkAZQ at 90,-80 size 111,65 {
   	-ControlFlow-> _PXMhsNzNEeWtAOZsxPLKSA  decorate "" at (0,0) {
@@ -14,6 +14,7 @@ Process _sA1GYNviEeWsF7MALrkAZQ {
   RetrieveOfTypeSIB _PXMhsNzNEeWtAOZsxPLKSA at 54,120 size 180,65 {
   	label "Retrieve all RedditUser"
   	libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
+  	ignoredBranch [  ]
   	-BranchConnector-> _PXdncNzNEeWtAOZsxPLKSA   {
   		id _PXmxYNzNEeWtAOZsxPLKSA
   		concurrent true
@@ -41,6 +42,9 @@ Process _sA1GYNviEeWsF7MALrkAZQ {
   AtomicSIB _hiIoINzNEeWtAOZsxPLKSA at 262,210 size 166,90 {
   	label "LogDebugMessage"
   	libraryComponentUID "common.LogDebugMessage"
+  	ignoredBranch [ IgnoreBranch _S8_9wL9cEeqs2OWb69o-pA {
+  			name "failure"
+  		} ]
   	TextInputStatic _nxMycNzNEeWtAOZsxPLKSA at 5,67 size 156,18 {
   		name "message"
   		value "Skipping initialization: Users"
@@ -64,9 +68,9 @@ Process _sA1GYNviEeWsF7MALrkAZQ {
   }
   
   ProcessSIB _GYaH0U15Eeq209oVN1gUOw at 86,252 size 120,162 index 7 {
-  	minorPage false
   	label "CreateUser"
   	libraryComponentUID "_cBxicNzDEeW2rv4DARGjjw"
+  	ignoredBranch [  ]
   	TextInputStatic _IQecsU15Eeq209oVN1gUOw at 5,67 size 110,18 {
   		name "firstName"
   		value "Adam"
@@ -111,9 +115,9 @@ Process _sA1GYNviEeWsF7MALrkAZQ {
   }
   
   ProcessSIB _cQBUUU15Eeq209oVN1gUOw at 86,511 size 120,162 index 9 {
-  	minorPage false
   	label "CreateUser"
   	libraryComponentUID "_cBxicNzDEeW2rv4DARGjjw"
+  	ignoredBranch [  ]
   	TextInputStatic _dAjZYU15Eeq209oVN1gUOw at 5,67 size 110,18 {
   		name "firstName"
   		value "John"
@@ -168,6 +172,7 @@ Process _sA1GYNviEeWsF7MALrkAZQ {
   RetrieveOfTypeSIB _poTnEYCdEeqfiYaJbkQcLA at 86,788 size 120,65 {
   	label "Retrieve from SkillsList"
   	libraryComponentUID "_KlUvcV4oEeqBtq1_HiCcCw"
+  	ignoredBranch [  ]
   	-BranchConnector-> _pof0UYCdEeqfiYaJbkQcLA   {
   		id _pol68YCdEeqfiYaJbkQcLA
   		concurrent true
@@ -203,6 +208,7 @@ Process _sA1GYNviEeWsF7MALrkAZQ {
   AtomicSIB _z6JDQYCdEeqfiYaJbkQcLA at 84,909 size 120,65 {
   	label "LoadSkills"
   	libraryComponentUID "app.demo.LoadSkills"
+  	ignoredBranch [  ]
   	-BranchConnector-> _z6awEYCdEeqfiYaJbkQcLA   {
   		id _z6bXIYCdEeqfiYaJbkQcLA
   		concurrent true
@@ -229,6 +235,9 @@ Process _sA1GYNviEeWsF7MALrkAZQ {
   AtomicSIB _4IqSIICdEeqfiYaJbkQcLA at 262,690 size 120,90 {
   	label "LogDebugMessage"
   	libraryComponentUID "common.LogDebugMessage"
+  	ignoredBranch [ IgnoreBranch _T_sJ0L9cEeqs2OWb69o-pA {
+  			name "failure"
+  		} ]
   	TextInputStatic _6aiOIYCdEeqfiYaJbkQcLA at 5,67 size 110,18 {
   		name "message"
   		value "Skipping Skills Loading "
@@ -250,6 +259,7 @@ Process _sA1GYNviEeWsF7MALrkAZQ {
   IterateSIB _A0BfwYCeEeqfiYaJbkQcLA at 262,975 size 120,90 {
   	label "Iterate SkillsLists"
   	libraryComponentUID "_KlUvcV4oEeqBtq1_HiCcCw"
+  	ignoredBranch [  ]
   	ComplexInputPort _A0VBwYCeEeqfiYaJbkQcLA at 5,67 size 110,18 {
   		name "list"
   		isList true
@@ -294,6 +304,7 @@ Process _sA1GYNviEeWsF7MALrkAZQ {
   PutComplexToContextSIB _InPkcYCeEeqfiYaJbkQcLA at 452,1105 size 120,90 {
   	label "Put SkillsList"
   	libraryComponentUID "_KlUvcV4oEeqBtq1_HiCcCw"
+  	ignoredBranch [  ]
   	ComplexInputPort _IneN8YCeEeqfiYaJbkQcLA at 5,67 size 110,18 {
   		name "in"
   		isList false

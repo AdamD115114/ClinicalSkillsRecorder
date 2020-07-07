@@ -2,7 +2,7 @@ Process _9C-yQWE8EeqErIHjN9OXbA {
   modelName "RemoveStudentUser"
   description "RemoveStudentUser"
   dataFlowView true
-  processType Interactable
+  processType Basic
   isStateful false
   StartSIB _9DB1kWE8EeqErIHjN9OXbA at 350,71 size 121,90 {
   	ComplexOutputPort _A3Y4AWE9EeqErIHjN9OXbA at 5,67 size 111,18 {
