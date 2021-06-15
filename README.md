@@ -37,4 +37,4 @@ The demo folder contains example skills imports to be used if testing the creati
 # Developer Details
 
 Developed by: Adam Doherty
-Contact Email: 14170671@studentmail.ul.ie
+Contact Email: Adam.J.Doherty@ul.ie
